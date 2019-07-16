@@ -23,10 +23,14 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover:not(.active) {
+li a:hover:not(.active):hover:not(.logobgcol) {
   background-color: LightGrey;
 }
 
 .active {
   background-color: CornflowerBlue;
+}
+
+.logobgcol {
+  background-color: AliceBlue;
 }
