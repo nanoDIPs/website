@@ -8,41 +8,29 @@ h1 {
 }
 p {
   color: red;
-  font-family: SanFranciscoDisplay
-}
-
-@font-face {
-  font-family: SanFranciscoDisplay;
-  src: url(fonts/sf-pro-display_regular.woff2);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: SanFranciscoDisplay;
-  src: url(fonts/sf-pro-display_regular.woff2);
-  font-weight: bolder;
+  font-family: SanFrancisco
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/sf-pro-text_regular.woff2);
+  src: url(fonts/SF-Pro-Text-Regular.otf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/sf-pro-text_light.woff2);
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family: SanFrancisco;
-  src: url(fonts/sf-pro-text_semibold.woff2);
+  src: url(fonts/SF-Pro-Text-Medium.otf);
   font-weight: bolder;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/sf-pro-text_bold.woff2);
+  src: url(fonts/SF-Pro-Text-Bold.otf);
   font-weight: bold;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(fonts/SF-Pro-Text-Light.otf);
+  font-weight: lighter;
 }
