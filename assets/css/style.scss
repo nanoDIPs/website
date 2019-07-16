@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  padding: 1em;
+  background-image: url("vorteg.gif") no-repeat center center;
+  background-color: DarkCyan;
+  color: black;
+  background-size: cover;
+  opacity:0.5;
+
+}
