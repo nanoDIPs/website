@@ -37,12 +37,12 @@
 
 .panel {
   padding: 0 18px;
-  display: none;
   background-color: white;
   max-height: 0;
-  overflow: auto;
+  overflow: hidden;
   transition: max-height 5s ease-out;
 }
+
 </style>
 </head>
 
@@ -168,10 +168,10 @@
     acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
       } else {
-        panel.style.display = "block";
+        panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });
   }
