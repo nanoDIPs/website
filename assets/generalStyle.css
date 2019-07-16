@@ -1,5 +1,8 @@
 body {
   font-family: Verdana;
+  position: absolute;
+  left: 20px;
+  top: 50px;
 }
 h1 {
   color: blue;
