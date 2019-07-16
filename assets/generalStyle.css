@@ -18,6 +18,6 @@ div.weekbox {
     overflow: auto;
     height:300px;
     width:700px;
-    border: 8px solid yellowgreen;
+    border:9px solid #0ADA0A;
     padding:2%;
   }
