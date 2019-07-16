@@ -9,7 +9,7 @@ Official first day. However, not everyone is in London. We are still sorting out
 
 Eduard and Alberto arrived in London
 Miro sent out lots of sponsorship emails.
-Georg and Alberto chased Baldwin for CDT studentships.</p>
+Georg and Alberto chased Baldwin for CDT studentships.
 
 ## Wednesday, July 3
 
