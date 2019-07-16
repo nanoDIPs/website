@@ -26,7 +26,7 @@
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: all 3s ease;
+  transition: all 0.4s ease;
 
 }
 
@@ -39,7 +39,7 @@
   display: none;
   background-color: white;
   overflow: hidden;
-  transition: all 5s ease;
+  transition: all 0.4s ease;
 }
 </style>
 </head>
@@ -164,7 +164,7 @@
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
+      this.classList.toggle("appear");
       var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
