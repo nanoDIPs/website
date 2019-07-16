@@ -8,6 +8,7 @@ h1 {
 }
 p {
   color: red;
+  font-family: SanFranciscoDisplay
 }
 
 @font-face {
