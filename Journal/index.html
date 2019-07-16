@@ -43,8 +43,9 @@ div.daybox {
 
 <body>
 
-<div class="weekbox">
-<h1>Week 1</h1>
+<button onclick="myFunction()"><h2>Week 2</h1></button>
+<div class="weekbox" id="clickbox">
+
 
       <div class="daybox">
       <h2>Monday, July 1</h2>
@@ -191,5 +192,15 @@ div.daybox {
 
   </div>
 
+  <script>
+  function myFunction() {
+    var x = document.getElementById("clickbox");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
 </body>
 </html>
