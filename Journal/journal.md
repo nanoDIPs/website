@@ -1,3 +1,9 @@
+---
+layout: default
+title: Journal
+description: Day to day updates
+
+---
 
 # Week 1
 
