@@ -106,6 +106,7 @@ div.daybox {
     Lunch in a street food market in White City.
     With IDT you can order DNA sequences with cholesterol at the 3’-ends, so they can attach to membranes.
     At 5 everyone goes home.</p>
+
   </div>
 
   <button class="accordion">Week 2</button>
@@ -120,7 +121,6 @@ div.daybox {
 
       <h3>Tuesday, July 9</h3>
       <p>There is the chemical biology symposium in White City today. Apperently Stefan Howorka is talking there about DNA nanopores. We managed to sneak in at the conference asd listen to the lecture. Some thoughts about DNA Nanopores: "What is the benefit of transporting single DNA molecules through tiny holes ? DNA sequencing. Biosensing.Detecting analytes is possible using ON/OFF switch approach (not reversible). This can be adapted. to create a protein sensitive pore. The presence of a protein lead to specific signal. These DNA pores are completely new. What are the properties ? Not as stable as the protein pores… more wavy and flexible. This is something that needs to be addressed" (Howorka, 2019). Meeting with David at ICAH at 5</p>
-      </div>
 
       <h3>Wednesday, July 10</h3>
       <p>
@@ -131,7 +131,6 @@ div.daybox {
       <p>
       Good news from the sponsorship front. The CDT in BioDesign Engineering announced that it will fund up to 8 6-week summer bursaries for undergraduate students (also final year students). Now we need to generate momentum and follow up with the Head of Department of Bioengineering. Also the Enterprise Lab is giving us 2ks. We can start buying flights already perhaps. In the afternoon, meeting at the Hackspace for the daily meeting with David. Prepare for meeting with Oscar tomorrow.
       </p>
-      </div>
 
       <h3>Friday, July 12</h3>
       <p> At 9, meeting with Oscar and David at the Hackspace.
@@ -152,11 +151,9 @@ div.daybox {
       <h2>Wednesday</h2>
       <p></p>
 
-      <div class="daybox">
       <h2>Thursday</h2>
       <p></p>
 
-      <div class="daybox">
       <h2>Friday</h2>
       <p></p>
 
@@ -165,53 +162,49 @@ div.daybox {
   <button class="accordion">Week 4</button>
   <div class="panel">
 
-        <div class="daybox">
         <h2>Monday</h2>
         <p></p>
         </div>
 
-        <div class="daybox">
         <h2>Tuesday</h2>
         <p></p>
         </div>
 
-        <div class="daybox">
         <h2>Wednesday</h2>
         <p></p>
         </div>
 
-        <div class="daybox">
         <h2>Thursday</h2>
         <p></p>
         </div>
 
-        <div class="daybox">
         <h2>Friday</h2>
         <p></p>
-        </div>
 
   </div>
 
   <script>
+
   function myFunction() {
     var acc = document.getElementsByClassName("accordion");
-var i;
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
     }
-  });
-}
-  </script>
+
+</script>
 </body>
 </html>
