@@ -1,8 +1,12 @@
 body {
   background-color: white;
+  font-family: Verdana;
 }
 h1 {
   color: blue;
+  font-family: Verdana;
+  font-stretch: semi-expanded;
+  font-weight: bolder;
 }
 p {
   color: red;
