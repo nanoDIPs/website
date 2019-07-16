@@ -1,17 +1,10 @@
 body {
-<<<<<<< HEAD
   font-family: Verdana;
 }
 h1 {
   color: blue;
   font-family: SanFrancisco;
   font-weight: bold;
-=======
-  background-color: white;
-}
-h1 {
-  color: blue;
->>>>>>> 59e72b68bb7f13337d4580b5c43d0bc0c4193d16
 }
 p {
   color: red;
