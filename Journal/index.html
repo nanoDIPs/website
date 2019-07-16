@@ -15,6 +15,7 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 .accordion {
   background-color: #eee;
@@ -26,7 +27,7 @@
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: all 0.4s ease;
+  transition: all 0.9s ease;
 
 }
 
@@ -165,7 +166,7 @@
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-      this.classList.toggle("appear");
+      this.classList.toggle("active");
       var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
