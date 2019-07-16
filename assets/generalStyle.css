@@ -11,3 +11,13 @@ h1 {
 p {
   color: red;
 }
+
+/* scrollable area for journal */
+div.weekbox {
+    background-color: lightblue;
+    overflow: auto;
+    height:300px;
+    width:700px;
+    border: 8px solid yellowgreen;
+    padding:2%;
+  }
