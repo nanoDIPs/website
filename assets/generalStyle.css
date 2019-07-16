@@ -1,23 +1,47 @@
 body {
-  background-color: white;
   font-family: Verdana;
 }
 h1 {
   color: blue;
-  font-family: Verdana;
-  font-stretch: semi-expanded;
-  font-weight: bolder;
+  font-family: SanFrancisco;
+  font-weight: bold;
 }
 p {
   color: red;
 }
 
-/* scrollable area for journal */
-div.weekbox {
-    background-color: lightblue;
-    overflow: auto;
-    height:300px;
-    width:700px;
-    border:9px solid #0ADA0A;
-    padding:2%;
-  }
+@font-face {
+  font-family: SanFranciscoDisplay;
+  src: url(fonts/sf-pro-display_regular.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SanFranciscoDisplay;
+  src: url(fonts/sf-pro-display_regular.woff2);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(fonts/sf-pro-text_regular.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(fonts/sf-pro-text_light.woff2);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(fonts/sf-pro-text_semibold.woff2);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(fonts/sf-pro-text_bold.woff2);
+  font-weight: bold;
+}
