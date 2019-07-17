@@ -1,7 +1,6 @@
 body {
   font-family: SanFrancisco;
   font-weight: lighter;
-  margin: 10%;
 }
 h1 {
   color: blue;
@@ -78,5 +77,23 @@ h6 {
   transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
 }
 .parallax__layer--deep {
+  transform: translateZ(-2px) scale(3);
+}
+
+.bg-image {
+  /* Add the blur effect */
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   transform: translateZ(-2px) scale(3);
 }
