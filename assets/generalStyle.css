@@ -1,6 +1,7 @@
 body {
-  font-family: Verdana;
-  padding: 10%
+  font-family: SanFrancisco;
+  font-weight: lighter;
+  margin: 10%;
 }
 h1 {
   color: blue;
@@ -12,69 +13,20 @@ p {
   font-family: SanFrancisco
 }
 
-<<<<<<< HEAD
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
-}
-
-.parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
-}
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.bg-image {
-  /* Add the blur effect */
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 0.5;
-}
-
 h5 {
-  color: Black;
+  color: black;
   font-family: SanFrancisco;
   font-weight: bold;
-  font-size: 70px
+  font-size: 96
 }
 
 h6 {
-  color: DarkRed;
+  color: SlateGray;
   font-family: SanFrancisco;
   font-weight: bold;
-  font-size: 38px
+  font-size: 42
 }
 
-=======
->>>>>>> 5a4e622febfaa1d36ccf40f733308264d6a8ce92
 @font-face {
   font-family: SanFrancisco;
   src: url(fonts/SF-Pro-Text-Regular.otf);
