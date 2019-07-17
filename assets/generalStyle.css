@@ -83,7 +83,6 @@ h6 {
 }
 .parallax__layer--deep {
   transform: translateZ(-2px) scale(3);
-  position: static;
 }
 
 .bg-image {
@@ -92,9 +91,7 @@ h6 {
   -webkit-filter: blur(6px);
   opacity: 0.5;
 
-  /* Full height */
-  height: 100%;
-  width: 100%;
+  /* Full height height: 100%; */
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -103,5 +100,11 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateZ(-2px) scale(3);
+
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+
 }
