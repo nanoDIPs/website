@@ -1,8 +1,9 @@
 body {
   font-family: Verdana;
+  padding: 10%
 }
 h1 {
-  color: black;
+  color: blue;
   font-family: SanFrancisco;
   font-weight: bold;
 }
@@ -11,6 +12,7 @@ p {
   font-family: SanFrancisco
 }
 
+<<<<<<< HEAD
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -71,6 +73,8 @@ h6 {
   font-size: 38px
 }
 
+=======
+>>>>>>> 5a4e622febfaa1d36ccf40f733308264d6a8ce92
 @font-face {
   font-family: SanFrancisco;
   src: url(fonts/SF-Pro-Text-Regular.otf);
