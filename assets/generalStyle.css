@@ -1,73 +1,15 @@
 body {
   font-family: Verdana;
+  padding: 10%
 }
 h1 {
-  color: black;
+  color: blue;
   font-family: SanFrancisco;
   font-weight: bold;
 }
 p {
   color: red;
   font-family: SanFrancisco
-}
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
-}
-
-.parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
-}
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.bg-image {
-  /* Add the blur effect */
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-h5 {
-  color: Black;
-  font-family: SanFrancisco;
-  font-weight: bold;
-  font-size: 70px
-}
-
-h6 {
-  color: DarkRed;
-  font-family: SanFrancisco;
-  font-weight: bold;
-  font-size: 38px
 }
 
 @font-face {
