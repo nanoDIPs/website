@@ -25,6 +25,8 @@ h6 {
   font-weight: bolder;
   font-size: 36px;
   margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
 }
 
 @font-face {
@@ -91,6 +93,7 @@ h6 {
 
   /* Full height */
   height: 100%;
+  width: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
