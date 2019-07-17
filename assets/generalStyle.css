@@ -20,10 +20,11 @@ h5 {
 }
 
 h6 {
-  color: SlateGray;
+  color: Black;
   font-family: SanFrancisco;
   font-weight: bolder;
-  font-size: 42px;
+  font-size: 36px;
+  margin-left: 5%;
 }
 
 @font-face {
@@ -72,9 +73,11 @@ h6 {
 }
 .parallax__layer--base {
   transform: translateZ(0);
+  position: relative;
 }
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
+  position: relative;
 }
 .parallax__layer--deep {
   transform: translateZ(-2px) scale(3);
@@ -84,6 +87,7 @@ h6 {
   /* Add the blur effect */
   filter: blur(6px);
   -webkit-filter: blur(6px);
+  opacity: 0.5;
 
   /* Full height */
   height: 100%;
