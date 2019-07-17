@@ -1,11 +1,8 @@
 body {
   font-family: Verdana;
-  position: absolute;
-  left: 20px;
-  top: 50px;
 }
 h1 {
-  color: blue;
+  color: black;
   font-family: SanFrancisco;
   font-weight: bold;
 }
@@ -42,6 +39,35 @@ p {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
+}
+
+.bg-image {
+  /* Add the blur effect */
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+h5 {
+  color: Black;
+  font-family: SanFrancisco;
+  font-weight: bold;
+  font-size: 70px
+}
+
+h6 {
+  color: DarkRed;
+  font-family: SanFrancisco;
+  font-weight: bold;
+  font-size: 38px
 }
 
 @font-face {
