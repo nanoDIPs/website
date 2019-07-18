@@ -60,6 +60,7 @@ h6 {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  transform-style: preserve-3d;
 }
 .parallax__layer {
   position: absolute;
@@ -71,18 +72,17 @@ h6 {
 .parallax__group {
   position: relative;
   height: 100vh;
-  transform-style: preserve-3d;
 }
 .parallax__layer--base {
   transform: translateZ(0);
   position: relative;
 }
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
+  transform: translateZ(-1px) scale(1); /* scale = 1 + (translateZ * -1) / perspective */
   position: relative;
 }
 .parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(1);
   position: static;
 }
 
@@ -107,5 +107,57 @@ h6 {
   -o-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
+}
 
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 33%;
+  position: relative;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.right {
+  width: 67%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topoverlay {
+  width: 33%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: Black;
+  opacity: 0.5;
+}
+
+.bottomoverlay {
+  width: 33%;
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  background-color: Black;
+  opacity: 0.5;
 }
