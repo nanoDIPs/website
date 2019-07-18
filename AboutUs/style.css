@@ -14,7 +14,7 @@ p {
 
 h5 {
   color: white;
-  font-family: SanFrancisco;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
   font-size: 96px;
 }
@@ -54,6 +54,14 @@ h6 {
 }
 
 /* for parallax effect */
+
+.teampic {
+  perspective: 1px;
+  position: relative;
+  height: 25%;
+  margin-top: 33%;
+}
+
 
 .parallax {
   perspective: 1px;
@@ -171,10 +179,7 @@ h6 {
 }
 
 .herotext {
-  font-size: 48;
-  font-family: SanFrancisco, Arial, sans-serif;
-  font-weight: bold;
-  position: relative;
+  position: absolute;
   z-index: 6;
   top: 0;
   margin-left: 20px;
