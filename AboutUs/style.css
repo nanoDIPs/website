@@ -58,16 +58,17 @@ h6 {
 .teampic {
   perspective: 1px;
   position: relative;
-  height: 25%;
   margin-top: 50%;
   margin-left: 20px;
+  align-content: center;
+  height: 33%;
 }
 
 .teamtext {
   perspective: 1px;
   position: relative;
-  height: 25%;
-  margin-top: 30%;
+  margin-top: 25%;
+  height: 33%;
 }
 
 .parallax {
@@ -132,6 +133,7 @@ h6 {
 .column {
   float: left;
   padding: 0px;
+  margin-top: 46px;
 }
 
 .left {
@@ -188,7 +190,7 @@ h6 {
 .herotext {
   position: absolute;
   z-index: 6;
-  top: -12%;
+  top: -14%;
   left: 0;
   margin-left: 20px;
   margin-top: 0;
