@@ -59,9 +59,16 @@ h6 {
   perspective: 1px;
   position: relative;
   height: 25%;
-  margin-top: 33%;
+  margin-top: 30%;
+  margin-left: 20px;
 }
 
+.teamtext {
+  perspective: 1px;
+  position: relative;
+  height: 25%;
+  margin-top: 30%;
+}
 
 .parallax {
   perspective: 1px;
@@ -124,7 +131,7 @@ h6 {
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
+  padding: 0px;
 }
 
 .left {
@@ -182,6 +189,7 @@ h6 {
   position: absolute;
   z-index: 6;
   top: 0;
+  left: 0;
   margin-left: 20px;
   margin-top: 0;
 }
