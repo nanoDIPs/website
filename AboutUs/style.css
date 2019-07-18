@@ -16,7 +16,7 @@ h5 {
   color: white;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 15vh;
 }
 
 h6 {
@@ -56,19 +56,15 @@ h6 {
 /* for parallax effect */
 
 .teampic {
-  perspective: 1px;
   position: relative;
-  margin-top: 50%;
-  margin-left: 20px;
+  margin-top: 25vh;
+  margin-left: 0;
   align-content: center;
-  height: 33%;
 }
 
 .teamtext {
-  perspective: 1px;
   position: relative;
-  margin-top: 25%;
-  height: 33%;
+  margin-top: 30vh;
 }
 
 .parallax {
@@ -129,7 +125,7 @@ h6 {
   box-sizing: border-box;
 }
 
-/* Create three unequal columns that floats next to each other */
+/* Create 2 unequal columns that float next to each other */
 .column {
   float: left;
   padding: 0px;
@@ -194,4 +190,17 @@ h6 {
   left: 0;
   margin-left: 20px;
   margin-top: 0;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.centeredImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  margin-bottom: 0vh;
+  height: 20vh;
 }
