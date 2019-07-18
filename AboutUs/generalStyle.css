@@ -137,3 +137,21 @@ h6 {
   display: table;
   clear: both;
 }
+
+.topoverlay {
+  width: 33%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: Black;
+  opacity: 0.5;
+}
+
+.bottomoverlay {
+  width: 33%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: Black;
+  opacity: 0.5;
+}
