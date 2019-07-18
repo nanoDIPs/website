@@ -59,7 +59,7 @@ h6 {
   perspective: 1px;
   position: relative;
   height: 25%;
-  margin-top: 30%;
+  margin-top: 50%;
   margin-left: 20px;
 }
 
@@ -188,7 +188,7 @@ h6 {
 .herotext {
   position: absolute;
   z-index: 6;
-  top: 0;
+  top: -12%;
   left: 0;
   margin-left: 20px;
   margin-top: 0;
