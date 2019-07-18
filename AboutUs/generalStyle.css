@@ -144,7 +144,7 @@ h6 {
 
 .topoverlay {
   width: 33%;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
@@ -154,7 +154,7 @@ h6 {
 
 .bottomoverlay {
   width: 33%;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   bottom: 0;
   left: 0;
