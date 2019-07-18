@@ -13,8 +13,8 @@ p {
 }
 
 h5 {
-  color: black;
-  font-family: SanFrancisco;
+  color: white;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
   font-size: 96px;
 }
@@ -31,29 +31,44 @@ h6 {
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Regular.otf);
+  src: url((../assets/fonts/SF-Pro-Text-Regular.otf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Medium.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Medium.otf);
   font-weight: bolder;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Bold.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Bold.otf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Light.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Light.otf);
   font-weight: lighter;
 }
 
 /* for parallax effect */
+
+.teampic {
+  perspective: 1px;
+  position: relative;
+  height: 25%;
+  margin-top: 30%;
+  margin-left: 20px;
+}
+
+.teamtext {
+  perspective: 1px;
+  position: relative;
+  height: 25%;
+  margin-top: 30%;
+}
 
 .parallax {
   perspective: 1px;
@@ -116,12 +131,13 @@ h6 {
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
+  padding: 0px;
 }
 
 .left {
   width: 33%;
   position: relative;
+  z-index: 0;
   top: 0;
   left: 0;
 }
@@ -129,6 +145,9 @@ h6 {
 .right {
   width: 67%;
   position: relative;
+  z-index: 1;
+  top: 0;
+  right: 0;
 }
 
 /* Clear floats after the columns */
@@ -136,4 +155,41 @@ h6 {
   content: "";
   display: table;
   clear: both;
+}
+
+.topoverlay {
+  width: 100%;
+  height: 30%;
+  position: fixed;
+  z-index: 5;
+  top: 46px;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(80,80,80,1),
+    rgba(80,80,80,0)
+    );
+}
+
+.bottomoverlay {
+  width: 100%;
+  height: 30%;
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(80,80,80,0),
+    rgba(80,80,80,1)
+    );
+}
+
+.herotext {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 0;
 }
