@@ -13,31 +13,61 @@
   <li><a href="../Sponsors/">Sponsors</a></li>
 </ul>
 
+<style>
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+</style>
 
 <body>
-
 <br>
-<h1>Design:</h1>
-<h2>Modelling and Simulations</h2>
 
-<div style="background-color:lightblue">
-<h2>DNA origami channels</h2>
-<p>Bla bla<p>
+
+<div class="split left">
+  <div class="centered">
+    <h2>To be</h2>
+  </div>
 </div>
 
-<div style="background-color:lightblue">
-<h2>What opens the pores ?</h2>
-<p>DNA ? Proteins ?<p>
-</div>
-
-<div style="background-color:lightblue">
-<h2>Releasing the Keys</h2>
-<p>Key tree ? <p>
-</div>
-
-<div style="background-color:lightblue">
-<h2>Key-Tree</h2>
-<p>Surface-diplay of ss-DNA keys<p>
+<div class="split right">
+  <div class="centered">
+    <h2>or not to be ?</h2>
+  </div>
 </div>
 
 
