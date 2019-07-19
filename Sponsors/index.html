@@ -19,27 +19,29 @@
   <br>
   <!-- basic.html -->
   <title>basic.html</title>
+    <link rel="stylesheet" href="../assets/generalStyle.css">
   <meta charset = "UTF-8" />
 </head>
 
 <style>
   .gallery {
-    border: 1px solid #ccc;
+    border: 1px clear;
       }
 
   .gallery:hover {
-    border: 1px solid #777;
+    border: 1px clear;
       }
 
   .gallery img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    padding: 0px
       }
 
   .responsive {
-    padding: 5px;
+    padding: 20px;
     float: left;
-    width: 24.99999%;
+    width: 30%;
       }
 
   @media only screen and (max-width: 700px) {
@@ -66,38 +68,29 @@
   <h1>Thank You To Our Sponsors</h1>
 
   <div class="responsive">
-    <div class="gallery" onclick="location.href='https://epsrc.ukri.org/';" style="cursor:pointer;">
-      <img class="column" src="../assets/sponsorlogos/EPSRC_logo.png" alt="EPSRC" width="500" height="400">
+    <div class="gallery">
+      <div class="position">
+        <a href = "https://epsrc.ukri.org/"><img class="column" src="../assets/sponsorlogos/EPSRC_logo.png" alt="EPSRC"></a>
+        <a href = "https://www.imperialenterpriselab.com/"><img class="column" src="../assets/sponsorlogos/elab.png" alt="Enterprise Lab"></a>
+      </div>
     </div>
   </div>
 
   <div class="responsive">
-    <div class="gallery" onclick="location.href='http://www.icb-cdt.co.uk/';" style="cursor:pointer;">
-      <img class="column" src="../assets/sponsorlogos/CDT_logo.jpg" alt="CDT" width="500" height="400">
+    <div class="gallery">
+      <div class="position">
+        <a href = "http://www.icb-cdt.co.uk/"><img class="column" src="../assets/sponsorlogos/CDT_logo.jpg" alt="CDT"></a>
+        <a href = "https://biorender.com/"><img class="column" src="../assets/sponsorlogos/biorender-logo.png" alt="Biorender"></a>
+      </div>
     </div>
   </div>
 
   <div class="responsive">
-    <div class="gallery" onclick="location.href='https://www.imperial.ac.uk/advanced-hackspace/';" style="cursor:pointer;">
-      <img class="column" src="../assets/sponsorlogos/hackspace.png" alt="Advanced Hackspace" width="500" height="400">
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery" onclick="location.href='https://www.imperialenterpriselab.com/';" style="cursor:pointer;">
-      <img src="../assets/sponsorlogos/elab.png" alt="Enterprise Lab">
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery" onclick="location.href='https://biorender.com/';" style="cursor:pointer;">
-      <img src="../assets/sponsorlogos/biorender-logo.png" alt="Biorender">
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery" onclick="location.href='https://www.bmglabtech.com/';" style="cursor:pointer;">
-      <img src="../assets/sponsorlogos/bmg-labtech.png" alt="BMG Labtech">
+    <div class="gallery">
+      <div class="position">
+        <a href = "https://www.imperial.ac.uk/advanced-hackspace/"><img class="column" src="../assets/sponsorlogos/hackspace.png" alt="Advanced Hackspace"></a>
+        <a href = "https://www.bmglabtech.com"><img class="column" src="../assets/sponsorlogos/bmg-labtech.png" alt="BMG Labtech"></a>
+      </div>
     </div>
   </div>
 
