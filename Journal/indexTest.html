@@ -18,22 +18,29 @@
   <br>
   <br>
   <!-- basic.html -->
-  <title>basic.html</title>
+  <title>Journal</title>
   <link rel="stylesheet" href="generalStyleTest.css">
   <meta charset = "UTF-8" />
+
+<!--load jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+
+  <script>
+  $(function() {
+     $("body").mousewheel(function(event, delta) {
+        this.scrollLeft -= (delta * 30);
+        event.preventDefault();
+     });
+  });
+  </script>
+
 </head>
 
 <body>
 
-<div class="horizontal-scroll-wrapper squares">
-  <div>item 1</div>
-  <div>item 2</div>
-  <div>item 3</div>
-  <div>item 4</div>
-  <div>item 5</div>
-  <div>item 6</div>
-  <div>item 7</div>
-  <div>item 8</div>
+<div class="box">
+  Hello
 </div>
 
 </body>

@@ -31,81 +31,33 @@ h6 {
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Regular.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Regular.otf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Medium.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Medium.otf);
   font-weight: bolder;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Bold.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Bold.otf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: SanFrancisco;
-  src: url(fonts/SF-Pro-Text-Light.otf);
+  src: url(../assets/fonts/SF-Pro-Text-Light.otf);
   font-weight: lighter;
 }
 
-/* for parallax effect */
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__group {
+.box {
+  background-color: lightblue;
   position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-  position: relative;
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
-  position: relative;
-}
-.parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
-  position: static;
-}
-
-.bg-image {
-  /* Add the blur effect */
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
-  opacity: 0.5;
-
-  /* Full height height: 100%; */
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  -moz-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
-
+  width: 30vh;
+  height: 80vh;
+  top: 20%;
+  margin-left: 20vh;
 }
