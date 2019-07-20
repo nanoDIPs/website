@@ -11,6 +11,22 @@
   <br>
   <title>About Us</title>
   <meta charset = "UTF-8" />
+  <!--load jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        $(".teampic").fadeOut("slow");
+        $(".col-2").fadeOut("slow");
+      }
+    }
+  });
+  </script>
+
 </head>
 
 <body>
