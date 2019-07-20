@@ -1,3 +1,4 @@
+/*
 body {
   font-family: SanFrancisco;
   font-weight: lighter;
@@ -52,20 +53,40 @@ h6 {
   src: url(../assets/fonts/SF-Pro-Text-Light.otf);
   font-weight: lighter;
 }
+*/
 
-.googBox {
-  background-color: green;
-  position: relative;
-  width: 30vh;
-  height: 80vh;
-  top: 20%;
-  margin-left: 20vh;
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
 }
 
-.googContainer {
-  background-color: lightgrey;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+body {height:1500px;}
+.col-1 {float:left}
+.col-2 {float:left;padding-left:25px;}
+img {width:180px;height:100px;visibility:hidden;}
+hr {margin-top:400px;}
