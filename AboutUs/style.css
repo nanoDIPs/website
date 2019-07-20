@@ -55,16 +55,24 @@ h6 {
 
 /* for parallax effect */
 
-.teampic {
-  position: relative;
-  margin-top: 25vh;
-  margin-left: 0;
-  align-content: center;
-}
 
 .teamtext {
+  display: block;
   position: relative;
   margin-top: 30vh;
+  margin-left: 10vw;
+  height: 30vh;
+  opacity: 0;
+}
+
+.teampic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  margin-bottom: 0vh;
+  height: 30vh;
+  border-radius: 50%;
 }
 
 .bg-image {
@@ -173,17 +181,4 @@ h6 {
   left: 0;
   margin-left: 20px;
   margin-top: 0;
-}
-
-img {
-  border-radius: 50%;
-}
-
-.centeredImg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30vh;
-  margin-bottom: 0vh;
-  height: 20vh;
 }

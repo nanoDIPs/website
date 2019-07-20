@@ -16,13 +16,19 @@
 
     <script>
     $(document).ready(function(){
-    window.onscroll = function() {myFunction()};
 
-    function myFunction() {
-      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-        $(".teampic").fadeOut("slow");
-        $(".col-2").fadeOut("slow");
+
+    window.onscroll = function() {fadeTM()};
+
+    function fadeTM() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        $(".teampic").fadeIn("slow");
+        $(".teamtext").animate({
+          right: '10vw',
+          opacity: '1',
+          });
       }
+
     }
   });
   </script>
@@ -36,14 +42,14 @@
 </div>
 
 <div class="column left">
-  <div class="teampic">
-    <img src="teampics/georg.jpg" alt="testPic" class="centeredImg">
+  <div>
+    <img src="teampics/georg.jpg" alt="testPic" class="teampic">
   </div>
-  <div class="teampic">
-    <img src="teampics/georg.jpg" alt="testPic" class="centeredImg">
+  <div>
+    <img src="teampics/georg.jpg" alt="testPic" class="teampic">
   </div>
-  <div class="teampic">
-    <img src="teampics/georg.jpg" alt="testPic" class="centeredImg">
+  <div>
+    <img src="teampics/georg.jpg" alt="testPic" class="teampic">
   </div>
 </div>
 
