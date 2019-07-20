@@ -3,13 +3,21 @@ body {
   font-weight: lighter;
 }
 h1 {
-  color: blue;
-  font-family: SanFrancisco;
+  color: navy;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h2  {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
 }
 p {
-  color: red;
-  font-family: SanFrancisco
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 h5 {
