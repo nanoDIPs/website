@@ -21,10 +21,11 @@ p {
 }
 
 h5 {
-  color: white;
+  color: darkgrey;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
   font-size: 15vh;
+  max-width: 100%;
 }
 
 h6 {
@@ -67,17 +68,17 @@ h6 {
 .teamtext {
   display: block;
   position: relative;
-  margin-top: 30vh;
+  margin-top: 50vh;
   margin-left: 10vw;
   height: 30vh;
   opacity: 0;
 }
 
 .teampic {
-  display: block;
-  margin-left: auto;
+  display: none;
+  margin-left: 10vw;
   margin-right: auto;
-  margin-top: 30vh;
+  margin-top: 50vh;
   margin-bottom: 0vh;
   height: 30vh;
   border-radius: 50%;

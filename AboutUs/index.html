@@ -20,13 +20,17 @@
 
     window.onscroll = function() {fadeTM()};
 
+    function checkPos() {
+
+    }
+
     function fadeTM() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $(".teampic").fadeIn("slow");
         $(".teamtext").animate({
           right: '10vw',
           opacity: '1',
-          });
+        });
       }
 
     }
@@ -68,14 +72,14 @@
 </div>
 
 
-<div class="topoverlay"></div>
+<!--<div class="topoverlay"></div>
 <div class="topoverlay2"></div>
-<div class="bottomoverlay"></div>
+<div class="bottomoverlay"></div>-->
 
 <!-- NAVBAR -->
   <link rel="stylesheet" href="../assets/cssNavbarv1.css">
   <ul>
-    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html"><img src="../assets/logo/LogoSMALLINV.png" class="logobgcol"></a></li>
     <li><a href="../Introduction/">Introduction</a></li>
     <li><a href="../Design/">Design</a></li>
     <li><a href="../Build/">Build</a></li>
