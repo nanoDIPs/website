@@ -1,18 +1,21 @@
 <!DOCTYPE HTML>
 <html lang = "en">
-<!--
-<link rel="stylesheet" href="../assets/cssNavbarv1.css">
-<ul>
-  <li><a href="../index.html">Home</a></li>
-  <li><a href="../Introduction">Introduction</a></li>
-  <li><a href="../Design/">Design</a></li>
-  <li><a href="../Build/">Build</a></li>
-  <li><a href="../Test/">Test</a></li>
-  <li><a href="../AboutUs/">About Us</a></li>
-  <li><a class="active" href="#">Journal</a></li>
-  <li><a href="../Sponsors/">Sponsors</a></li>
-</ul>
--->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- NAVBAR -->
+  <link rel="stylesheet" href="../assets/cssNavbarv1.css">
+  <ul>
+    <li><a href="../index.html"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
+    <li><a href="../Introduction/">Introduction</a></li>
+    <li><a href="../Design/">Design</a></li>
+    <li><a href="../Build/">Build</a></li>
+    <li><a href="../Test/">Test</a></li>
+    <li><a href="../AboutUs/">About Us</a></li>
+    <li><a class="active" href="#">Journal</a></li>
+    <li><a href="../Sponsors/">Sponsors</a></li>
+  </ul>
+
 <head>
   <br>
   <br>
@@ -23,27 +26,38 @@
 <!--load jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  window.onscroll = function() {myFunction()};
+  jQuery(function ($) {
+      $.fn.hScroll = function (amount) {
+          amount = amount || 120;
+          $(this).bind("DOMMouseScroll mousewheel", function (event) {
+              var oEvent = event.originalEvent,
+                  direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+                  position = $(this).scrollLeft();
+              position += direction > 0 ? -amount : amount;
+              $(this).scrollLeft(position);
+              event.preventDefault();
+          })
+      };
+  });
 
-  function myFunction() {
-    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-      document.getElementById("myImg").className = "slideUp";
-      $(".col-2").hide();
-    }
-  }
-});
-</script>
+  $(document).ready(function() {
+      $("div").hScroll(60); // You can pass (optionally) scrolling amount
+  });
+  </script>
 </head>
 
 <body>
-<hr>
-  <div class="col-1">
-    <img id="myImg" src="../assets/logo/smallLogo.png" width="304" height="228">
-  </div>
-
-  <div class="col-2">
-    Just some text..
+  <div id="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="timelinebar"></div>
   </div>
 
 

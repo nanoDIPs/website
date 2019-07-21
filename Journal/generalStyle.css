@@ -1,4 +1,4 @@
-/*
+
 body {
   font-family: SanFrancisco;
   font-weight: lighter;
@@ -53,7 +53,7 @@ h6 {
   src: url(../assets/fonts/SF-Pro-Text-Light.otf);
   font-weight: lighter;
 }
-*/
+
 
 .slideUp {
   animation-name: slideUp;
@@ -85,8 +85,37 @@ h6 {
   }
 }
 
-body {height:1500px;}
-.col-1 {float:left}
-.col-2 {float:left;padding-left:25px;}
-img {width:180px;height:100px;visibility:hidden;}
-hr {margin-top:400px;}
+#box {
+    overflow-y: visible;
+    overflow-x: auto;
+    white-space: nowrap;
+    vertical-align: text-top;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    border-spacing: 5px;
+    height: 100vh;
+}
+.item {
+    display: table-cell;
+    min-width: 240px;
+    width: 240px;
+    font-size: 140px;
+    border: 2px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    white-space: normal;
+    line-height: 1.6;
+    vertical-align: top;
+    text-align: center;
+}
+
+.timelinebar {
+  height: 1vh;
+  max-height: 6px;
+  width: 4000px;
+  background-color: rgba(112,112,112,1);
+  position: relative;
+  margin-top: 5vh;
+}
