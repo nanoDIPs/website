@@ -27,6 +27,7 @@ li a:not(.logobgcol) {
   text-align: center;
   margin: auto;
   margin-right: 3vw;
+  margin-top: 10px;
   text-decoration: none;
   transition: all 0.2s ease;
   height: 42px;
@@ -41,7 +42,8 @@ li a:hover:not(.logobgcol) {
 }
 
 li a img:hover {
-    background-color: rgba(61,84,134,1);
+    /*background-color: rgba(61,84,134,1);*/
+    filter: none;
     -webkit-animation: rotation 10s infinite linear;
 }
 
@@ -64,11 +66,12 @@ li a img:hover {
 .logobgcol {
   background-color: inherit;
   align-content: center;
-  padding: 0px;
+  padding: 4px;
   display: block;
   margin-left: 3vw;
   margin-right: auto;
   height: 42px;
-  margin-top: 0px;
-  background-color: white;
+  margin-top: -10px;
+  background-color: rgba(0,0,0,0);
+  filter: brightness(1000);
 }
