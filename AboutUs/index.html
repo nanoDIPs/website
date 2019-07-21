@@ -13,7 +13,7 @@
   <meta charset = "UTF-8" />
   <!--load jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<!--
     <script>
     $(document).ready(function(){
 
@@ -25,7 +25,7 @@
     }
 
     function fadeTM() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 50) {
         $(".teampic").fadeIn("slow");
         $(".teamtext").animate({
           right: '10vw',
@@ -36,6 +36,50 @@
     }
   });
   </script>
+-->
+
+<script>
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.teampic').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'});
+            }
+
+        });
+
+        /* Check the location of each desired element */
+        $('.teamtext').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({
+                  right: '10vw',
+                  opacity: '1',
+                });
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
 
 </head>
 
@@ -47,26 +91,26 @@
 
 <div class="column left">
   <div>
-    <img src="teampics/georg.jpg" alt="testPic" class="teampic">
+    <img src="teampics/georg.jpg" class="teampic">
   </div>
   <div>
-    <img src="teampics/georg.jpg" alt="testPic" class="teampic">
+    <img src="teampics/georg.jpg" class="teampic">
   </div>
   <div>
-    <img src="teampics/georg.jpg" alt="testPic" class="teampic">
+    <img src="teampics/georg.jpg" class="teampic">
   </div>
 </div>
 
 <div class="column right">
-  <div class="teamtext">
+  <div id="GeorgText" class="teamtext">
     <h1>Georg Wachter</h1>
     <h2>Primary Role: Team Lead</h2>
     <p>Hi there test 1 2</p>
   </div>
-  <div class="teamtext">
+  <div id="Albi" class="teamtext">
     <h1> Testing team text </h1>
   </div>
-  <div class="teamtext">
+  <div id="Eddi" class="teamtext">
     <h1> Testing team text </h1>
   </div>
 </div>

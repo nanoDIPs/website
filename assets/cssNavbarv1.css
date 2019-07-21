@@ -59,8 +59,9 @@ li a img:hover {
 .active {
   /*background-color: rgba(61,84,134,1);*/
   /*border-radius: 15px 30px;*/
+  /*border-bottom: 14px solid rgba(159,177,213,1);*/
   color: rgba(159,177,213,1);
-  border-bottom: 3px solid rgba(159,177,213,1);
+  border-bottom: 13px solid white;
 }
 
 .logobgcol {
