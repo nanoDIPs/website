@@ -3,6 +3,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- NAVBAR -->
+  <link rel="stylesheet" href="../assets/cssNavbarv1.css">
+  <ul>
+    <li><a href="../index.html"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
+    <li><a href="../Introduction/">Introduction</a></li>
+    <li><a href="../Design/">Design</a></li>
+    <li><a href="../Build/">Build</a></li>
+    <li><a href="../Test/">Test</a></li>
+    <li><a class="active" href="#">About Us</a></li>
+    <li><a href="../Journal/">Journal</a></li>
+    <li><a href="../Sponsors/">Sponsors</a></li>
+  </ul>
 
 <head>
   <!-- basic.html -->
@@ -11,6 +23,52 @@
   <br>
   <title>About Us</title>
   <meta charset = "UTF-8" />
+  <!--load jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.teampic').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'});
+            }
+
+        });
+
+        /* Check the location of each desired element */
+        $('.teamtext').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({
+                  right: '10vw',
+                  opacity: '1',
+                });
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+
 </head>
 
 <body>
@@ -20,45 +78,35 @@
 </div>
 
 <div class="column left">
-  <div class="teampic">
-    <img src="teampics/georg.jpg" alt="testPic" class="centeredImg">
+  <div>
+    <img src="teampics/georg.jpg" class="teampic">
   </div>
-  <div class="teampic">
-    <img src="teampics/georg.jpg" alt="testPic" class="centeredImg">
+  <div>
+    <img src="teampics/georg.jpg" class="teampic">
   </div>
-  <div class="teampic">
-    <img src="teampics/georg.jpg" alt="testPic" class="centeredImg">
+  <div>
+    <img src="teampics/georg.jpg" class="teampic">
   </div>
 </div>
 
 <div class="column right">
-  <div class="teamtext">
+  <div id="GeorgText" class="teamtext">
+    <h1>Georg Wachter</h1>
+    <h2>Primary Role: Team Lead</h2>
+    <p>Hi there test 1 2</p>
+  </div>
+  <div id="Albi" class="teamtext">
     <h1> Testing team text </h1>
   </div>
-  <div class="teamtext">
-    <h1> Testing team text </h1>
-  </div>
-  <div class="teamtext">
+  <div id="Eddi" class="teamtext">
     <h1> Testing team text </h1>
   </div>
 </div>
 
 
-<div class="topoverlay"></div>
+<!--<div class="topoverlay"></div>
 <div class="topoverlay2"></div>
-<div class="bottomoverlay"></div>
+<div class="bottomoverlay"></div>-->
 
-<!-- NAVBAR -->
-  <link rel="stylesheet" href="../assets/cssNavbarv1.css">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../Introduction/">Introduction</a></li>
-    <li><a href="../Design/">Design</a></li>
-    <li><a href="../Build/">Build</a></li>
-    <li><a href="../Test/">Test</a></li>
-    <li><a class="active" href="#">About Us</a></li>
-    <li><a href="../Journal/">Journal</a></li>
-    <li><a href="../Sponsors/">Sponsors</a></li>
-  </ul>
 </body>
 </html>
