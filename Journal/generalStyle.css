@@ -1,0 +1,63 @@
+body {
+  font-family: SanFrancisco;
+  font-weight: lighter;
+}
+h1 {
+  color: blue;
+  font-family: SanFrancisco;
+  font-weight: bold;
+}
+p {
+  color: red;
+  font-family: SanFrancisco
+}
+
+h5 {
+  color: black;
+  font-family: SanFrancisco;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+h6 {
+  color: Black;
+  font-family: SanFrancisco;
+  font-weight: bolder;
+  font-size: 36px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Medium.otf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Light.otf);
+  font-weight: lighter;
+}
+
+.box {
+  background-color: lightblue;
+  position: relative;
+  width: 30vh;
+  height: 80vh;
+  top: 20%;
+  margin-left: 20vh;
+}
