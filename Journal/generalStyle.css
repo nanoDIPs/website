@@ -90,23 +90,22 @@ h6 {
     overflow-x: auto;
     white-space: nowrap;
     vertical-align: text-top;
-    margin: 0;
+    margin-left: 0;
     padding: 0;
     clear: both;
-    border-spacing: 5px;
+    border-spacing: 5vw;
     height: 100vh;
 }
 .item {
     display: table-cell;
-    min-width: 240px;
-    width: 240px;
-    font-size: 140px;
-    border: 2px solid #d1d1d1;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
+    width: 25vh;
+    height: 25vh;
+    font-size: 15vh;
+    font-family: SanFrancisco;
+    color: white;
+    background-color: rgba(112,112,112,1);
+    border-radius: 50%;
     white-space: normal;
-    line-height: 1.6;
     vertical-align: top;
     text-align: center;
 }
