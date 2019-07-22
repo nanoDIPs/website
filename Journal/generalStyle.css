@@ -1,3 +1,4 @@
+
 body {
   font-family: SanFrancisco;
   font-weight: lighter;
@@ -9,19 +10,19 @@ h1 {
 }
 p {
   color: red;
-  font-family: SanFrancisco
+  font-family: SanFrancisco, Arial, sans-serif;
 }
 
 h5 {
   color: black;
-  font-family: SanFrancisco;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
   font-size: 96px;
 }
 
 h6 {
   color: Black;
-  font-family: SanFrancisco;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bolder;
   font-size: 36px;
   margin-left: 5%;
@@ -53,11 +54,68 @@ h6 {
   font-weight: lighter;
 }
 
-.box {
-  background-color: lightblue;
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+#box {
+    overflow-y: visible;
+    overflow-x: auto;
+    white-space: nowrap;
+    vertical-align: text-top;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    border-spacing: 5px;
+    height: 100vh;
+}
+.item {
+    display: table-cell;
+    min-width: 240px;
+    width: 240px;
+    font-size: 140px;
+    border: 2px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    white-space: normal;
+    line-height: 1.6;
+    vertical-align: top;
+    text-align: center;
+}
+
+.timelinebar {
+  height: 1vh;
+  max-height: 6px;
+  width: 4000px;
+  background-color: rgba(112,112,112,1);
   position: relative;
-  width: 30vh;
-  height: 80vh;
-  top: 20%;
-  margin-left: 20vh;
+  margin-top: 5vh;
 }

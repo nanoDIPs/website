@@ -3,20 +3,29 @@ body {
   font-weight: lighter;
 }
 h1 {
-  color: blue;
-  font-family: SanFrancisco;
+  color: navy;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h2  {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
 }
 p {
-  color: red;
-  font-family: SanFrancisco
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 h5 {
-  color: white;
+  color: darkgrey;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
   font-size: 15vh;
+  max-width: 100%;
 }
 
 h6 {
@@ -55,16 +64,30 @@ h6 {
 
 /* for parallax effect */
 
-.teampic {
-  position: relative;
-  margin-top: 25vh;
-  margin-left: 0;
-  align-content: center;
-}
 
 .teamtext {
+  display: block;
   position: relative;
-  margin-top: 30vh;
+  margin-top: 35vh;
+  margin-left: 10vw;
+  margin-bottom: 30vh;
+  height: 35vh;
+  opacity: 0;
+}
+
+.teampic {
+  display: block;
+  margin-left: 5vw;
+  margin-right: auto;
+  margin-top: 35vh;
+  margin-bottom: 30vh;
+  height: 35vh;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.hidepic {
+  opacity: 0;
 }
 
 .bg-image {
@@ -173,17 +196,4 @@ h6 {
   left: 0;
   margin-left: 20px;
   margin-top: 0;
-}
-
-img {
-  border-radius: 50%;
-}
-
-.centeredImg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30vh;
-  margin-bottom: 0vh;
-  height: 20vh;
 }
