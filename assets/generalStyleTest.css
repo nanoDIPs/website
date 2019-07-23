@@ -109,17 +109,57 @@ h6 {
   transform: translateX(0px);
 }
 
+.scrolltest {
+  height: 400px;
+  width: 40px;
+  position: absolute;
+  top: 80vh;
+  left: 20vw;
+  background-color: red;
+}
+
 .displayHomeText {
   position: relative;
-  margin-top: 40vh;
-  margin-left: 2vw;
+  margin-top: -8.5em;
+  margin-left: 2em;
   padding: 0;
   height: 7.5em;
   display: block;
 }
 
-.biomodLogo {
+.biomodLogoWrapper {
+  padding: 0;
+  background-color: none;
+  margin-bottom: 0;
+  display: block;
+  margin-left: 2.6em;
+  margin-top: 35vh;
+  height: auto;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
 
+img.biomodLogo {
+  height:2.5em;
+  padding: 0;
+  width: auto;
+  float: left;
+  position: relative;
+  margin: 0;
+  align: middle;
+  line-height: 0;
+}
+
+p.biomodLogo {
+  text-align: top;
+  font-size: 3.25em;
+  font-weight: bold;
+  color: rgba(217,217,217,1);
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  margin-top: -0.23em
 }
 
 p.nanoDIPsText {
@@ -139,8 +179,8 @@ p.nanoDIPsText {
   position: relative;
   margin-top: 0;
   padding-top: 0;
-  margin-left: 2.3vw;
-  letter-spacing: 0.042em;
+  margin-left: 0.57em;
+  letter-spacing: 0.015em;
 }
 
 mark.darkblue {

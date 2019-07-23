@@ -59,9 +59,9 @@ li a img:hover {
 .cornerlogo {
   -webkit-animation: rotation 120s infinite linear;
   position: absolute;
-  top: -15vh;
+  top: -17vh;
   left: 60vw;
-  width: 50vw;
+  width: 55vw;
   height: auto;
   display: block;
   align-content: center;
