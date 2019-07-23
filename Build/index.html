@@ -15,10 +15,29 @@
 <head>
   <style>
 
+body {
+    background: url("assets/pattern.png");
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+div.sticky {
+  position:sticky;
+
+}
+
+.highlight {
+    background-color: #4d0000;
+    background-image: linear-gradient(to right, #800000 0%, #4d0000 100%);
+}
+
   .column {
     float: left;
     padding: 0px;
     margin-top: 46px;
+
+
   }
 
   .left {
@@ -55,29 +74,54 @@
     text-align: justify
   }
   div {
-     max-width: 800px;
+
      margin-bottom: 20px;
      padding: 25px;
-     font-family: Arial, Helvetica, sans-serif
+     font-family: San Francisco;
+     max-width: 800px
+     -webkit-column-rule: 4px double; /* Chrome, Safari, Opera */
+       -moz-column-rule: 4px double; /* Firefox */
+       column-rule: 4px double;
+
+  }
+  .steps {
+    background-color: white; border top: 15px black; border-radius: 10px;
+    max-width: 720px
   }
 
+h1 {
+  color: white
+}
   </style>
 </head>
 <body>
 
 
 <br>
-<h1>Build:</h1>
-<h2 style="margin-left:30px; text-decoration: none;": >How we transformed our pen and paper design idea into a real nanodevice</h2>
+<h1><span class ="highlight"> build: </span></h1>
+<h2 style="margin-left:30px; color: white; text-decoration: none;": > <span class ="highlight">
+  how we transformed our pen and paper design idea into a real nanodevice
+   <span>
+</h2>
 
 <div class="row">
-  <div class="column left";>
-    <p>contents</p>
+  <div class="column left sticky row:after">
+    <div style="background-color: white;
+      border-color: black;
+      border-radius: 15px 40px 30px;
+      margin-right: 25px;
+      max-width: 250px;">
+    <h2>contents</h2>
+    <ol>
+    <li>Fluorophore-filled liposomes</li> <br>
+    <li>DNA Nanopores</li><br>
+    <li>Key-trees</li><br>
+  </ol>
   </div>
+</div>
 <div class="column right">
-  <div style="background-color:rgb(254, 246, 194); border-left: 10px solid rgb(254, 186, 67);
-">
-<h2>'Laying the ground': assembling fluorophore-filled liposomes</h2>
+  <div class="steps">
+<h2>'laying the ground': assembling fluorophore-filled liposomes</h2>
 <p style="margin-left: 15px">We used large unilamellar vesicles (LUVs) as vehicles for drug delivery.
   To model the kinetics of the potential drug and assess the effectiveness
   of our nanodevice we loaded them with a fluorophore (calcein). For practice
@@ -88,8 +132,8 @@
 <p>
 </div>
 
-<div style="background-color:rgb(254, 238, 254); border-left: 10px solid rgb(227, 66, 222);">
-<h2 >Assembling DNA Nanopores</h2>
+<div class = "steps">
+<h2 >assembling DNA Nanopores</h2>
 <p>We constructed the DNA nanopores for our device by following the design
 developed by Howorka (2017). Each nanopore comprised six hexagonally arranged
 duplexes and a lock strand, the conformation of which determined the state of the
@@ -106,8 +150,8 @@ made sure the fluorophore did not leak out through closed nanopores.</p>
   them in their dynamic state by applying the key strands. ........</p>
 </div>
 
-<div style="background-color: rgb(217, 196, 254); border-left: 10px solid rgb(100, 15, 212)">
-<h2>'Planting' key-trees</h2>
+<div class="steps">
+<h2>'planting' key-trees</h2>
 <p>constructing and embedding key-trees <p>
 </div>
 </div>
