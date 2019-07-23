@@ -108,3 +108,49 @@ h6 {
   -ms-transform: translateX(0px);
   transform: translateX(0px);
 }
+
+.displayHomeText {
+  position: relative;
+  margin-top: 40vh;
+  margin-left: 2vw;
+  padding: 0;
+  height: 7.5em;
+  display: block;
+}
+
+.biomodLogo {
+
+}
+
+p.nanoDIPsText {
+  text-transform: uppercase;
+  font-size: 7.5em;
+  font-weight: bold;
+  line-height: inherit;
+  padding: inherit;
+}
+
+.icbiomodtext {
+  font-size: 4em;
+  height: 4em;
+  text-transform: uppercase;
+  color: rgba(217,217,217,1);
+  font-weight: bold;
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 2.3vw;
+  letter-spacing: 0.042em;
+}
+
+mark.darkblue {
+  background-color: inherit;
+  color: rgba(61,84,134,1);
+}
+
+mark.midblue {
+  background-color: inherit;
+  color: rgba(116,142,193,1);
+  padding: inherit;
+  margin: inherit;
+}

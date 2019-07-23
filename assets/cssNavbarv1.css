@@ -56,6 +56,17 @@ li a img:hover {
 		}
 }
 
+.cornerlogo {
+  -webkit-animation: rotation 120s infinite linear;
+  position: absolute;
+  top: -15vh;
+  left: 60vw;
+  width: 50vw;
+  height: auto;
+  display: block;
+  align-content: center;
+}
+
 .active {
   /*background-color: rgba(61,84,134,1);*/
   /*border-radius: 15px 30px;*/
