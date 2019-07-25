@@ -27,60 +27,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-
 $(document).ready(function() {
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
 
-        /* Check the location of each desired element */
-        $('.teampic').each( function(i){
+    /* return boolean for in view*/
+    return (elementTop+200) >= viewportTop && elementBottom <= viewportBottom;
+  };
 
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'});
-            }
-
-        });
-
-        /* Check the location of each desired element */
-        $('.teamtext').each( function(i){
-
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({
-                  right: '0',
-                  opacity: '1',
-                });
-            }
-        });
-
-        /* Check the location of each desired element */
-        $('.teamtextLow').each( function(i){
-
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({
-                  right: '0',
-                  opacity: '1',
-                });
-            }
-        });
-
+  $(window).on('resize scroll', function() {
+    $('.teamWrapper').each(function() {
+        var activeName = $(this).attr('id');
+      if ($(this).isInViewport()) {
+        $('#side' + activeName).addClass('sidebarText-active');
+        $('#pic' + activeName).addClass('teampic-active');
+        $('#name' + activeName).addClass('teamtext-active');
+        $('#low' + activeName).addClass('teamtextLow-active');
+      } else {
+        $('#side' + activeName).removeClass('sidebarText-active');
+        $('#pic' + activeName).removeClass('teampic-active');
+        $('#name' + activeName).removeClass('teamtext-active');
+        $('#low' + activeName).removeClass('teamtextLow-active');
+      }
     });
 
+
+  });
 });
 
 </script>
+
 </head>
 
 <body>
@@ -92,25 +72,25 @@ $(document).ready(function() {
 
 <div class="sidebar">
 <div class="sidebarMid">
-  <a class="sidebarText" href="#Georg">Georg Wachter</a><br>
-  <a class="sidebarText" href="#Albi">Alberto Scarampi</a><br>
-  <a class="sidebarText" href="#Alisdair">Alisdair Stevenson</a><br>
-  <a class="sidebarText" href="#Kevin">Kevin Vela</a><br>
-  <a class="sidebarText" href="#Sonia">Sonia Shyfrin</a><br>
-  <a class="sidebarText" href="#Edward">Edward Praun</a><br>
-  <a class="sidebarText" href="#Hansa">Hansa Shree</a><br>
-  <a class="sidebarText" href="#Miro">Miroslav Gasparek</a><br>
+  <a class="sidebarText" id="sideGeorg" href="#Georg">Georg Wachter</a><br>
+  <a class="sidebarText" id="sideAlbi" href="#Albi">Alberto Scarampi</a><br>
+  <a class="sidebarText" id="sideAlisdair" href="#Alisdair">Alisdair Stevenson</a><br>
+  <a class="sidebarText" id="sideKevin" href="#Kevin">Kevin Vela</a><br>
+  <a class="sidebarText" id="sideSonia" href="#Sonia">Sonia Shyfrin</a><br>
+  <a class="sidebarText" id="sideEdward" href="#Edward">Edward Praun</a><br>
+  <a class="sidebarText" id="sideHansa" href="#Hansa">Hansa Shree</a><br>
+  <a class="sidebarText" id="sideMiro" href="#Miro">Miroslav Gasparek</a><br>
 </div>
 </div>
 
 
 <div id="Georg" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+  <img src="teampics/georg.jpg" id="picGeorg" class="teampic">
+  <p class="teamtext" id="nameGeorg">
     <mark class="firstName">Georg</mark>
     <mark class="lastName">Wachter</mark>
   </p>
-  <p class="teamtextLow">
+  <p class="teamtextLow" id="lowGeorg">
     <mark class="jobtitle">Team Lead</mark><br><br>
     Let me just test if this is fine <br>
     Let me just test if this is fine <br>
@@ -124,65 +104,121 @@ $(document).ready(function() {
 </div>
 
 
-<div id="Albi" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+<div id="Albi" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picAlbi" class="teampic">
+  <p class="teamtext" id="nameAlbi">
     <mark class="firstName">Alberto</mark>
     <mark class="lastName">Scarampi</mark>
   </p>
+  <p class="teamtextLow" id="lowAlbi">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
 </div>
 
 
-<div id="Alisdair" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+<div id="Alisdair" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picAlisdair" class="teampic">
+  <p class="teamtext" id="nameAlisdair">
     <mark class="firstName">Alisdair</mark>
     <mark class="lastName">Stevenson</mark>
   </p>
+  <p class="teamtextLow" id="lowAlisdair">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
 </div>
 
 
-<div id="Kevin" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+<div id="Kevin" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picKevin" class="teampic teampic-inactive">
+  <p class="teamtext" id="nameKevin">
     <mark class="firstName">Kevin</mark>
     <mark class="lastName">Vela</mark>
   </p>
+  <p class="teamtextLow" id="lowKevin">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
 </div>
 
 
-<div id="Sonia" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+<div id="Sonia" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picSonia" class="teampic">
+  <p class="teamtext" id="nameSonia">
     <mark class="firstName">Sonia</mark>
     <mark class="lastName">Shyfrin</mark>
   </p>
+  <p class="teamtextLow" id="lowSonia">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
 </div>
 
 
-<div id="Edward" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+<div id="Edward" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picEdward" class="teampic">
+  <p class="teamtext" id="nameEdward">
     <mark class="firstName">Edward</mark>
     <mark class="lastName">Praun</mark>
   </p>
-</div>
-
-
-<div id="Hansa" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
-    <mark class="firstName">Hansa</mark>
-    <mark class="lastName">Shree</mark>
+  <p class="teamtextLow" id="lowEdward">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
   </p>
 </div>
 
 
-<div id="Miro" class="teamWrapper">
-  <img src="teampics/georg.jpg" class="teampic">
-  <p class="teamtext">
+<div id="Hansa" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picHansa" class="teampic">
+  <p class="teamtext" id="nameHansa">
+    <mark class="firstName">Hansa</mark>
+    <mark class="lastName">Shree</mark>
+  </p>
+  <p class="teamtextLow" id="lowHansa">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Miro" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picMiro" class="teampic">
+  <p class="teamtext" id="nameMiro">
     <mark class="firstName">Miroslav</mark>
     <mark class="lastName">Gasparek</mark>
+  </p>
+  <p class="teamtextLow" id="lowMiro">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
   </p>
 </div>
 

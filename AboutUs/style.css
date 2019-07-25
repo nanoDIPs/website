@@ -68,9 +68,9 @@ h6 {
   top: 10vh;
   left: 0;
   margin-left: 5vw;
-  margin-top: 20vh;
-  padding-top: 25vh;
-  height: 50vh;
+  margin-top: 30vh;
+  padding-top: 20vh;
+  height: 40vh;
   width: 65vw;
   overflow: hidden;
 }
@@ -80,7 +80,7 @@ h6 {
 }
 
 
-p.teamtext {
+.teamtext {
   position: relative;
   overflow: hidden;
   display: block;
@@ -91,31 +91,45 @@ p.teamtext {
   font-size: 2em;
   right: -15vw;
   padding-top: 5vh;
+  transition: 0.5s;
+}
+
+.teamtext-active {
+  right: 0;
+  opacity: 1;
 }
 
 
-p.teamtextLow {
+.teamtextLow {
   position: relative;
   overflow: hidden;
   opacity: 0;
   right: -10vw;
   color: darkgrey;
   font-size: 1em;
+  transition: 0.5s;
 }
 
-img.teampic {
+.teamtextLow-active {
+  right: 0;
+  opacity: 1;
+}
+
+.teampic {
   position: relative;
   float: left;
   height: auto;
   width: 35vh;
   border-radius: 50%;
-  opacity: 0;
+  border: 1px solid white;
   margin: 0;
   padding: 5vh;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.hidepic {
-  opacity: 0;
+.teampic-active {
+  opacity: 1;
 }
 
 mark.firstName {
@@ -157,15 +171,21 @@ mark.jobtitle {
   line-height: 2em;
 }
 
-a.sidebarText {
+.sidebarText {
   font-family: SanFrancisco, Arial, sans-serif;
   letter-spacing: 0.01em;
   color: darkgrey;
   text-decoration: none;
   transition: 0.3s;
+  margin-left: 0em;
 }
 
-a.sidebarText:hover {
+.sidebarText-active {
+  margin-left: -1em;
+  color: rgba(61,84,134,1);
+}
+
+.sidebarText:hover:not(.sidebarText-active) {
   /*color: rgba(61,84,134,1);*/
   color: rgba(116,142,193,1);
   transition: 0.3s;
