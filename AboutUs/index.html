@@ -55,11 +55,25 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 $(this).animate({
-                  right: '10vw',
+                  right: '0',
                   opacity: '1',
                 });
             }
+        });
 
+        /* Check the location of each desired element */
+        $('.teamtextLow').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({
+                  right: '0',
+                  opacity: '1',
+                });
+            }
         });
 
     });
@@ -75,40 +89,104 @@ $(document).ready(function() {
   <h5>Meet the team.</h5>
 </div>
 
+
 <div class="sidebar">
-
-
-<div>
-
-
-
-
-
-<div class="column left">
-  <div>
-    <img src="teampics/georg.jpg" class="teampic">
-  </div>
-  <div>
-    <img src="teampics/georg.jpg" class="teampic">
-  </div>
-  <div>
-    <img src="teampics/georg.jpg" class="teampic">
-  </div>
+<div class="sidebarMid">
+  <a class="sidebarText" href="#Georg">Georg Wachter</a><br>
+  <a class="sidebarText" href="#Albi">Alberto Scarampi</a><br>
+  <a class="sidebarText" href="#Alisdair">Alisdair Stevenson</a><br>
+  <a class="sidebarText" href="#Kevin">Kevin Vela</a><br>
+  <a class="sidebarText" href="#Sonia">Sonia Shyfrin</a><br>
+  <a class="sidebarText" href="#Edward">Edward Praun</a><br>
+  <a class="sidebarText" href="#Hansa">Hansa Shree</a><br>
+  <a class="sidebarText" href="#Miro">Miroslav Gasparek</a><br>
+</div>
 </div>
 
-<div class="column right">
-  <div id="GeorgText" class="teamtext">
-    <h1>Georg Wachter</h1>
-    <h2>Primary Role: Team Lead</h2>
-    <p>Hi there test 1 2</p>
-  </div>
-  <div id="Albi" class="teamtext">
-    <h1> Testing team text </h1>
-  </div>
-  <div id="Eddi" class="teamtext">
-    <h1> Testing team text </h1>
-  </div>
+
+<div id="Georg" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Georg</mark>
+    <mark class="lastName">Wachter</mark>
+  </p>
+  <p class="teamtextLow">
+    <mark class="jobtitle">Team Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
 </div>
+
+
+<div id="Albi" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Alberto</mark>
+    <mark class="lastName">Scarampi</mark>
+  </p>
+</div>
+
+
+<div id="Alisdair" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Alisdair</mark>
+    <mark class="lastName">Stevenson</mark>
+  </p>
+</div>
+
+
+<div id="Kevin" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Kevin</mark>
+    <mark class="lastName">Vela</mark>
+  </p>
+</div>
+
+
+<div id="Sonia" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Sonia</mark>
+    <mark class="lastName">Shyfrin</mark>
+  </p>
+</div>
+
+
+<div id="Edward" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Edward</mark>
+    <mark class="lastName">Praun</mark>
+  </p>
+</div>
+
+
+<div id="Hansa" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Hansa</mark>
+    <mark class="lastName">Shree</mark>
+  </p>
+</div>
+
+
+<div id="Miro" class="teamWrapper">
+  <img src="teampics/georg.jpg" class="teampic">
+  <p class="teamtext">
+    <mark class="firstName">Miroslav</mark>
+    <mark class="lastName">Gasparek</mark>
+  </p>
+</div>
+
+
 
 
 <!--<div class="topoverlay"></div>
