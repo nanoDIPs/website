@@ -14,21 +14,42 @@
 </ul>
 
 
+<head>
+<title>Test</title>
+<link rel="stylesheet" href="generalStyleTest.css">
+<meta charset = "UTF-8" />
+
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: green;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+
+}
+</style>
+</head>
+
 <body>
 
 <br>
 <h1>Test</h1>
-<h2>Tesing the DNA Nanopores</h2>
 
-<div style="background-color:white">
-<h2>Analyse liposomes</h2>
-<p>Dynamic light scattering<p>
+<div class="flex-container">
+  <div>Analyse liposomes</div>
+  <div>Assembing DNA Nanopores</div>
+  <div>Testing in silico</div>
+  <div>Hero experiment</div>
 </div>
 
-<div style="background-color:white">
-<h2>Assembling DNA nanopores</h2>
-<p>Absorbance, membrane attachment etc...<p>
-</div>
+
 
 </body>
 </html>
