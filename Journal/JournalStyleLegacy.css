@@ -1,0 +1,120 @@
+
+body {
+  font-family: SanFrancisco;
+  font-weight: lighter;
+}
+h1 {
+  color: blue;
+  font-family: SanFrancisco;
+  font-weight: bold;
+}
+p {
+  color: red;
+  font-family: SanFrancisco, Arial, sans-serif;
+}
+
+h5 {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+h6 {
+  color: Black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 36px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Medium.otf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Light.otf);
+  font-weight: lighter;
+}
+
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+#box {
+    overflow-y: visible;
+    overflow-x: auto;
+    white-space: nowrap;
+    vertical-align: text-top;
+    margin-left: 0;
+    padding: 0;
+    clear: both;
+    border-spacing: 5vw;
+    height: 100vh;
+}
+.item {
+    display: table-cell;
+    width: 25vh;
+    height: 25vh;
+    font-size: 15vh;
+    font-family: SanFrancisco;
+    color: white;
+    background-color: rgba(112,112,112,1);
+    border-radius: 50%;
+    white-space: normal;
+    vertical-align: top;
+    text-align: center;
+}
+
+.timelinebar {
+  height: 1vh;
+  max-height: 6px;
+  width: 4000px;
+  background-color: rgba(112,112,112,1);
+  position: relative;
+  margin-top: 5vh;
+}
