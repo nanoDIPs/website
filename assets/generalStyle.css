@@ -3,20 +3,32 @@ body {
   font-weight: lighter;
 }
 h1 {
-  color: blue;
-  font-family: SanFrancisco;
+  color: navy;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
+h2  {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+}
+
 p {
-  color: red;
-  font-family: SanFrancisco
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 h5 {
-  color: black;
-  font-family: SanFrancisco;
+  color: darkgrey;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 50px;
+  font-size: 15vh;
+  max-width: 90%;
 }
 
 h6 {
@@ -108,4 +120,15 @@ h6 {
   -ms-transform: translateX(0px);
   transform: translateX(0px);
 
+}
+
+/* Font for web page titles*/
+.herotext {
+  position: absolute;
+  z-index: 6;
+  top: -17%;
+  left: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
 }
