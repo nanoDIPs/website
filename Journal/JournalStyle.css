@@ -1,0 +1,165 @@
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+    overflow-x: hidden;
+    font-family: SanFrancisco, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/** PARALLAX TEST
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 4000px;
+  position: fixed;
+  top: 41vh;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 6000px;
+}
+
+
+
+h1 {
+  color: blue;
+  font-family: SanFrancisco;
+  font-weight: bold;
+}
+p {
+  color: red;
+  font-family: SanFrancisco, Arial, sans-serif;
+}
+
+h5 {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+h6 {
+  color: Black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 36px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Medium.otf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Light.otf);
+  font-weight: lighter;
+}
+
+.monthbox {
+  position: fixed;
+  top: 52px;
+  left: 30vw;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1em;
+  z-index: 3;
+  width: 40vw;
+  height:10vh;
+  border: 2px solid red;
+}
+
+.monthbox-active {
+  opacity: 1;
+}
+
+
+.timelinebar {
+  height: 1vh;
+  max-height: 8px;
+  width: 4000px;
+  /*background-color: rgba(112,112,112,1);*/
+  background-image: linear-gradient(to right, red , yellow);
+  position: fixed;
+  top: 45vh;
+  left: 0;
+  margin: 0;
+  z-index: -2;
+}
+
+.timelineBubble {
+  background-color: darkgrey;
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  position: sticky;
+  float: left;
+  margin-left: 500px;
+  display: table;
+  border: 1vh solid white;
+}
+
+.timelineBubble-active {
+  background-color: navy;
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  position: fixed;
+  top: 41vh;
+  left: 40vw;
+  z-index: 3;
+  display: table;
+  border: 3vh solid blue;
+}
+
+.timelineBubbleText {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  z-index: 4;
+}

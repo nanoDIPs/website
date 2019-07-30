@@ -108,3 +108,13 @@ h6 {
   transform: translateX(0px);
 
 }
+
+/* Font for web page titles*/
+.herotext {
+  position: absolute;
+  z-index: 6;
+  top: -14%;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 0;
+}
