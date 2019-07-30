@@ -1,7 +1,5 @@
-<!DOCTYPE HTML>
-<html lang = "en">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
 
 <!-- NAVBAR -->
   <link rel="stylesheet" href="../assets/cssNavbarv1.css">
@@ -17,33 +15,12 @@
   </ul>
 
 <head>
-  <br>
-  <br>
-  <!-- basic.html -->
-  <title>Journal</title>
-  <meta charset = "UTF-8" />
-  <link rel="stylesheet" href="JournalStyle.css">
-  <link rel="stylesheet" href="jInvertScroll.css">
-<!--load jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="JS/jquery.jInvertScroll.js"></script>
-<script type="text/javascript">
-$(document).ready(function($) {
-    $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
-        {
-        onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-            console.log(percent);
-        }
-    });
-}(jQuery));
-</script>
-
+	<meta charset="utf-8" />
+	<title>Journal</title>
+    <link rel="stylesheet" href="JournalStyle.css" />
 </head>
-
-
-
 <body>
-  <div class="timelinebar scroll"></div>
+  <h1>test non-scrollable content</h1>
 
   <div id="julyMonthbox" class="monthbox monthbox-active">
     July
@@ -57,17 +34,32 @@ $(document).ready(function($) {
     September
   </div>
 
+  <div class="timelinebar scroll"></div>
+
+  <div class="middle scroll">
+    <div class="timelineBubble">
+    <div class="timelineBubbleText">1</div>
+    </div>
+  </div>
+
+  <div class="front scroll">
+      <img src="testImages/front.png" alt="" />
+  </div>
 
 
 
-<div class="timelineBubble scroll">
-<div class="timelineBubbleText">1</div>
-</div>
-
-<div class="timelineBubble timelineBubble-active scroll">
-<div class="timelineBubbleText">2</div>
-</div>
-</div>
-
+<!-- SCRIPTS FOR SIDESCROLLING-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="JS/jquery.jInvertScroll.js"></script>
+<script type="text/javascript">
+$(document).ready(function($) {
+    $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+        {
+        onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+            console.log(percent);
+        }
+    });
+}(jQuery));
+</script>
 </body>
 </html>

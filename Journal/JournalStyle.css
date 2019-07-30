@@ -134,7 +134,7 @@ h6 {
   border-radius: 50%;
   position: fixed;
   top: 41vh;
-  z-index: 3;
+  margin-left: 500px;
   display: table;
   border: 1vh solid white;
 }
