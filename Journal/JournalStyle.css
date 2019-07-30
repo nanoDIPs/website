@@ -31,6 +31,8 @@ body
 {
   z-index: 500;
   width: 4000px;
+  position: fixed;
+  top: 41vh;
 }
 
 .front
@@ -132,8 +134,8 @@ h6 {
   height: 9vh;
   width: 9vh;
   border-radius: 50%;
-  position: fixed;
-  top: 41vh;
+  position: sticky;
+  float: left;
   margin-left: 500px;
   display: table;
   border: 1vh solid white;
