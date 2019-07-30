@@ -1,8 +1,46 @@
-
-body {
-  font-family: SanFrancisco;
-  font-weight: lighter;
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+    overflow-x: hidden;
+    font-family: SanFrancisco, Arial, sans-serif;
+    font-weight: lighter;
 }
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/** PARALLAX TEST
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 4000px;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 6000px;
+}
+
+
+
 h1 {
   color: blue;
   font-family: SanFrancisco;
@@ -54,67 +92,72 @@ h6 {
   font-weight: lighter;
 }
 
-
-.slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
+.monthbox {
+  position: fixed;
+  top: 52px;
+  left: 30vw;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1em;
+  z-index: 3;
+  width: 40vw;
+  height:10vh;
+  border: 2px solid red;
 }
 
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
+.monthbox-active {
+  opacity: 1;
 }
 
-@-webkit-keyframes slideUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
-
-#box {
-    overflow-y: visible;
-    overflow-x: auto;
-    white-space: nowrap;
-    vertical-align: text-top;
-    margin-left: 0;
-    padding: 0;
-    clear: both;
-    border-spacing: 5vw;
-    height: 100vh;
-}
-.item {
-    display: table-cell;
-    width: 25vh;
-    height: 25vh;
-    font-size: 15vh;
-    font-family: SanFrancisco;
-    color: white;
-    background-color: rgba(112,112,112,1);
-    border-radius: 50%;
-    white-space: normal;
-    vertical-align: top;
-    text-align: center;
-}
 
 .timelinebar {
   height: 1vh;
-  max-height: 6px;
+  max-height: 8px;
   width: 4000px;
-  background-color: rgba(112,112,112,1);
-  position: relative;
-  margin-top: 5vh;
+  /*background-color: rgba(112,112,112,1);*/
+  background-image: linear-gradient(to right, red , yellow);
+  position: fixed;
+  top: 45vh;
+  left: 0;
+  margin: 0;
+  z-index: -2;
+}
+
+.timelineBubble {
+  background-color: darkgrey;
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  position: fixed;
+  top: 41vh;
+  z-index: 3;
+  display: table;
+  border: 1vh solid white;
+}
+
+.timelineBubble-active {
+  background-color: navy;
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  position: fixed;
+  top: 41vh;
+  left: 40vw;
+  z-index: 3;
+  display: table;
+  border: 3vh solid blue;
+}
+
+.timelineBubbleText {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  z-index: 4;
 }
