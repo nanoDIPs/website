@@ -13,7 +13,7 @@ body
 .scroll
 {
     position: fixed;
-    bottom: 0;
+    top: 46px;
     left: 0;
 }
 
@@ -30,7 +30,7 @@ body
 .middle
 {
   z-index: 500;
-  width: 4000px;
+  width: 8000px;
   position: fixed;
   top: 41vh;
 }
@@ -38,16 +38,16 @@ body
 .front
 {
   z-index: 1000;
-  width: 6000px;
+  width: 17000px;
 }
-
 
 
 h1 {
   color: blue;
-  font-family: SanFrancisco;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
 }
+
 p {
   color: red;
   font-family: SanFrancisco, Arial, sans-serif;
@@ -115,6 +115,17 @@ h6 {
   opacity: 1;
 }
 
+.daybox {
+  width: 50vw;
+  position: sticky;
+  float: left;
+  margin-left: 40vw;
+  margin-top: 50vh;
+}
+
+.daybox:first-child {
+  margin-left: 30vw;
+}
 
 .timelinebar {
   height: 1vh;
@@ -136,21 +147,20 @@ h6 {
   border-radius: 50%;
   position: sticky;
   float: left;
-  margin-left: 500px;
+  margin-left: 33vw;
   display: table;
   border: 1vh solid white;
 }
+
+.timelineBubble:first-child {margin-left: 45vw;}
 
 .timelineBubble-active {
   background-color: navy;
   height: 9vh;
   width: 9vh;
+  margin-top: -2.5vh;
   border-radius: 50%;
-  position: fixed;
-  top: 41vh;
-  left: 40vw;
-  z-index: 3;
-  display: table;
+  position: sticky;
   border: 3vh solid blue;
 }
 
