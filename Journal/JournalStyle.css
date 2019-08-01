@@ -119,20 +119,20 @@ h6 {
   width: 50vw;
   position: sticky;
   float: left;
-  margin-left: 40vw;
+  margin-left: 41vw;
   margin-top: 50vh;
 }
 
 .daybox:first-child {
-  margin-left: 30vw;
+  margin-left: 25vw;
 }
 
 .timelinebar {
   height: 1vh;
   max-height: 8px;
   width: 4000px;
-  /*background-color: rgba(112,112,112,1);*/
-  background-image: linear-gradient(to right, red , yellow);
+  background-color: rgba(112,112,112,1);
+  /* background-image: linear-gradient(to right, red, yellow);*/
   position: fixed;
   top: 45vh;
   left: 0;
