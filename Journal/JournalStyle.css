@@ -96,7 +96,7 @@ h6 {
 
 .monthbox {
   position: fixed;
-  top: 52px;
+  top: 80px;
   left: 30vw;
   margin: 0;
   text-align: center;
@@ -108,7 +108,7 @@ h6 {
   z-index: 3;
   width: 40vw;
   height:10vh;
-  border: 2px solid red;
+  color: rgba(116,142,193,1);
 }
 
 .monthbox-active {
@@ -129,9 +129,9 @@ h6 {
 
 .timelinebar {
   height: 1vh;
-  max-height: 8px;
+  max-height: 12px;
   width: 4000px;
-  background-color: rgba(112,112,112,1);
+  background-color: rgba(147,160,188,1);
   /* background-image: linear-gradient(to right, red, yellow);*/
   position: fixed;
   top: 45vh;
@@ -141,27 +141,29 @@ h6 {
 }
 
 .timelineBubble {
-  background-color: darkgrey;
+  background-color: rgba(217,217,217,1);
   height: 9vh;
   width: 9vh;
   border-radius: 50%;
   position: sticky;
   float: left;
+  margin-top: -0.6vh;
   margin-left: 33vw;
   display: table;
   border: 1vh solid white;
+  transition: 0.3s;
 }
 
 .timelineBubble:first-child {margin-left: 45vw;}
 
 .timelineBubble-active {
-  background-color: navy;
-  height: 9vh;
-  width: 9vh;
-  margin-top: -2.5vh;
+  background-color: rgba(61,84,134,1);
+  height: 12vh;
+  width: 12vh;
+  margin-top: -4.5vh;
   border-radius: 50%;
   position: sticky;
-  border: 3vh solid blue;
+  border: 3vh solid rgba(147,160,188,1);
 }
 
 .timelineBubbleText {
