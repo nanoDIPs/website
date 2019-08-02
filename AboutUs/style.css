@@ -65,7 +65,7 @@ h6 {
 
 .teamWrapper {
   position: relative;
-  top: 10vh;
+  top: 0;
   left: 0;
   margin-left: 5vw;
   margin-top: 30vh;
@@ -74,6 +74,12 @@ h6 {
   width: 65vw;
   overflow: hidden;
 }
+
+.teamWrapper:first-of-type {
+  padding-top: 0;
+  margin-top: -30vh;
+}
+
 
 .teamWrapper:last-of-type {
   margin-bottom: 40vh;
@@ -198,4 +204,15 @@ mark.jobtitle {
   left: 0;
   margin-left: 20px;
   margin-top: 0;
+}
+
+.megaTeamPic {
+  width: 75vw;
+  height: auto;
+  top: 0;
+  left: 0;
+  margin-top: 30vh;
+  margin-left: 2vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

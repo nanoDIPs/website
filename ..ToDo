@@ -26,6 +26,7 @@ To do list for the Website:
 - add sonias picture as placeholder.
 - For Eddi: make sonias pics into proper layout to fit site.
 - responsive for phones (first eddi design)
+- JS: animation start offset from 200px value to a vh value (as in journal)
 
 ===JOURNAL===
 - add calendar icon
