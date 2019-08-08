@@ -125,10 +125,33 @@ h6 {
 /* Font for web page titles*/
 .herotext {
   position: absolute;
-  z-index: 6;
+  z-index: 20;
   top: -17%;
   left: 0;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 0;
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  bottom:94%;
+  z-index: 10;
+  filter: brightness(80%);
+  background: url(../assets/logo/NANO7.png) center no-repeat #fff;
 }

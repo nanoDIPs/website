@@ -343,7 +343,7 @@
 
 <!-- SCRIPTS FOR SIDESCROLLING-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="JS/jquery.jInvertScroll.js"></script>
+<script src="scripts/jquery.jInvertScroll.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function($) {
     $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
@@ -355,40 +355,7 @@ $(document).ready(function($) {
 }(jQuery));
 </script>
 
-<script>
-$(document).ready(function() {
-  $.fn.isInViewport = function() {
-    var elementLeft = $(this).offset().left;
-    var elementRight = elementLeft + $(this).outerWidth();
-    //console.log(elementLeft)
-    //console.log(elementRight)
-
-    var viewportLeft = 0;
-    var viewportRight = viewportLeft + $(window).width();
-    //console.log(viewportLeft)
-    //console.log(viewportRight)
-
-    //console.log(viewportRight-elementRight)
-    //console.log(elementLeft-viewportLeft)
-    /* return boolean for in view*/
-    return elementRight-(viewportRight/5) <= viewportRight && elementLeft+(viewportRight/5) >= viewportLeft;
-  };
-
-  $(window).on('resize scroll', function() {
-    $('.daybox').each(function() {
-        var activeDate = $(this).attr('id');
-      if ($(this).isInViewport()) {
-        $('#Bubble' + activeDate).addClass('timelineBubble-active');
-      } else {
-        $('#Bubble' + activeDate).removeClass('timelineBubble-active');
-      }
-    });
-
-
-  });
-});
-
-</script>
+<script src="scripts/scroll.js"></script>
 
 </body>
 </html>

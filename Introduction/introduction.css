@@ -2,21 +2,34 @@ body {
   font-family: SanFrancisco;
   font-weight: lighter;
 }
+
 h1 {
-  color: blue;
-  font-family: SanFrancisco;
+  color: navy;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
+h2 {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+}
+
 p {
-  color: red;
-  font-family: SanFrancisco
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 h5 {
-  color: black;
-  font-family: SanFrancisco;
+  color: darkgrey;
+  font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 50px;
+  font-size: 15vh;
+  max-width: 90%;
 }
 
 h6 {
@@ -54,13 +67,13 @@ h6 {
 }
 
 /* for parallax effect */
-
 .parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -68,21 +81,27 @@ h6 {
   bottom: 0;
   left: 0;
 }
+
 .parallax__group {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
 }
+
 .parallax__layer--base {
   transform: translateZ(0);
   position: relative;
 }
+
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(2); /* scale = 1 + (translateZ * -1) / perspective */
+  transform: translateZ(-1px) scale(2);
+  /* scale = 1 + (translateZ * -1) / perspective */
   position: relative;
 }
+
 .parallax__layer--deep {
   transform: translateZ(-2px) scale(3);
+  position: static;
 }
 
 .bg-image {
@@ -90,9 +109,7 @@ h6 {
   filter: blur(6px);
   -webkit-filter: blur(6px);
   opacity: 0.5;
-
   /* Full height height: 100%; */
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -100,21 +117,30 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-
   -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -o-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
-
 }
 
 /* Font for web page titles*/
 .herotext {
   position: absolute;
   z-index: 6;
-  top: -14%;
+  top: -17%;
   left: 0;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 0;
+}
+
+.info_section {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(216, 216, 216, 1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(216, 216, 216, 1);
+  box-shadow: 5px 5px 5px 0px rgba(216, 216, 216, 1);
 }
