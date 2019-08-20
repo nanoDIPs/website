@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+
+<link rel="stylesheet" href="../assets/cssNavbarv1.css">
+<ul>
+  <li><a href="../index.html"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
+  <li><a href="../Introduction">Introduction</a></li>
+  <li><a href="../Design/">Design</a></li>
+  <li><a href="../Build/">Build</a></li>
+  <li><a href="../Test/">Test</a></li>
+  <li><a href="../AboutUs/">About Us</a></li>
+  <li><a class="active" href="#">Journal</a></li>
+  <li><a href="../Sponsors/">Sponsors</a></li>
+</ul>
+
+
+<head>
+  <br>
+  <br>
+  <!-- basic.html -->
+  <title>basic.html</title>
+  <meta charset = "UTF-8" />
+</head>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+
+<body>
+
+<br>
+<br>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>Week 1</h2>
+      <h3>Monday, July 1</h3>
+      <p>Official first day. However, not everyone is in London.
+        We are still sorting out money stuff.</p>
+
+      <h3>Tuesday, July 2</h3>
+      <p>Eduard and Alberto arrived in London.
+      Miro sent out lots of sponsorship emails.
+      Georg and Alberto chased Baldwin for CDT studentships.</p>
+
+      <h3>Wednesday, July 3</h3>
+      <p>Alisdair, Sonia, Eduard, Alberto, Kevin and Georg meet at 10 am on campus. In the morning we worked on sending out sponsorship emails. We also sent out -mails to the Head of Department (and president of the Biochemical Society) Anne Dell for travel grants. Kevin is trying to contact the BBSRC (since it sponsored the Oxford team in 2017).
+      Ismael arrives to say hi at 12. Lunch in JCR.
+      In the afternoon we set out more sponsorship requests. We also went to the enterprise lab to ask for more money. We also set up a crowdfunding page on kickstarter. Our design student Eduard has started working on the logo.</p>
+
+      <h3>Thursday, July 4</h3>
+      <p>Slightly positive news from the Enterprise Lab for funding. We discussed what to discuss for tomorrow’s meeting with Oscar Ces. We planned steps in wet lab and dry lab.
+      Manos dropped out.
+      First name idea: Nano DIPs (DNA Imperial/Intelligent Pores).
+      The final year biochemists got their transcripts today.
+      Alisdair downloaded Cadnano.
+      Eddie is working on the logo.
+      The raspberry pie arrives. </p>
+
+      <h3>Friday, July 5</h3>
+      <p>Meeting with Oscar, 9am (white city).
+      Apologies from Miro: I would like to Skype in.
+      Present: Sonia, Ismael, Alisdair, Georg, Alberto, Eduard, Kevin, Oscar Ces, David Miller
+      We discussed logistics in the labs and feasibility of experiments.
+      He suggested us to use Kanban boards to be efficient. It is essentially a highly organised japanese post-it system.
+      We outlined some funding strategies (e.g. more targeted emails to just 10-15 companies and copying him in).
+      At 10 we met with David. He suggested to make a list of things we need to start running experiments. The wet lab is going to replicate the Burns, Reifer and Howorka (2016) paper as a first sanity check. In the meantime, the dry lab (Alisdair) familiarises with Cadnano.
+      Lunch in a street food market in White City.
+      With IDT you can order DNA sequences with cholesterol at the 3’-ends, so they can attach to membranes.
+      At 5 everyone goes home.</p>
+    </div>
+</div>
+
+<div class="container right">
+  <div class="content">
+    <h2>Week 2</h2>
+    <h3>Monday, July 8</h3>
+    <p>Sonia, Eduard, Kevin and Alberto meet at the hackspace in the morning. Georg, Alisdair and Miro are working remotely.
+    No great news regarding sponsorhips. We tried to chase Baldwin but he was elusive.
+    Sonia and Alberto made a protocol for making liposomes filled with fluorophores.
+    We need an extruder to make multilamellar liposomes into unilamellar (just one bilayer).
+    Our first logo is now online (https://nanodips.github.io/home/). </p>
+
+    <h3>Tuesday, July 9</h3>
+    <p>There is the chemical biology symposium in White City today. Apperently Stefan Howorka is talking there about DNA nanopores. We managed to sneak in at the conference asd listen to the lecture. Some thoughts about DNA Nanopores: "What is the benefit of transporting single DNA molecules through tiny holes ? DNA sequencing. Biosensing.Detecting analytes is possible using ON/OFF switch approach (not reversible). This can be adapted. to create a protein sensitive pore. The presence of a protein lead to specific signal. These DNA pores are completely new. What are the properties ? Not as stable as the protein pores… more wavy and flexible. This is something that needs to be addressed" (Howorka, 2019). Meeting with David at ICAH at 5</p>
+
+    <h3>Wednesday, July 10</h3>
+    <p>
+    Meeting in White city in the morning. Present: Albi, Georg, Sonia, Kevin, Edward.  Miro is working from Home. Positive news from the Bioeng department.Massive brainstorming day. We came up with the key-Tree idea. DNA keys are displayed to the surface of the liposome via a peptide linker. The peptide contains a recognition sequence for the MMP7 protease, which is secreted by metastasising cancer cells. Thus metastatic cells can trigger the opening of the pore and the release of a chemotherapy drug. We talked with Ryan about the issue with access to hackspace. The website is under construction. The protocols have been reviewed and approved.
+    </p>
+
+    <h3>Thursday, July 11</h3>
+    <p>
+    Good news from the sponsorship front. The CDT in BioDesign Engineering announced that it will fund up to 8 6-week summer bursaries for undergraduate students (also final year students). Now we need to generate momentum and follow up with the Head of Department of Bioengineering. Also the Enterprise Lab is giving us 2ks. We can start buying flights already perhaps. In the afternoon, meeting at the Hackspace for the daily meeting with David. Prepare for meeting with Oscar tomorrow.
+    </p>
+
+    <h3>Friday, July 12</h3>
+    <p> At 9, meeting with Oscar and David at the Hackspace.
+    Things discussed: Novel idea: DNA key-tree. Cancer-specific proteases release keys. Maybe use trypsin instead of the hard-to get MMP7. Update about BioDesign CDT bursaries. He suggested to design every experiment as a controllable separate step. We need a lot of DNA (IDT !!!). Probably we can get more funding from the Hackspace. We need to be careful when using the extruder to wach out fluorescent stuff. Introduced Kevin to the world of Github Desktop. Eddie spilled water on himself and he is working on the vortex animation. Alisdair is working on cadnano. The IDT quote has been sent to David, hopefully DNA arrives soon.
+    </p>
+  </div>
+</div>
+
+<div class="container left">
+  <div class="content">
+    <h2>Week 3</h2>
+    <h3>Monday, July 15</h3>
+    <p> Sonia, Kevin, Albi, Georg and Alisdair met at the Hackspace in the afternoon. Miro is working from Slovakia. Eddi is coming back to London from Austria on wednesday.
+      Wrote other follow up e-mails.
+      Update with key trees.
+      Daily meeting with David at 5.  </p>
+
+    <h3>Tuesday, July 16</h3>
+    <p>Everyone worked remotely. We sent the IDT quote to David.
+      Laid down the basic architecture for the website.
+      We are constructing it from scratch (no template, no nothing) in Atom now.
+      We are still waiting for the extruder to arrive. As a result, the wet lab is inactive at the moment.
+      Hopefully next week we can start making liposomes.
+     </p>
+
+    <h3>Wednesday, July 17</h3>
+    <p>We ordered flights from London Heathrow to San Francisco.
+      We are leaving on wednesday 23rd of October. Thank you Enterprise Lab !
+    The Jamboree is on the weekends. Then we will fly back on Tuesday.
+    Apart from Georg and Eddi, who are oing to saty in the USA until November.
+    The IDT order has been received, so hopefully in a week we can start assembling some DNA pores. Eddi lost his flight. </p>
+
+    <h3>Thursday, July 18 </h3>
+    <p>Meeting in the Hackspace. We ate falafel wraps for lunch. Everyone is working on the website today.
+    Eddi arrives in White City after lunch. Everyone is working on the website. Everyone is learning HTML and CSS.
+    49 years ago the Queen's had their first gig ever (at Imperial). </p>
+
+    <h3>Friday, July 19</h3>
+    <p>Meeting with Oscar and David at 9 am in the challenge room.
+    The life scientists received the CDT bursaries forms. UROP forms have been signed.
+    Oscar suggests to go to Anne Dell to extend our UROP. Otherwise we can only work 6 weeks in the lab.
+    We get paid per hours, so we need to log the hours we work. We can only work 35 hours per week apparently.
+    Oscar says this is a good thing, at least for our mental health.
+    IDT order has been confirmed. Ismael suggests to chase IDT, as they might be very busy with the free IDT order.
+    We could also ask the help from the Foundry.
+    Let's write an e-mail and cc Oscar to the Foundry. It would be good to contact Stefan Howorka.
+    However, this would count as discolusure to someone outside of the college.
+    Maybe we should go to the Enterprise Lab to discuss pateting things. But should we think about patenting before the jamboree or just enjoy the moment [cit. O.C.]?
+    </p>
+  </div>
+</div>
+
+<div class="container right">
+    <div class="content">
+    <h2>Week 4</h2>
+    <h3>Monday</h2>
+    <p>Meeting at the Hackspace in the morning. Present: Albi, Georg, Sonia, Edward and Kevin.
+      Today is the first day in the wet lab, finally. It took some time to understant where things are in the hackspace. It is not as equipped as the labs in South Kensington. But it is very cool as it has that DIY feel.
+      We dissolved phospatidylcholine in chloroform.
+      The website front is progressing quickly.  </p>
+
+    <h3>Tuesday</h3>
+    <p>Meeting in the morning at the hackspace. The website front proceeds, with Edwuard working on the design and Georg who is in his HTML loop.
+      In the wet lab, Sonia and Alberto dissolved DOPE and DOPC in chloroforom as decribed by Howorka and let the chloroform evaporate overnight in the fumehood at room temperature. Hansa is here to help with the liposome preparation.
+      We had lunch in Westfield. Since tomorrow is the last day when we can claim back some money from the Hackspace, we paid the BIOMOD registration fees and booked the hotel in San Francisco (the Marriot).
+    Call with Miro for updates.
+    </p>
+
+    <h3>Wednesday</h3>
+    <p>Meeting at the Hackspace at 11. It is an insanely hot day. We checked the lipid cake at 12 am. It was not a dry cake yet, but still a liquid solution.
+    We asked David for help. He suggested to rotate the flask or pump some nitrogen inside. We tried both. Using a stream of nitrogen we managed to evaporate all the chloroform.
+    Lunch at Westfield (but some people still had falafel wraps). Alisdair and Alberto met Thom Ouldridge, who gave really helpful suggestions regarding the key tree. Maybe now we could do a key kyte.
+    Kevin sent all the invoices to the Hackspace. </p>
+
+    <h3>Thursday</h3>
+    <p>Meeting with Oscar at 9, as tomorrow he is going in holidays.
+    The fridge broke during the night. The DNA from IDT arrives.
+    In theory tomorrow we could already replicate the Howorka paper. </p>
+
+    <h3>Friday</h3>
+    <p>Very hot day. Tha AC broke. There are 32 C in the lab.
+    While the sephadex gel is in the oven, we go for some drinks at 5 pm (it is friday at the end). Found a new bar that gives 25% discount to Imperial students.
+    Georg wants to replicate a Nature paper at 5 pm on a friday. Everyone else disagrees.
+    We tried to hack gel filtration without proper sephadex columns (we used syringes as columns and filter supports from the extruder as membranes).It was a disaster. Everything was dripping. We need proper filters. Sephadex 1 - Nanodips 0.
+    In the dry lab, Alisdair identified the three toehold regions in the lock. That means we have to hide all three with 3-antikeys. That makes the design more complex than expected.
+    In the meantime, Eddy is making progresses with mMAYA. He modelled a DNA barrel with 6 cylinders embedded on a curved lipidic bilayer.
+     </p>
+  </div>
+</div>
+
+<div class="container left">
+    <div class="content">
+      <h2>Week 4</h2>
+      <h3>Monday</h2>
+      <p>Meeting at 10:30 at the Hackspace.
+        Present: Sonia, Hansa, Georg, Alberto, Eddy, Alisdair.
+        Succesful day in the wet lab.
+        What is great about using liposomes and DNA is the efficiency of the experiments.
+        In less than 6 hours today we made fresh liposomes and incapsulated calcein inside.
+        If we had to use cells we would still be waiting for them to grow.
+        When a strong detergent (Triton-X100) is added in the solution of liposome, a twofold increase in fluorescence is observed.
+        Without Triton-X the fluorescence of the of the liposome solution is similar to the blank (sucrose buffer).
+        This means that calcein is encapsulated in the liposome at a self-quenching concentration of >60 mM.
+        We left the solution of liposome in the plate reader overnight to investigate the leakage of fluorophore from the LUVs.</p>
+
+      <h3>Tuesday</h3>
+      <p>In the morning, we went to South Kensington to find a DLS machine and assess the quality of the liposomes from yesterday.
+        We found a helpful postdoc in Freemont's lab who let us use the DLS machine. Great news: we have a very uniform distribution of vesicles, with median size of 67 nm. This is good as it means that we can make good LUVs in a day at the Biohackspace.
+        In the dry lab, the key yte is being designed. There is now a pen and paper design. We need to add an extra layer of DNA to block all the three toeholds. At least the number of pepetide-DNA conkugates now is always one. We need to understant the chemistry to make it possible now.
+        Today the aim is to replicate the Howorka paper. Bad News: the thermocycler is broken.
+        That makes it hard to anneal the oligonucleotides for 2 min at 95 C to assemble the DNA nanopores. We could use a water bath, but since annealing is sensitive to changes in temperatures we decide not to attempt the experiment.
+        Tomorrow we will go again to South Kensington to use a thermocycler.
+        We need to make a video as on friday we will take over Imperial College's instagram account.
+      </p>
+
+      <h3>Wednesday</h3>
+      <p>Today we finally replicate the Howorka paper.
+        Beer at the Blue Moon Pub (the union of white city) at 5 pm, while waiting for the gel.
+        We checked the plae reader results after 30 min.
+        No difference in the wells with just liposomes, liposomes + pores + key. </p>
+
+      <h3>Thursday</h3>
+      <p>Today we try to replicate Howorka again.
+        Maybe it is the negative charges in calcein.
+        Let's try with Rhodamine. </p>
+
+      <h3>Friday</h3>
+      <p> Today we takeover Imperial College instagrams's account (with 55k followers).
+        We also have to replicate Howorka again. Sonia make nice sketches of the team members.
+        In the supplementary information oh Burns et al 2017, they show that the liposomes are larger than 100 nm.
+        Indeed, with the pore size of the extruder we were actually making SUVs instead of LUVs.</p>
+        So today we extrude with filters of pore size = 200 nm.
+    </div>
+</div>
+
+<div class="container right">
+    <div class="content">
+      <h2>Week 6</h2>
+      <h3>Monday</h2>
+      <p></p>
+
+      <h3>Tuesday</h3>
+      <p></p>
+
+      <h3>Wednesday</h3>
+      <p></p>
+
+      <h3>Thursday</h3>
+      <p></p>
+
+      <h3>Friday</h3>
+      <p></p>
+    </div>
+</div>
+
+<div class="container left">
+    <div class="content">
+      <h2>Week 7</h2>
+      <h3>Monday</h2>
+      <p></p>
+
+      <h3>Tuesday</h3>
+      <p></p>
+
+      <h3>Wednesday</h3>
+      <p></p>
+
+      <h3>Thursday</h3>
+      <p></p>
+
+      <h3>Friday</h3>
+      <p></p>
+    </div>
+</div>
+
+<div class="container right">
+    <div class="content">
+      <h2>Week 7</h2>
+      <h3>Monday</h2>
+      <p></p>
+
+      <h3>Tuesday</h3>
+      <p></p>
+
+      <h3>Wednesday</h3>
+      <p></p>
+
+      <h3>Thursday</h3>
+      <p></p>
+
+      <h3>Friday</h3>
+      <p></p>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>

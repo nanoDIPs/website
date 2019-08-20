@@ -30,7 +30,7 @@ body
 .middle
 {
   z-index: 500;
-  width: 8000px;
+  width: 20000px;
   position: fixed;
   top: 41vh;
 }
@@ -130,7 +130,7 @@ h6 {
 .timelinebar {
   height: 1vh;
   max-height: 12px;
-  width: 4000px;
+  width: 20000px;
   background-color: rgba(147,160,188,1);
   /* background-image: linear-gradient(to right, red, yellow);*/
   position: fixed;
