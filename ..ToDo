@@ -1,14 +1,16 @@
 To do list for the Website:
 
 ===WHOLE PAGE===
-- make navbar responsive
+- make navbar responsive for phones
   - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
   - keep logo in top corner, maybe put NanoDips in writing. rest in drop down.
 
 
 ===HOMEPAGE===
 - add two empty full page divs with no in between scrolling
-- responsive for phones (first eddi design)
+  - one that embeds random utube vid
+  - one that has lorem ipsum
+- responsive for phones, as eddi designed
 
 ===INTRODUCTION===
 - eddis design missing
@@ -17,7 +19,10 @@ To do list for the Website:
 - eddis design missing
 
 ===BUILD===
-- eddis design missing
+- 1st page as eddi design
+- create one div with accordion
+- web page wait for eddi
+
 
 ===TEST===
 - eddis design missing
