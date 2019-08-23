@@ -39,3 +39,12 @@ h1 {
   width: 90vw;
   border: 2px solid red;
 }
+
+.accordion {
+
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+}
