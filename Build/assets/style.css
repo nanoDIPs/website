@@ -41,10 +41,28 @@ h1 {
 }
 
 .accordion {
+  width: 33vw;
+  position: relative;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+.active_accordion, .accordion:hover {
+  background-color: #ccc;
 }
 
 .panel {
   display: none;
   overflow: hidden;
+  padding: 0 18px;
+  background-color: white;
+  width: 30vw;
+  color: black;
+  font-size: 1em;
 }
