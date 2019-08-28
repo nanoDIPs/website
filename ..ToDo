@@ -8,9 +8,9 @@ To do list for the Website:
 
 ===HOMEPAGE===
 - add two empty full page divs with no in between scrolling
-  - one that embeds random utube vid
+  - one that embeds random youtube vid
   - one that has lorem ipsum
-- responsive for phones, as eddi designed
+- responsive for phones, as eddi designed (pic in slack)
 
 ===INTRODUCTION===
 - eddis design missing
@@ -37,6 +37,7 @@ To do list for the Website:
 - add calendar icon
 - month switching appropriate to active text
 - responsive for phones (first eddi design)
+- fix the spacing issue that happened when albi put in more dates
 
 ===SPONSORS===
 - Eddis design missing
