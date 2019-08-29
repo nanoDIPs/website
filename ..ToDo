@@ -16,16 +16,19 @@ To do list for the Website:
 - eddis design missing
 
 ===DESIGN===
-- eddis design missing
+- same as build
 
 ===BUILD===
 - 1st page as eddi design
-- web page wait for eddi
-- fix accordion
+- add animation (smooth) to accordion
+- float accordion right (one next to the other)
+  - maybe class: first second third?
+- accordion: disable first when second active etc
+- mobile design wait for eddi
 
 
 ===TEST===
-- eddis design missing
+- same as build
 
 ===ABOUT US===
 - first team member spacing needs adjusting.
