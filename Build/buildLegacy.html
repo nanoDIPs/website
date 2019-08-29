@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="../assets/cssNavbarv1.css">
+<link rel="stylesheet" href="../assets/generalStyle.css">
+
+<head>
+  <style>
+
+    body {
+      background: url("assets/pattern.png");
+      background-attachment: fixed;
+      background-size: cover;
+
+    }
+
+    div.sticky {
+      position: sticky;
+
+    }
+
+    .highlight {
+      background-color: #4d0000;
+      background-image: linear-gradient(to right, #800000 0%, #4d0000 100%);
+    }
+
+    .column {
+      float: left;
+      padding: 0px;
+      margin-top: 46px;
+
+
+    }
+
+    .left {
+      width: 33%;
+      position: relative;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .right {
+      width: 67%;
+      position: relative;
+      z-index: 1;
+      top: 0;
+      right: 0;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    h2 {
+      margin-left: 15px;
+      text-decoration: underline;
+    }
+
+    p {
+      margin-left: 15px;
+      line-height: 25px;
+      text-align: justify
+    }
+
+    div {
+
+      margin-bottom: 20px;
+      padding: 25px;
+      font-family: San Francisco;
+      max-width: 800px -webkit-column-rule: 4px double;
+      /* Chrome, Safari, Opera */
+      -moz-column-rule: 4px double;
+      /* Firefox */
+      column-rule: 4px double;
+
+    }
+
+    .steps {
+      background-color: white;
+      border top: 15px black;
+      border-radius: 10px;
+      max-width: 720px
+    }
+
+    h1 {
+      color: white
+    }
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script>
+    $(window).load(function() {
+      // Animate loader off screen
+      $(".loading-icon").fadeOut("quickly");;
+    });
+  </script>
+</head>
+
+<body>
+  <div class="loading-icon"></div>
+  <ul>
+    <li><a href="../index.html"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
+    <li><a href="../Introduction/introduction.html">Introduction</a></li>
+    <li><a href="../Design/design.html">Design</a></li>
+    <li><a href="../Build/build.html" class="active">Build</a></li>
+    <li><a href="../Test/test.html">Test</a></li>
+    <li><a href="../AboutUs/about-us.html">About Us</a></li>
+    <li><a href="../Journal/journal.html">Journal</a></li>
+    <li><a href="../Sponsors/sponsors.html">Sponsors</a></li>
+  </ul>
+  <br>
+  <h1><span class="highlight"> build: </span></h1>
+  <h2 style="margin-left:30px; color: white; text-decoration: none;" :> <span class="highlight">
+      how we transformed our pen and paper design idea into a real nanodevice
+      <span>
+  </h2>
+
+  <div class="row">
+    <div class="column left sticky row:after">
+      <div style="background-color: white;
+      border-color: black;
+      border-radius: 15px 40px 30px;
+      margin-right: 25px;
+      max-width: 250px;">
+        <h2>contents</h2>
+        <ol>
+          <li>Fluorophore-filled liposomes</li> <br>
+          <li>DNA Nanopores</li><br>
+          <li>Key-trees</li><br>
+        </ol>
+      </div>
+    </div>
+    <div class="column right">
+      <div class="steps">
+        <h2>'laying the ground': assembling fluorophore-filled liposomes</h2>
+        <p style="margin-left: 15px">We used large unilamellar vesicles (LUVs) as vehicles for drug delivery.
+          To model the kinetics of the potential drug and assess the effectiveness
+          of our nanodevice we loaded them with a fluorophore (calcein). For practice
+          purposes, at first we assembled empty, and later calcein-filled vesicles with
+          nothing embedded in their membranes, using a mixture of DOPC and DOPE.
+          Extrusion ensured that the resulting vesicles were all unilamellar and of
+          the same size (200 nm). Then we assessed their quality via Dynamic Light Scattering (DLS).
+          <p>
+      </div>
+
+      <div class="steps">
+        <h2>assembling DNA Nanopores</h2>
+        <p>We constructed the DNA nanopores for our device by following the design
+          developed by Howorka (2017). Each nanopore comprised six hexagonally arranged
+          duplexes and a lock strand, the conformation of which determined the state of the
+          pore (open or closed). Cholesterol anchors attached to some duplexes allowed
+          embedding charged DNA molecules into the lipid membranes. The sequences for each
+          DNA strand were imported from Howorka (2017) and ordered from IDT.<p>
+            <p>DNA nanopores were assembled in two states: open (NP-O) and closed (NP-C). Applying
+              a detergent and a +40 mV voltage facilitated their insertion into membranes.</p>
+            <p>If NP-O's were embedded into membranes, calcein leaked out of the vesicles. To make sure
+              NP-C's have inserted successfully, restriction nucleases were applied to the solution to
+              hydrolyse DNA nanopores, and the fluorophore movement was then observed. We also
+              made sure the fluorophore did not leak out through closed nanopores.</p>
+            <p>After perfecting our techniques of handling static DNA nanopores we moved on to testing
+              them in their dynamic state by applying the key strands. ........</p>
+      </div>
+
+      <div class="steps">
+        <h2>'planting' key-trees</h2>
+        <p>constructing and embedding key-trees <p>
+      </div>
+    </div>
+    <div class="topoverlay"></div>
+    <div class="bottomoverlay"></div>
+  </div>
+
+
+</body>
+
+</html>
