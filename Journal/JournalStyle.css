@@ -21,16 +21,22 @@ body
   * z-index ordering of the different layers, do this for your layers,
   * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
   */
+
+ /* horizon: 3000, middle: 20000 front: 17000
+ works at same vw: 2566:5921
+ works on 13" MBP: middle: 32850px; front: 75800px
+ratio: middle:front = 1:2.32
+ */
 .horizon
 {
   z-index: 1;
-  width: 3000px;
+  width: 3000vw;
 }
 
 .middle
 {
   z-index: 500;
-  width: 20000px;
+  width: 2566vw;
   position: fixed;
   top: 41vh;
 }
@@ -38,7 +44,7 @@ body
 .front
 {
   z-index: 1000;
-  width: 17000px;
+  width: 5921vw;
 }
 
 
@@ -130,7 +136,7 @@ h6 {
 .timelinebar {
   height: 1vh;
   max-height: 12px;
-  width: 20000px;
+  width: 100vw;
   background-color: rgba(147,160,188,1);
   /* background-image: linear-gradient(to right, red, yellow);*/
   position: fixed;
@@ -142,15 +148,15 @@ h6 {
 
 .timelineBubble {
   background-color: rgba(217,217,217,1);
-  height: 9vh;
-  width: 9vh;
+  height: 5vw;
+  width: 5vw;
   border-radius: 50%;
   position: sticky;
   float: left;
-  margin-top: -0.6vh;
+  margin-top: -1vh;
   margin-left: 33vw;
   display: table;
-  border: 1vh solid white;
+  border: 0.5vw solid white;
   transition: 0.3s;
 }
 
