@@ -10,14 +10,13 @@
 
 [role="tab"] {
   position: relative;
-  width: 30%;
+  width: 29%;
   margin: 0;
   overflow: visible;
   font-family: inherit;
   font-size: inherit;
 
   background-color: #eee;
-  color: #444;
   cursor: pointer;
   border: none;
   outline: none;
@@ -58,7 +57,6 @@
 [role="tab"]:active {
   outline: 0;
   border-radius: 0;
-  color: inherit;
 }
 
 [role="tab"]:hover::before,
@@ -93,12 +91,15 @@
 
 .greytab {
   background-color: grey;
+  color: white;
 }
 
 .lightbluetab {
   background-color: blue;
+  color: white;
 }
 
 .darkbluetab {
   background-color: navy;
+  color: white;
 }
