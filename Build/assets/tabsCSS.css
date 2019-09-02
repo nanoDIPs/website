@@ -90,16 +90,21 @@
 
 
 .greytab {
-  background-color: grey;
+  background-color: rgba(217,217,217,1);
   color: white;
 }
 
 .lightbluetab {
-  background-color: blue;
+  background-color: rgba(159,177,213,1);
+  color: white;
+}
+
+.midbluetab {
+  background-color: rgba(116,142,193,1);
   color: white;
 }
 
 .darkbluetab {
-  background-color: navy;
+  background-color: rgba(61,84,134,1);
   color: white;
 }
