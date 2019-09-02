@@ -4,7 +4,7 @@ To do list for the Website:
 - make navbar responsive for phones
   - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
   - keep logo in top corner, maybe put NanoDips in writing. rest in drop down.
-- navbar list special so stuff doesn't interfere with it anymore
+- update navbar list classes on all other pages but build
 
 ===HOMEPAGE===
 - add two empty full page divs with no in between scrolling
@@ -21,9 +21,7 @@ To do list for the Website:
 ===BUILD===
 - 1st page as eddi design
 - add animation (smooth) to accordion
-- float accordion right (one next to the other)
-  - maybe class: first second third?
-- accordion: disable first when second active etc
+- change colors so <p> is same as rest in accordion
 - mobile design wait for eddi
 
 
@@ -40,7 +38,6 @@ To do list for the Website:
 - add calendar icon
 - month switching appropriate to active text
 - responsive for phones (first eddi design)
-- fix the spacing issue that happened when albi put in more dates
 - responsive for different screen sizes (on computer)
 
 ===SPONSORS===
