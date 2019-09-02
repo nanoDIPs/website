@@ -46,8 +46,17 @@
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
+              aria-selected="true"
+              aria-controls="HidePanel1-tab"
+              style="width: 2.5em"
+              id="HidePanel1">
+        -
+      </button>
+      <button role="tab"
               aria-selected="false"
               aria-controls="Protocol1-tab"
+              tabindex="-1"
+              class="greytab"
               id="Protocol1">
         Protocol1
       </button>
@@ -55,24 +64,34 @@
               aria-selected="false"
               aria-controls="agnes-tab"
               id="agnes"
-              tabindex="-1">
+              tabindex="-1"
+              class="lightbluetab">
         Agnes Obel
       </button>
       <button role="tab"
               aria-selected="false"
               aria-controls="complexcomplex"
+              class="darkbluetab"
               id="complex"
-              tabindex="-1"
-              data-deletable="">
+              tabindex="-1">
         Joke
       </button>
     </div>
     <div tabindex="0"
          role="tabpanel"
+         id="HidePanel1-tab"
+         aria-labelledby="HidePanel1">
+      <p>
+      </p>
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
          id="Protocol1-tab"
          aria-labelledby="Protocol1"
+         class="greytab"
          hidden="">
       <p>
+        List of ingredients:
         <ul>
           <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
           <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
@@ -84,6 +103,7 @@
          role="tabpanel"
          id="agnes-tab"
          aria-labelledby="agnes"
+         class="lightbluetab"
          hidden="">
       <p>
         Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.
@@ -93,6 +113,7 @@
          role="tabpanel"
          id="complexcomplex"
          aria-labelledby="complex"
+         class="darkbluetab"
          hidden="">
       <p>
         Fear of complicated buildings:

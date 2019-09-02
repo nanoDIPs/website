@@ -4,13 +4,13 @@
 }
 
 [role="tablist"] {
-  margin: 0 0 -0.1em;
+  margin: 0 0 0;
   overflow: visible;
 }
 
 [role="tab"] {
   position: relative;
-  width: 33%;
+  width: 30%;
   margin: 0;
   overflow: visible;
   font-family: inherit;
@@ -22,6 +22,7 @@
   border: none;
   outline: none;
   transition: 0.2s;
+  padding: 0.5em;
 }
 
 [role="tab"]:hover::before,
@@ -29,8 +30,8 @@
 [role="tab"][aria-selected="true"]::before {
   position: absolute;
   bottom: 100%;
-  right: -1px;
-  left: -1px;
+  right: -0px;
+  left: -0px;
   content: '';
 }
 
@@ -76,8 +77,8 @@
 [role="tabpanel"]:focus::after {
   position: absolute;
   bottom: 0;
-  right: -1px;
-  left: -1px;
+  right: -0px;
+  left: -0px;
   content: '';
 }
 
@@ -87,4 +88,17 @@
 
 [role="tabpanel"] * + p {
   margin-top: 0em;
+}
+
+
+.greytab {
+  background-color: grey;
+}
+
+.lightbluetab {
+  background-color: blue;
+}
+
+.darkbluetab {
+  background-color: navy;
 }
