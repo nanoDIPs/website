@@ -5,21 +5,22 @@
 
 <!-- NAVBAR -->
   <link rel="stylesheet" href="../assets/cssNavbarv1.css">
-  <ul>
-    <li><a href="../index.html"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
-    <li><a href="../Introduction/">Introduction</a></li>
-    <li><a href="../Design/">Design</a></li>
-    <li><a class="active" href="#">Build</a></li>
-    <li><a href="../Test/">Test</a></li>
-    <li><a href="../AboutUs/">About Us</a></li>
-    <li><a href="../Journal/">Journal</a></li>
-    <li><a href="../Sponsors/">Sponsors</a></li>
+  <ul class="navbar">
+    <li class="navbar"><a href="../index.html"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
+    <li class="navbar"><a href="../Introduction/">Introduction</a></li>
+    <li class="navbar"><a href="../Design/">Design</a></li>
+    <li class="navbar"><a class="activeNavbar" href="#">Build</a></li>
+    <li class="navbar"><a href="../Test/">Test</a></li>
+    <li class="navbar"><a href="../AboutUs/">About Us</a></li>
+    <li class="navbar"><a href="../Journal/">Journal</a></li>
+    <li class="navbar"><a href="../Sponsors/">Sponsors</a></li>
   </ul>
 
 <head>
   <!-- basic.html -->
   <link rel="stylesheet" href="../assets/generalStyle.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/tabsCSS.css">
   <br>
   <br>
   <title>Build</title>
@@ -33,23 +34,98 @@
 </div>
 
 <div class="megadivProtocol">
+
   <h1>Building DNA nanopores</h1>
   DNA nanopores self-assemble from synthetic single stranded sequences of DNA (oligonucleotides).
   Oligonucleotides are designed using computer software <a href="https://cadnano.org/osx-installation.html">(cadnano)</a>
   to fold into specific 3D structures.
   We designed DNA nanopores as hexameric hollow barrel composed of six double stranded DNA helices. We chose to build this nanopore as this archetypal design has been independently described twice (Langecker et al., 2012; Burns et al., 2013)  and has been recently demonstrated to embed in the membranes of liposomes (Burns et al., 2016).
   Four of the 6 helices are equipped with cholesterol anchors, in order to puncture lipid bilayers and allow to the nanopores to embed across the hydrophobic membranes.
-  <button class="accordion">Protocol for DNA nanopore</button>
-  <div class="panel">
-  <ul>
-    <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-    <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-    <li>15 mM Tris (1.8171 mg per ml)</li>
-  </ul>
+
+
+  <div class="tabs">
+    <div role="tablist" aria-label="Entertainment">
+      <button role="tab"
+              aria-selected="true"
+              aria-controls="HidePanel1-tab"
+              style="width: 2.5em"
+              id="HidePanel1">
+        -
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol1-tab"
+              tabindex="-1"
+              class="greytab"
+              id="Protocol1">
+        Protocol1
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="agnes-tab"
+              id="agnes"
+              tabindex="-1"
+              class="lightbluetab">
+        Protocol 2
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="complexcomplex"
+              class="darkbluetab"
+              id="complex"
+              tabindex="-1">
+        Protocol 3
+      </button>
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="HidePanel1-tab"
+         aria-labelledby="HidePanel1">
+      <p>
+      </p>
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="Protocol1-tab"
+         aria-labelledby="Protocol1"
+         class="greytab"
+         hidden="">
+      <p>
+        List of ingredients:
+        <ul>
+          <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
+          <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
+          <li>15 mM Tris (1.8171 mg per ml)</li>
+        </ul>
+      </p>
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="agnes-tab"
+         aria-labelledby="agnes"
+         class="lightbluetab"
+         hidden="">
+      <p>
+        Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.
+      </p>
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="complexcomplex"
+         aria-labelledby="complex"
+         class="darkbluetab"
+         hidden="">
+      <p>
+        Fear of complicated buildings:
+      </p>
+      <p>
+        A complex complex complex.
+      </p>
+    </div>
   </div>
 
-</div>
-<script type="text/javascript" src="assets/buildJS.js"></script>
+
+<script type="text/javascript" src="assets/tabsJS.js"></script>
 
 </body>
 </html>

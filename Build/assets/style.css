@@ -41,7 +41,7 @@ h1 {
 }
 
 .accordion {
-  width: 33vw;
+  width: 33.33%;
   position: relative;
   background-color: #eee;
   color: #444;
@@ -53,6 +53,18 @@ h1 {
   transition: 0.4s;
 }
 
+.firstaccordion {
+  float: left;
+}
+
+.secondaccordion {
+  float: left;
+}
+
+.thirdaccordion {
+  float: left;
+}
+
 .active_accordion, .accordion:hover {
   background-color: #ccc;
 }
@@ -61,8 +73,23 @@ h1 {
   display: none;
   overflow: hidden;
   padding: 0 18px;
-  background-color: white;
-  width: 30vw;
-  color: black;
+  width: 95%;
   font-size: 1em;
+  max-height: 0;
+  transition: 0.3s ease-out;
+}
+
+.firstpanel {
+  background-color: white;
+  color: black;
+}
+
+.secondpanel {
+  background-color: grey;
+  color: black;
+}
+
+.thirdpanel {
+  background-color: blue;
+  color: white;
 }
