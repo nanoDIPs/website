@@ -10,11 +10,14 @@
 
 [role="tab"] {
   position: relative;
-  width: 29%;
+  width: 24%;
   margin: 0;
   overflow: visible;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: -5px;
+
 
   background-color: #eee;
   cursor: pointer;
@@ -22,6 +25,7 @@
   outline: none;
   transition: 0.2s;
   padding: 0.5em;
+  margin-top: 1em;
 }
 
 [role="tab"]:hover::before,
@@ -36,7 +40,7 @@
 
 [role="tab"][aria-selected="true"] {
   border-radius: 0;
-  outline: 0;
+  outline: none;
 }
 
 [role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
@@ -44,7 +48,6 @@
 
 [role="tab"][aria-selected="true"]::after {
   position: absolute;
-  z-index: 3;
   bottom: -1px;
   right: 0;
   left: 0;
@@ -55,7 +58,7 @@
 [role="tab"]:hover,
 [role="tab"]:focus,
 [role="tab"]:active {
-  outline: 0;
+  outline: none;
   border-radius: 0;
 }
 
@@ -65,11 +68,11 @@
 
 [role="tabpanel"] {
   position: relative;
-  z-index: 2;
+  padding: 1em;
 }
 
 [role="tabpanel"]:focus {
-  outline: 0;
+  outline: none;
 }
 
 [role="tabpanel"]:focus::after {
@@ -90,7 +93,7 @@
 
 
 .greytab {
-  background-color: rgba(217,217,217,1);
+  background-color: rgba(180,180,180,1);
   color: white;
 }
 
@@ -99,10 +102,12 @@
   color: white;
 }
 
+
 .midbluetab {
   background-color: rgba(116,142,193,1);
   color: white;
 }
+
 
 .darkbluetab {
   background-color: rgba(61,84,134,1);

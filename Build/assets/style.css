@@ -1,5 +1,4 @@
 .herotext {
-  border: 2px solid red;
   position: absolute;
   top: 10%;
   left: 5%;
@@ -8,7 +7,7 @@
   font-size: 4em;
   font-family: SanFrancisco;
   font-weight: bold;
-  color: rgba(217,217,217,1);
+  color: rgba(180,180,180,1);
 }
 
 mark.midblue {
@@ -21,14 +20,14 @@ h1 {
   text-transform: none;
   font-size: 1.7em;
   padding-bottom: 5vh;
-  color: rgba(217,217,217,1);
+  color: rgba(180,180,180,1);
   font-weight: normal;
   width: 100%;
   border-bottom: 2px solid rgba(217,217,217,1);
 }
 
 .megadivProtocol {
-  color: rgba(217,217,217,1);
+  color: rgba(180,180,180,1);
   font-size: 1.2em;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bolder;
@@ -37,7 +36,6 @@ h1 {
   margin-left: 5vw;
   margin-right: 5vw;
   width: 90vw;
-  border: 2px solid red;
 }
 
 .accordion {
