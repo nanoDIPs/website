@@ -3,7 +3,7 @@ ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   background-color: rgba(112,112,112,1);
   position: fixed;
@@ -16,6 +16,12 @@ ul.navbar {
 
 li.navbar {
   float: left;
+  display: block;
+}
+
+.navbar .icon {
+  display: none;
+  color: white;
 }
 
 li.navbar a:not(.logobgcol) {
@@ -86,4 +92,26 @@ li.navbar a img:hover {
   margin-top: -12px;
   background-color: rgba(0,0,0,0);
   filter: brightness(1000);
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar li:not(:first-child):not(.keepfirst):not(.icon) {display: none;}
+  .navbar .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar.responsiveBar {position: relative;}
+  .navbar.responsiveBar .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsiveBar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
