@@ -5,7 +5,6 @@
 
 <!-- NAVBAR -->
   <link rel="stylesheet" href="../assets/cssNavbarv1.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--icons for navbar-->
   <ul id="navbar" class="navbar">
     <li class="navbar"><a href="../"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
     <li class="navbar keepfirst"><a href="../Introduction/">Introduction</a></li>
@@ -15,8 +14,16 @@
     <li class="navbar"><a href="../AboutUs/">About Us</a></li>
     <li class="navbar"><a href="../Journal/">Journal</a></li>
     <li class="navbar"><a href="../Sponsors/">Sponsors</a></li>
-    <li class="navbar icon"><a href="javascript:void(0);"  onclick="navbarfunction()">more</a>
-</li>
+
+    <li class="navbar icon navbar-dropdown">
+      <a href="javascript:void(0)" class="navbar navbar-dropbtn">More</a>
+      <div class="navbar-dropdown-content">
+        <a href="../AboutUs/">About Us</a>
+        <a href="../Journal/">Journal</a>
+        <a href="../Sponsors/">Sponsors</a>
+      </div>
+    </li>
+
   </ul>
 
 <head>
@@ -33,7 +40,7 @@
 <body>
 
 <div class="herotext">
-  From pen and paper to <mark class="midblue">nanodevice</mark>.
+  From pen and paper <br> to <mark class="midblue">nanodevice</mark>.
 </div>
 
 <div id="CreatingNanopores" class="megadivProtocol">
@@ -51,7 +58,7 @@
       <button role="tab"
               aria-selected="true"
               aria-controls="HidePanel1-tab"
-              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
+              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal;"
               id="HidePanel1">
               -
       </button>
@@ -83,7 +90,8 @@
     <div tabindex="0"
          role="tabpanel"
          id="HidePanel1-tab"
-         aria-labelledby="HidePanel1">
+         aria-labelledby="HidePanel1"
+         style="padding:0">
       <p>
       </p>
     </div>
@@ -184,7 +192,8 @@
     <div tabindex="0"
          role="tabpanel"
          id="HidePanel2-tab"
-         aria-labelledby="HidePanel2">
+         aria-labelledby="HidePanel2"
+         style="padding:0">
       <p>
       </p>
     </div>
