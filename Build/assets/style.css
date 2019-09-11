@@ -15,6 +15,21 @@
   font-size: 1.5em;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: lighter;
+  color: rgba(180,180,180,1);
+  bottom: 15%;
+  right: 7%;
+  line-height: 2em;
+}
+
+.frontmenuitem {
+  transition: 0.4s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.frontmenuitem:hover {
+  color: rgba(116,142,193,1);
+  transition: 0.4s;
 }
 
 mark.midblue {
@@ -40,8 +55,9 @@ h1 {
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bolder;
   position: relative;
-  top: 100vh;
+  top: 80vh;
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-top: 20vh;
   width: 90vw;
 }
