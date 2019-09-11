@@ -5,6 +5,13 @@ To do list for the Website:
   - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
   - keep logo in top corner, maybe put NanoDips in writing. rest in drop down.
 - update navbar list classes on all other pages but build
+  - home
+  - aboutus
+  - design
+  - introduction
+  - journal
+  - sponsors
+  - test
 
 ===HOMEPAGE===
 - add two empty full page divs with no in between scrolling
@@ -22,6 +29,7 @@ To do list for the Website:
 ===BUILD===
 - 1st page as eddi design
 - add animation (smooth) to accordion
+- add smooth animation to scroll first page to rest
 - mobile design wait for eddi
 
 
