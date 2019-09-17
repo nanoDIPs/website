@@ -19,7 +19,19 @@ body {
 .youtubevid iframe {
   height: 100%;
   width: 100%;
+  pointer-events: auto;
+  z-index: 1;
 }
+
+.hideframe {
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  z-index: 10;
+  width: 50vw;
+  height: 28.125vw;
+  max-height: 70vh;
+}
+
 
 .abstract {
   margin-left: 10vw;
@@ -50,41 +62,22 @@ h1 {
 .downarrow {
   position: relative;
   margin-left: 48vw;
-  height: 5vh;
-  width: 4vw;
+  width: 40px;
   margin-right: 48vw;
-  background-color: red;
-  text-align: center;
+  height: 40px;
   margin-top: 2em;
-  -webkit-animation:3s arrow infinite ease;
-  animation:3s arrow infinite ease;
+
+  display:inline-block;
+
+  border-right:2px solid rgba(180,180,180,1);
+  border-bottom:2px solid rgba(180,180,180,1);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
 }
 
 .downarrow:hover {
   text-decoration: none;
-}
-
-.downarrow:after {
-  content:'';
-  -webkit-animation:3s arrow infinite ease;
-  animation:3s arrow infinite ease;
-}
-
-@-webkit-keyframes arrow {
-  0%,100% {
-    top:10px;
-  }
-  50% {
-    top:30px;
-  }
-}
-@keyframes arrow {
-  0%,100% {
-    top:10px;
-  }
-  50% {
-    top:30px;
-  }
 }
 
 .displayHomeText {

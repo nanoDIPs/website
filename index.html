@@ -9,13 +9,28 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/scrollify.js"></script>
   <script>
-    $(function() {
+  window.addEventListener('load', function(){
+    $(document).ready(function() {
       $.scrollify({
         section : ".scrollwrapper",
         offset : 0,
       });
     });
+    });
   </script>
+
+<script>
+$(document).ready(function(){
+  $(".hideframe").click(function(){
+    $(".hideframe").hide();
+  });
+  $(".youtubevid").mouseleave(function(){
+    $(".hideframe").show();
+  });
+});
+</script>
+
+
   <link rel="stylesheet" href="assets/generalStyleTest.css">
   <link rel="stylesheet" href="assets/homestyle.css">
   <link rel="stylesheet" href="assets/cssNavbarv1.css">
@@ -56,41 +71,38 @@
     Imperial College
   </div>
 
+  <a href="#video" class="downarrow" style="position:absolute;left:0;top:80vh;"></a>
+
 
 </div>
 </div>
 
 
-<div class="scrollwrapper">
+<div id="video" class="scrollwrapper">
   <div class="fillpage">
     <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
 <div class="abstract">
   <h1>Video</h1>
 </div>
 <div class="youtubevid">
+  <button class="hideframe"></button>
   <iframe src="https://www.youtube.com/embed/gBeIREVBoNg"
    frameborder="0" allowfullscreen></iframe>
 </div>
 
-<a href="#abstract" class="downarrow">
-  Scroll to Abstract
-</a>
+<a href="#abstract" class="downarrow"></a>
 
 </div>
 </div>
 
 
 
-<div class="scrollwrapper">
-  <div id="abstract" class="fillpage">
+<div id="abstract" class="scrollwrapper">
+  <div class="fillpage">
     <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
 <div class="abstract">
   <h1>Abstract</h1>
   Insert Abstract here
-</div>
-
-<div class="downarrow">
-  TEST
 </div>
 
 </div>
