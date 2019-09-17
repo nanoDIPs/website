@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.fullpagediv {
+  height: 100vh;
+  width: 100vw;
+}
+.morethanpagediv {
+  height: 150vh;
+  width: 100vw;
+}
+</style>
+
+<head>
+  <!-- basic.html -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scrollify.js"></script>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".example-classname",
+        offset : 0,
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="assets/generalStyleTest.css">
+  <link rel="stylesheet" href="assets/homestyle.css">
+  <link rel="stylesheet" href="assets/cssNavbarv1.css">
+
+  <title>Home</title>
+  <meta charset="UTF-8" />
+</head>
+
+
+<body>
+
+  <ul class="navbar">
+    <li class="navbar"><a href="#"><img src="assets/logo/smallLogo.png" class="logobgcol"></a></li>
+    <li class="navbar"><a href="Introduction/">Introduction</a></li>
+    <li class="navbar"><a href="Design/design.html">Design</a></li>
+    <li class="navbar"><a href="Build/">Build</a></li>
+    <li class="navbar"><a href="Test/">Test</a></li>
+    <li class="navbar"><a href="AboutUs/">About Us</a></li>
+    <li class="navbar"><a href="Journal/">Journal</a></li>
+    <li class="navbar"><a href="Sponsors/">Sponsors</a></li>
+  </ul>
+
+  <div class="example-classname" style="background-color: blue">
+    <div class="morethanpagediv">
+      <div class="icbiomodtext">
+        hello test
+      </div>
+    </div>
+  </div>
+  <div class="fullpagediv example-classname" style="background-color: grey">
+    <h1>Video</h1>
+    <div class="youtubevid">
+      <iframe src="https://www.youtube.com/embed/gBeIREVBoNg"
+       width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="fullpagediv example-classname" style="background-color: grey">
+    Hello you 2
+  </div>
+</body>

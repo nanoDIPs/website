@@ -6,7 +6,18 @@
 
 <head>
   <!-- basic.html -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scrollify.js"></script>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".scrollwrapper",
+        offset : 0,
+      });
+    });
+  </script>
   <link rel="stylesheet" href="assets/generalStyleTest.css">
+  <link rel="stylesheet" href="assets/homestyle.css">
   <link rel="stylesheet" href="assets/cssNavbarv1.css">
   <br>
   <br>
@@ -16,22 +27,6 @@
 
 
 <body>
-
-  <img src="assets/logo/smallLogo.png" class="cornerlogo">
-
-  <div class="biomodLogoWrapper">
-    <img src="assets/sponsorlogos/BIOMODlogo.png" class="biomodLogo">
-    <p class="biomodLogo">2019</p>
-  </div>
-
-
-  <div class="displayHomeText">
-    <p class="nanoDIPsText"><mark class="darkblue">nano</mark><mark class="midblue">DIPs</mark></p>
-  </div>
-
-  <div class="icbiomodtext">
-    Imperial College
-  </div>
 
   <ul class="navbar">
     <li class="navbar"><a href="#"><img src="assets/logo/smallLogo.png" class="logobgcol"></a></li>
@@ -43,6 +38,63 @@
     <li class="navbar"><a href="Journal/">Journal</a></li>
     <li class="navbar"><a href="Sponsors/">Sponsors</a></li>
   </ul>
+<div class="scrollwrapper">
+  <div class="fillpage" style="top: 0; margin-top: 0;">
+<mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+  <img src="assets/logo/smallLogo.png" class="cornerlogo">
+
+    <div class="biomodLogoWrapper">
+      <img src="assets/sponsorlogos/BIOMODlogo.png" class="biomodLogo">
+      <p class="biomodLogo">2019</p>
+    </div>
+
+  <div class="displayHomeText">
+    <p class="nanoDIPsText"><mark class="darkblue">nano</mark><mark class="midblue">DIPs</mark></p>
+  </div>
+
+  <div class="icbiomodtext">
+    Imperial College
+  </div>
+
+
+</div>
+</div>
+
+
+<div class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="abstract">
+  <h1>Video</h1>
+</div>
+<div class="youtubevid">
+  <iframe src="https://www.youtube.com/embed/gBeIREVBoNg"
+   frameborder="0" allowfullscreen></iframe>
+</div>
+
+<a href="#abstract" class="downarrow">
+  Scroll to Abstract
+</a>
+
+</div>
+</div>
+
+
+
+<div class="scrollwrapper">
+  <div id="abstract" class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="abstract">
+  <h1>Abstract</h1>
+  Insert Abstract here
+</div>
+
+<div class="downarrow">
+  TEST
+</div>
+
+</div>
+</div>
 
 
 </body>
