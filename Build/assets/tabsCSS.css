@@ -69,6 +69,7 @@
 [role="tabpanel"] {
   position: relative;
   padding: 1em;
+  margin-bottom:5vh;
 }
 
 [role="tabpanel"]:focus {

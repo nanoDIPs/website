@@ -30,11 +30,29 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(document).ready(function(){
+  $(".scrolltosecond").click(function(){
+    $.scrollify.move("#2")
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".scrolltothird").click(function(){
+    $.scrollify.move("#3")
+  });
+});
+</script>
+
+
 
   <link rel="stylesheet" href="assets/generalStyleTest.css">
   <link rel="stylesheet" href="assets/homestyle.css">
   <link rel="stylesheet" href="assets/cssNavbarv1.css">
-  <br>
+  <link rel="stylesheet" href="assets/scrollify.css">
+
   <br>
   <title>Home</title>
   <meta charset="UTF-8" />
@@ -45,16 +63,26 @@ $(document).ready(function(){
 
   <ul class="navbar">
     <li class="navbar"><a href="#"><img src="assets/logo/smallLogo.png" class="logobgcol"></a></li>
-    <li class="navbar"><a href="Introduction/">Introduction</a></li>
-    <li class="navbar"><a href="Design/">Design</a></li>
-    <li class="navbar"><a href="Build/">Build</a></li>
-    <li class="navbar"><a href="Test/">Test</a></li>
+    <li class="navbar keepfirst"><a href="Introduction/">Introduction</a></li>
+    <li class="navbar keepfirst"><a href="Design/">Design</a></li>
+    <li class="navbar keepfirst"><a href="Build/">Build</a></li>
+    <li class="navbar keepfirst"><a href="Test/">Test</a></li>
     <li class="navbar"><a href="AboutUs/">About Us</a></li>
     <li class="navbar"><a href="Journal/">Journal</a></li>
     <li class="navbar"><a href="Sponsors/">Sponsors</a></li>
+
+    <li class="navbar icon navbar-dropdown">
+      <a href="javascript:void(0)" class="navbar navbar-dropbtn">More</a>
+      <div class="navbar-dropdown-content">
+        <a href="AboutUs/">About Us</a>
+        <a href="Journal/">Journal</a>
+        <a href="Sponsors/">Sponsors</a>
+      </div>
+    </li>
+
   </ul>
 <div class="scrollwrapper">
-  <div class="fillpage" style="top: 0; margin-top: 0;">
+  <div class="fillpage" style="top: 42px; margin-top: 0;">
 <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
   <img src="assets/logo/smallLogo.png" class="cornerlogo">
 
@@ -71,7 +99,7 @@ $(document).ready(function(){
     Imperial College
   </div>
 
-  <a href="#video" class="downarrow" style="position:absolute;left:0;top:80vh;"></a>
+  <a class="downarrow scrolltosecond" style="position:absolute;left:0;top:80vh;"></a>
 
 
 </div>
@@ -90,7 +118,7 @@ $(document).ready(function(){
    frameborder="0" allowfullscreen></iframe>
 </div>
 
-<a href="#abstract" class="downarrow"></a>
+<a class="downarrow scrolltothird"></a>
 
 </div>
 </div>
