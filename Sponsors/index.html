@@ -1,67 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang = "en">
 
-<link rel="stylesheet" href="../assets/cssNavbarv1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<head>
-  <br>
-  <br>
-  <!-- basic.html -->
-  <title>Sponsors</title>
-    <link rel="stylesheet" href="../assets/generalStyle.css">
-  <meta charset = "UTF-8" />
-</head>
-
-<style>
-  .gallery {
-    border: 1px clear;
-      }
-
-  .gallery:hover {
-    border: 1px clear;
-      }
-
-  .gallery img {
-    width: 100%;
-    height: 200px;
-    padding: 30px
-      }
-
-  .responsive1 {
-    padding: 280px 20px 20px;
-    float: left;
-    width: 30%;
-      }
-
-  .responsive2 {
-    padding: 20px;
-    float: left;
-    width: 30%;
-      }
-
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-</style>
-
-<body>
+<!-- NAVBAR -->
+  <link rel="stylesheet" href="../assets/cssNavbarv1.css">
   <ul class="navbar">
     <li class="navbar"><a href="../"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
     <li class="navbar keepfirst"><a href="../Introduction/">Introduction</a></li>
@@ -70,50 +13,232 @@
     <li class="navbar keepfirst"><a href="../Test/">Test</a></li>
     <li class="navbar"><a href="../AboutUs/">About Us</a></li>
     <li class="navbar"><a href="../Journal/">Journal</a></li>
-    <li class="navbar"><a href="#" class="active">Sponsors</a></li>
+    <li class="navbar"><a class="active" href="#">Sponsors</a></li>
 
     <li class="navbar icon navbar-dropdown">
       <a href="javascript:void(0)" class="navbar navbar-dropbtn">More</a>
       <div class="navbar-dropdown-content">
         <a href="../AboutUs/">About Us</a>
         <a href="../Journal/">Journal</a>
-        <a href="../Sponsors/">Sponsors</a>
+        <a href="#">Sponsors</a>
       </div>
     </li>
 
   </ul>
-  <div align = "Center">  <h2>Thank you to our sponsors</h5> </div>
 
-  <div class="responsive1">
-    <div class="gallery">
-      <div class="position">
-        <a href = "https://epsrc.ukri.org/"><img class="column" src="../assets/sponsorlogos/EPSRC_logo.png" alt="EPSRC"></a>
-        <a href = "https://www.imperialenterpriselab.com/"><img class="column" src="../assets/sponsorlogos/elab.png" alt="Enterprise Lab"></a>
-        <a href = "https://biorender.com/"><img class="column" src="../assets/sponsorlogos/biorender-logo.png" alt="Biorender"></a>
-      </div>
-    </div>
-  </div>
+<head>
+  <!-- basic.html -->
+  <link rel="stylesheet" href="style.css">
+  <br>
+  <br>
+  <title>Our Sponsors</title>
+  <meta charset = "UTF-8" />
+  <!--load jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <div class="responsive1">
-    <div class="gallery">
-      <div class="position">
-        <a href = "http://www.icb-cdt.co.uk/"><img class="column" src="../assets/sponsorlogos/CDT_logo.jpg" alt="CDT"></a>
-        <a href = "https://clarafi.com/"><img class="column" src="../assets/sponsorlogos/Clarafi_logo.png" alt="Clarafi"></a>
-      </div>
-    </div>
-  </div>
+<script>
+$(document).ready(function() {
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
 
-  <div class="responsive1">
-    <div class="gallery">
-      <div class="position">
-        <a href = "https://www.imperial.ac.uk/advanced-hackspace/"><img class="column" src="../assets/sponsorlogos/hackspace.png" alt="Advanced Hackspace"></a>
-        <a href = "https://www.bmglabtech.com"><img class="column" src="../assets/sponsorlogos/bmg-labtech.jpg" alt="BMG Labtech"></a>
-      </div>
-    </div>
-  </div>
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    /* return boolean for in view*/
+    return (elementTop+200) >= viewportTop && elementBottom <= viewportBottom;
+  };
+
+  $(window).on('resize scroll', function() {
+    $('.teamWrapper').each(function() {
+        var activeName = $(this).attr('id');
+      if ($(this).isInViewport()) {
+        $('#side' + activeName).addClass('sidebarText-active');
+        $('#pic' + activeName).addClass('teampic-active');
+        $('#name' + activeName).addClass('teamtext-active');
+        $('#low' + activeName).addClass('teamtextLow-active');
+      } else {
+        $('#side' + activeName).removeClass('sidebarText-active');
+        $('#pic' + activeName).removeClass('teampic-active');
+        $('#name' + activeName).removeClass('teamtext-active');
+        $('#low' + activeName).removeClass('teamtextLow-active');
+      }
+    });
 
 
-  <div class="clearfix"></div>
+  });
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="herotext">
+  <h5>Generously supported by <br> our <mark class="midblue">Sponsors</mark></h5>
+</div>
+
+
+<img src="teampics/TeamPlaceholder.png" class="megaTeamPic">
+
+
+<div class="sidebar">
+<div class="sidebarMid">
+  <a class="sidebarText" id="sideEPSRC" href="#EPSRC">EPSRC</a><br>
+  <a class="sidebarText" id="sideChemBio" href="#ChemBio">Chemical Biology CDT</a><br>
+  <a class="sidebarText" id="sideICAH" href="#ICAH">ICAH</a><br>
+  <a class="sidebarText" id="sideElab" href="#Elab">IC Enterprise Lab</a><br>
+  <a class="sidebarText" id="sideBMG" href="#BMG">BMG Labtech</a><br>
+  <a class="sidebarText" id="sideClarafi" href="#Clarafi">Clarafi</a><br>
+</div>
+</div>
+
+
+<div id="EPSRC" class="teamWrapper">
+  <img src="teampics/georg.jpg" id="picEPSRC" class="teampic">
+  <p class="teamtext" id="nameEPSRC">
+    <mark class="firstName">Georg</mark>
+    <mark class="lastName">Wachter</mark>
+  </p>
+  <p class="teamtextLow" id="lowEPSRC">
+    <mark class="jobtitle">Engineering and Physical Sciences Research Council</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="ChemBio" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picChemBio" class="teampic">
+  <p class="teamtext" id="nameChemBio">
+    <mark class="firstName">Alberto</mark>
+    <mark class="lastName">Scarampi del Cairo di Prunetto</mark>
+  </p>
+  <p class="teamtextLow" id="lowChemBio">
+    <mark class="jobtitle">Wet Lab Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Alisdair" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picAlisdair" class="teampic">
+  <p class="teamtext" id="nameAlisdair">
+    <mark class="firstName">Alisdair</mark>
+    <mark class="lastName">Stevenson</mark>
+  </p>
+  <p class="teamtextLow" id="lowAlisdair">
+    <mark class="jobtitle">Dry Lab Lead</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Kevin" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picKevin" class="teampic teampic-inactive">
+  <p class="teamtext" id="nameKevin">
+    <mark class="firstName">Kevin</mark>
+    <mark class="lastName">Vela</mark>
+  </p>
+  <p class="teamtextLow" id="lowKevin">
+    <mark class="jobtitle">Wet Lab</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Sonia" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picSonia" class="teampic">
+  <p class="teamtext" id="nameSonia">
+    <mark class="firstName">Sonia</mark>
+    <mark class="lastName">Shyfrin</mark>
+  </p>
+  <p class="teamtextLow" id="lowSonia">
+    <mark class="jobtitle">Wet Lab</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Edward" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picEdward" class="teampic">
+  <p class="teamtext" id="nameEdward">
+    <mark class="firstName">Edward</mark>
+    <mark class="lastName">Praun</mark>
+  </p>
+  <p class="teamtextLow" id="lowEdward">
+    <mark class="jobtitle">Design</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Hansa" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picHansa" class="teampic">
+  <p class="teamtext" id="nameHansa">
+    <mark class="firstName">Hansa</mark>
+    <mark class="lastName">Shree</mark>
+  </p>
+  <p class="teamtextLow" id="lowHansa">
+    <mark class="jobtitle">Wet Lab</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+<div id="Miro" class="teamWrapper anchor">
+  <img src="teampics/georg.jpg" id="picMiro" class="teampic">
+  <p class="teamtext" id="nameMiro">
+    <mark class="firstName">Shabz</mark>
+    <mark class="lastName">Khan</mark>
+  </p>
+  <p class="teamtextLow" id="lowMiro">
+    <mark class="jobtitle">Dry Lab</mark><br><br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+    Let me just test if this is fine <br>
+  </p>
+</div>
+
+
+
+
+<!--<div class="topoverlay"></div>
+<div class="topoverlay2"></div>
+<div class="bottomoverlay"></div>-->
 
 </body>
 </html>
