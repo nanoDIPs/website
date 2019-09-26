@@ -120,3 +120,39 @@ p.nanoDIPsText {
   margin-left: 0.57em;
   letter-spacing: 0.015em;
 }
+
+.sideAnimation {
+  position: fixed;
+  display: none;
+  margin-right: 3em;
+  margin-left: 3em;
+  top: 15vh;
+  max-height: 70vh;
+  width: 70vh;
+  max-width: 45vw;
+  background-color: black;
+  animation: 1s ease;
+}
+
+.sideAnimation-active {
+  display: block;
+  animation: 1s ease;
+}
+
+.introtext {
+  position: relative;
+  right: 5em;
+  left: 50vw;
+  height: 60vh;
+  background-color: blue;
+  width: 48vw;
+  top: 15vh;
+}
+
+.scrollwrapper {
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}

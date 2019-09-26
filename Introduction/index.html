@@ -7,7 +7,7 @@
 <head>
   <!-- basic.html -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/scrollify.js"></script>
+  <script type="text/javascript" src="../assets/scrollify.js"></script>
   <script>
   window.addEventListener('load', function(){
     $(document).ready(function() {
@@ -46,9 +46,37 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(document).ready(function() {
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    /* return boolean for in view*/
+    return (elementTop) >= viewportTop && elementBottom <= viewportBottom;
+  };
+
+  $(window).on('resize scroll', function() {
+    $('.introtext').each(function() {
+        var activeName = $(this).attr('id');
+      if ($(this).isInViewport()) {
+        $('#pic' + activeName).addClass('sideAnimation-active');
+      } else {
+        $('#pic' + activeName).removeClass('sideAnimation-active');
+      }
+    });
 
 
-  <link rel="stylesheet" href="../assets/generalStyleTest.css">
+  });
+});
+
+</script>
+
+
+  <link rel="stylesheet" href="../assets/generalStyle.css">
   <link rel="stylesheet" href="assets/introduction.css">
   <link rel="stylesheet" href="../assets/cssNavbarv1.css">
   <link rel="stylesheet" href="../assets/scrollify.css">
@@ -81,61 +109,40 @@ $(document).ready(function(){
     </li>
 
   </ul>
+
+<!--#first-->
 <div class="scrollwrapper">
   <div class="fillpage" style="top: 42px; margin-top: 0;">
-<mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
-  <img src="assets/logo/smallLogo.png" class="cornerlogo">
+    <mark style="background-color: red; color: rgba(0,0,0,0);">42</mark>
 
-    <div class="biomodLogoWrapper">
-      <img src="assets/sponsorlogos/BIOMODlogo.png" class="biomodLogo">
-      <p class="biomodLogo">2019</p>
+    <div id="first" class="introtext">
+      FIRST IMAGE TEXT
     </div>
 
-  <div class="displayHomeText">
-    <p class="nanoDIPsText"><mark class="darkblue">nano</mark><mark class="midblue">DIPs</mark></p>
+    <a class="downarrow scrolltosecond" style="position:absolute;left:0;top:80vh;"></a>
   </div>
+</div>
 
-  <div class="icbiomodtext">
-    Imperial College
+<!--#second-->
+<div class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: red; color: rgba(0,0,0,0);">42</mark>
+
+    <div id="second" class="introtext">
+      SECOND IMAGE TEXT
+    </div>
+
+    <a class="downarrow scrolltothird"></a>
+
   </div>
-
-  <a class="downarrow scrolltosecond" style="position:absolute;left:0;top:80vh;"></a>
-
-
-</div>
 </div>
 
 
-<div id="video" class="scrollwrapper">
-  <div class="fillpage">
-    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
-<div class="abstract">
-  <h1>Video</h1>
+<!--IMAGES-->
+<div>
+  <img id="picfirst" class="sideAnimation" style="background-color:white;z-index:10000;" src="../assets/logo/smallLogo.png"></img>
+  <img id="picsecond" class="sideAnimation" src="../assets/logo/smallLogo.png"></img>
 </div>
-<div class="youtubevid">
-  <button class="hideframe"></button>
-  <iframe src="https://www.youtube.com/embed/gBeIREVBoNg"
-   frameborder="0" allowfullscreen></iframe>
-</div>
-
-<a class="downarrow scrolltothird"></a>
-
-</div>
-</div>
-
-
-
-<div id="abstract" class="scrollwrapper">
-  <div class="fillpage">
-    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
-<div class="abstract">
-  <h1>Abstract</h1>
-  Insert Abstract here
-</div>
-
-</div>
-</div>
-
 
 </body>
 

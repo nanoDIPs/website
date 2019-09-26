@@ -116,17 +116,6 @@ h6 {
 
 }
 
-/* Font for web page titles*/
-.herotext {
-  position: absolute;
-  z-index: 20;
-  top: -17%;
-  left: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 0;
-}
-
 .no-js #loader {
   display: none;
 }
