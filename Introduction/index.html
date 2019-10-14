@@ -64,8 +64,13 @@ $(document).ready(function() {
         var activeName = $(this).attr('id');
       if ($(this).isInViewport()) {
         $('#pic' + activeName).addClass('sideAnimation-active');
+        $('#pic' + activeName + 'second').addClass('sideAnimation-active');
+        $('#pic' + activeName + 'third').addClass('sideAnimation-active');
+
       } else {
         $('#pic' + activeName).removeClass('sideAnimation-active');
+        $('#pic' + activeName + 'second').removeClass('sideAnimation-active');
+        $('#pic' + activeName + 'third').removeClass('sideAnimation-active');
       }
     });
 
@@ -159,11 +164,43 @@ $(document).ready(function() {
   </div>
 </div>
 
+<!--#third-->
+<div class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+
+    <div id="third" class="introtext">
+      scrolltothird IMAGE TEXT
+    </div>
+
+  </div>
+</div>
+
+<!--#fourth-->
+<div class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+
+    <div id="fourth" class="introtext">
+      fourth IMAGE TEXT
+    </div>
+
+  </div>
+</div>
+
 
 <!--IMAGES-->
 <div>
-  <img id="picfirst" class="sideAnimation" style="background-color:white;z-index:10000;" src="../assets/logo/smallLogo.png"></img>
-  <img id="picsecond" class="sideAnimation" src="../assets/logo/smallLogo.png"></img>
+  <img id="picfirst" class="sideAnimation" style="z-index:10;" src="assets/glyphs/Scene1-Problem/HealthyCellSurface.png"></img>
+
+  <img id="picsecond" class="sideAnimation" style="z-index:10;" src="assets/glyphs/Scene1-Problem/CancerousCellSurface.png"></img>
+
+  <img id="picthird" class="sideAnimation" style="z-index:10;" src="assets/glyphs/Scene1-Problem/ChemoTreatmentConventional.png"></img>
+
+  <img id="picfourth" class="sideAnimation" style="z-index:10;" src="assets/glyphs/Scene1-Problem/DamagedCellTissue.png"></img>
+  <img id="picfourthsecond" class="sideAnimation" style="z-index:11;" src="assets/glyphs/Components/Cancer.png"></img>
+  <img id="picfourththird" class="sideAnimation" style="z-index:12;" src="assets/glyphs/Components/PillMultiple.png"></img>
+
 </div>
 
 </body>

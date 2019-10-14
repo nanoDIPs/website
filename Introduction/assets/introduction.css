@@ -131,14 +131,16 @@ p.nanoDIPsText {
   max-height: 70vh;
   width: 70vh;
   max-width: 45vw;
-  background-color: black;
-  transition: 1s;
+  background-color: none;
+  transition: 0.6s;
+  transition-delay: 0.35s;
 }
 
 .sideAnimation-active {
   display: block;
-  transition: 1s;
+  transition: 0.7s;
   opacity: 1;
+  transition-delay: 0s;
 }
 
 .introtext {
