@@ -149,11 +149,14 @@ p.nanoDIPsText {
   vertical-align: middle;
   text-align: left;
   right: 5em;
-  left: 50vw;
+  left: 45vw;
   height: 60vh;
-  background-color: blue;
+  background-color: none;
   width: 48vw;
   top: 15vh;
+
+  font-size: 1.3em;
+  color: rgba(150,150,150,1);
 }
 
 .scrollwrapper {
