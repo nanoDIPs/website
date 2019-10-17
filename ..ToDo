@@ -14,9 +14,6 @@ To do list for the Website:
   - test
 
 ===HOMEPAGE===
-- add two empty full page divs with no in between scrolling
-  - one that embeds random youtube vid
-  - one that has lorem ipsum
 - responsive for phones, as eddi designed (pic in slack)
 - set window content fixed to 100vw
 

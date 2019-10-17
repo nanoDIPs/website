@@ -46,7 +46,7 @@ $(document).ready(function() {
     var viewportBottom = viewportTop + $(window).height();
 
     /* return boolean for in view*/
-    return (elementTop+200) >= viewportTop && elementBottom <= viewportBottom;
+    return (elementTop+200) >= viewportTop && (elementBottom-150) <= viewportBottom;
   };
 
   $(window).on('resize scroll', function() {
