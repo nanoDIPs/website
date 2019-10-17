@@ -355,7 +355,7 @@
          <br>List of ingredients:
          <ul>
            <li>Extruder (Avanti mini extruder kit)</li>
-           <li>Polycarbonate filter (0.2 um)</li>
+           <li>Polycarbonate filter (0.2 µm)</li>
            <li>Filter supports</li>
            <li>Hydrated vesicles (from step before)</li>
          </ul>
@@ -401,7 +401,6 @@
            <li>Pipette a solution of liposomes on top of the column and elute with elution buffer. 1 mL aliquots are collected in Eppendorf™ test tubes.</li>
          </ol>
        </p>
-
     </div>
   </div>
 </div>
@@ -413,7 +412,9 @@
 <div id="CreatingPOCs" class="megadivProtocol">
 
   <h1>Building Peptide-Oligonucleotide Conjugates (POCs)</h1>
-  Liposomes (vesicles) are membrane-enclosed spheres that transport molecular cargo within and between cells. We used large unilamellar vesicles (LUVs) with a diameter of 200nm as drug carriers.
+  After having succesfully demonstrated the the DNA nanopores open upon detection of the key input and allow the passage of molecular cargoes across the membrane, we aimed todemonstrate the nanopores can be used to sense protein substrates. For this we designed nanoscale Peptide-Oligonucleotide Conjugates (nanoPOCs), covalent constructs that link oligodeoxinucleotides to a synthetic peptide sequences. These materials merge the programmable self-assembly of oligonucleotides with the bioactivity and chemical diversity of polypeptides (MacCullogh et al., 2019).
+  NanoPOCs are composed of peptide sequences flanked by tandem DNA sequences that form defined tertiary structures.
+  The ultimate goal of nanoPOCs is to leverage the unique advantages of each biomolecule into a chimeric molecule that allows DNA nanopores to sense proteins.
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -429,7 +430,7 @@
               tabindex="-1"
               class="greytab"
               id="Protocol8">
-              Dissolving Lipids
+              Assembling nanoPOCs
       </button>
       <button role="tab"
               aria-selected="false"
@@ -437,7 +438,7 @@
               id="Protocol9"
               tabindex="-1"
               class="lightbluetab">
-              Hydration
+              Gel electrophoresis
       </button>
       <button role="tab"
               aria-selected="false"
@@ -445,7 +446,7 @@
               class="midbluetab"
               id="Protocol10"
               tabindex="-1">
-              Extrusion
+              Making a polyacrylamide gel
       </button>
       <button role="tab"
               aria-selected="false"
@@ -453,7 +454,7 @@
               class="darkbluetab"
               id="Protocol11"
               tabindex="-1">
-              Purification
+              Running the gel
       </button>
     </div>
     <div tabindex="0"
@@ -470,25 +471,38 @@
          aria-labelledby="Protocol8"
          class="greytab"
          hidden="">
-
-        The first step of LUV preparation consists of drying phospholipids into glass vials to form “lipid films”. These can be stored at 4°C and taken out for use as needed.when fresh vesicles are needed.
-
-        List of ingredients:
-        <ul>
-          <li>DOPC powder (Avanti Polar Lipids)</li>
-          <li>25 mg mL⁻¹ DOPE (Avanti Polar Lipids)</li>
-          <li>Chloroform</li>
-          <li>Nitrogen gas</li>
-        </ul>
-
-        Procedure:
-        <ol>
-          <li>Dissolve the DOPC powder in 3.79 mL of chloroform.</li>
-          <li>Add dissolved DOPC and DOPE into a vial in a 3:7 DOPE:DOPC ratio and make the solution up to the desired volume with chloroform. Here,In this experiment, 30 uL of DOPE, 70 uL of DOPC and an additional 100 mL of chloroform were used</li>
-          <li>The vial is dried using nitrogen gas and left in a vacuum oven without any heat, at 400 bar of pressure at least overnight before using. </li>
-          <li>Nitrogen gas</li>
-        </ol>
-
+      <p>
+         NanoPOCs were assembled by separate synthesis and purification of each component (peptides and oligonucleotides) followed by their coupling in solution using the heterobifunctional amine-to-sulfhydryl cross-linker succinimidyl 4-(N-maleimidomethyl)cyclohexane-1-carboxylate (SMCC), following the protocol described by Williams and Chaput, 2011.
+         Oligonucleotides were designed to have extra amine (NH2) groups at their 3’ends (ordered from Integrated DNA Technologies)
+      </p>
+         <p>
+           <br>List of ingredients:
+           <ul>
+             <li>Oligonucleotides with extra amino groups at the 3’end (from IDT)</li>
+             <li>Peptide sequences (with 2 terminal cysteines at the N- and C- termini)</li>
+             <li>Absolute ethanol</li>
+             <li>3 M sodium acetate</li>
+             <li>100 mM KH2OPO4 buffer</li>
+             <li>SMCC</li>
+             <li>Acetonitrile</li>
+             <li>40% acrylamide/bisacrylamide 19:1 solution</li>
+             <li>10X TAE-Mg2+ (400 mM tris, 200 mM acetic acid, 20mM EDTA, 125 mM magnesium acetate)</li>
+             <li>TEMED</li>
+             <li>10% ammonium persulfate</li>
+             <li>glycerol</li>
+             <li>native running dye (0.05%w/v bromophenol blue, 0.05% xylene cyanol, 80% glycerol)</li>
+             <li>NAP-10 (GE lifesciences)</li>
+           </ul>
+         </p>
+         <p>
+           Procedure:
+           <ol>
+             <li>Assemble the extruder following Avanti instructions</li>
+             <li>With a glass syringe draw the hydrated LUVs solution from the glass vial</li>
+             <li>Extrude following the extruder-kit instructions. Make sure to exchange fluids between the syringes for an odd number of times, and a minimum of 11.</li>
+             <li>Collect the extruded solution in a suitably-labeled Eppendorf tube</li>
+           </ol>
+         </p>
     </div>
     <div tabindex="0"
          role="tabpanel"
@@ -497,7 +511,33 @@
          class="lightbluetab"
          hidden="">
 
-        Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.
+         <p>
+         Gel electrophoresis assays were used to test whether (1) the POC had been assembled,
+         (2) strand displacement reactions were functional, and (3) that the nanopore was being opened.
+         By visualising bands which correspond to particular DNA complexes, gel electrophoresis is capable of 
+         providing insight into whether the modelled DNA-DNA and DNA-protein interactions were taking place.
+         </p>
+         <p>
+         <br>List of ingredients:
+         <ul>
+           <li>DNA samples</li>
+           <li>Agarose</li>
+           <li>x1TBE or x10TBE as preferred</li>
+           <li>Deionised water</li>
+           <li>Conical flask</li>
+           <li>SybrGold</li>
+           <li>Microwave oven</li>
+           <li>Mould for the gel</li>
+         </ul>
+         </p>
+         <p>
+         Procedure:
+         <ol>
+           <li>Dissolve agar into x1TBE in a conical flask</li>
+           <li>Heat the conical flask in a microwave for a few minutes until the fluid is entirely clear. Be careful to not superheat it as this can cause serious injury. The flask is very hot at this stage, so using heat resistant gloves to hold it is recommended.</li>
+           <li>5 µl of SybrSafe is added to every 50 ml of agar-TBE buffer in the heated conical flask. This is poured into the mould with the comb. The mould is left immersed in 150ml x1TBE until it solidifies. This usually takes about an hour.</li>
+         </ol>
+         </p>
 
     </div>
     <div tabindex="0"
@@ -506,12 +546,30 @@
          aria-labelledby="Protocol10"
          class="midbluetab"
          hidden="">
-      <p>
-        Fear of complicated buildings:
-      </p>
-      <p>
-        A complex complex complex.
-      </p>
+         <p>
+         Polyacrylamide gels are used to separate smaller fragments of DNA or reveal differences between lanes when the strands differ by a small number of base pairs. Polyacrylamide gels were made without any denaturing agent as described below.
+         </p>
+         <p>
+         <br>List of ingredients:
+         <ul>
+           <li>0.375M Tris-HCl pH 8.8</li>
+           <li>Acrylamide/Bisacrylamide (30%/0.8% w/v)</li>
+           <li>x1TBE or x10TBE as preferred</li>
+           <li>10% (w/v) ammonium persulfate (AP)</li>
+           <li>TEMED</li>
+           <li>Glass mould</li>
+           <li>Isopropanol</li>
+           <li>Comb</li>
+         </ul>
+         </p>
+         <p>
+         Procedure:
+         <ol>
+           <li>Add polyacrylimde, tris buffer</li>
+           <li>TEMED enables the acrylamide to polymerise and if left to sit for a minute, could result in the gel solidifying too much to pipette within the falcon itself. Therefore, it is important to quickly pipette the gel into the glass mould after adding TEMED.</li>
+           <li>Make stacking gel</li>
+         </ol>
+         </p>
     </div>
     <div tabindex="0"
          role="tabpanel"
