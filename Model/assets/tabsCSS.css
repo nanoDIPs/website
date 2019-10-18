@@ -1,0 +1,115 @@
+.tabs {
+  width: 100%;
+  font-family: SanFrancisco, Arial, sans-serif;
+}
+
+[role="tablist"] {
+  margin: 0 0 0;
+  overflow: visible;
+}
+
+[role="tab"] {
+  position: relative;
+  width: 24%;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: -5px;
+
+
+  background-color: #eee;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+[role="tab"]:hover::before,
+[role="tab"]:focus::before,
+[role="tab"][aria-selected="true"]::before {
+  position: absolute;
+  bottom: 100%;
+  right: -0px;
+  left: -0px;
+  content: '';
+}
+
+[role="tab"][aria-selected="true"] {
+  border-radius: 0;
+  outline: none;
+}
+
+[role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
+}
+
+[role="tab"][aria-selected="true"]::after {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+  height: 0.3em;
+  content: '';
+}
+
+[role="tab"]:hover,
+[role="tab"]:focus,
+[role="tab"]:active {
+  outline: none;
+  border-radius: 0;
+}
+
+[role="tab"]:hover::before,
+[role="tab"]:focus::before {
+}
+
+[role="tabpanel"] {
+  position: relative;
+  padding: 1em;
+}
+
+[role="tabpanel"]:focus {
+  outline: none;
+}
+
+[role="tabpanel"]:focus::after {
+  position: absolute;
+  bottom: 0;
+  right: -0px;
+  left: -0px;
+  content: '';
+}
+
+[role="tabpanel"] p {
+  margin: 0;
+}
+
+[role="tabpanel"] * + p {
+  margin-top: 0em;
+}
+
+
+.greytab {
+  background-color: rgba(180,180,180,1);
+  color: white;
+}
+
+.lightbluetab {
+  background-color: rgba(159,177,213,1);
+  color: white;
+}
+
+
+.midbluetab {
+  background-color: rgba(116,142,193,1);
+  color: white;
+}
+
+
+.darkbluetab {
+  background-color: rgba(61,84,134,1);
+  color: white;
+}
