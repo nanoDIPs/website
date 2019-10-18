@@ -1,0 +1,223 @@
+body {
+  font-family: SanFrancisco;
+  font-weight: lighter;
+}
+h1 {
+  color: navy;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h2  {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+}
+p {
+  color: black;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+h5 {
+  color: darkgrey;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15vh;
+  max-width: 100%;
+}
+
+h6 {
+  color: Black;
+  font-family: SanFrancisco;
+  font-weight: bolder;
+  font-size: 36px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
+}
+
+mark.midblue {
+  color: rgba(116,142,193,1);
+  background-color: inherit;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url((../assets/fonts/SF-Pro-Text-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Medium.otf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../assets/fonts/SF-Pro-Text-Light.otf);
+  font-weight: lighter;
+}
+
+
+.teamWrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 5vw;
+  margin-top: 30vh;
+  padding-top: 20vh;
+  height: 40vh;
+  width: 65vw;
+  overflow: hidden;
+}
+
+.teamWrapper:first-of-type {
+  padding-top: 0;
+  margin-top: -30vh;
+}
+
+
+.teamWrapper:last-of-type {
+  margin-bottom: 40vh;
+}
+
+
+.teamtext {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  opacity: 0;
+  border-bottom: 2px solid rgba(217,217,217,1);
+  color: rgba(116,142,193,1);
+  font-size: 2em;
+  right: -15vw;
+  padding-top: 5vh;
+  transition: 0.5s;
+}
+
+.teamtext-active {
+  right: 0;
+  opacity: 1;
+}
+
+
+.teamtextLow {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  right: -10vw;
+  color: darkgrey;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.teamtextLow-active {
+  right: 0;
+  opacity: 1;
+}
+
+.teampic {
+  position: relative;
+  float: left;
+  height: auto;
+  width: 35vh;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0;
+  padding: 5vh;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.teampic-active {
+  opacity: 1;
+}
+
+mark.firstName {
+  font-weight: normal;
+  background-color: inherit;
+  color: inherit;
+}
+
+mark.lastName {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: inherit;
+}
+
+mark.jobtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.3em;
+  letter-spacing: 0.8em;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  left: 80vw;
+  height: 100vh;
+  width: 20vw;
+  z-index: 15;
+  display: table;
+}
+
+.sidebarMid {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 2em;
+}
+
+.sidebarText {
+  font-family: SanFrancisco, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  color: darkgrey;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 0em;
+}
+
+.sidebarText-active {
+  margin-left: -1em;
+  color: rgba(61,84,134,1);
+}
+
+.sidebarText:hover:not(.sidebarText-active) {
+  /*color: rgba(61,84,134,1);*/
+  color: rgba(116,142,193,1);
+  transition: 0.3s;
+}
+
+.herotext {
+  position: absolute;
+  z-index: 6;
+  top: -14%;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.megaTeamPic {
+  width: 75vw;
+  height: auto;
+  top: 0;
+  left: 0;
+  margin-top: 30vh;
+  margin-left: 2vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

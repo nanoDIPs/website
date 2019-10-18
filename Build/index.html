@@ -97,6 +97,22 @@
               class="lightbluetab">
               Closed Nanopores
       </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol103-tab"
+              tabindex="-1"
+              class="midbluetab"
+              id="Protocol103">
+              Agarose Gel
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol104-tab"
+              id="Protocol104"
+              tabindex="-1"
+              class="darkbluetab">
+              Visualise Gel
+      </button>
 
     </div>
     <div tabindex="0"
@@ -230,6 +246,88 @@
     </div>
 
   </div>
+
+  <div tabindex="0"
+       role="tabpanel"
+       id="Protocol103-tab"
+       aria-labelledby="Protocol103"
+       class="midbluetab"
+       hidden="">
+
+       <p>
+       Gel electrophoresis assays were used to test whether (1) the nanopores had been assembled,
+       (2) strand displacement reactions were functional, and (3) that the nanopore was being opened.
+       By visualising bands which correspond to particular DNA complexes, gel electrophoresis is capable of
+       providing insight into whether the modelled DNA-DNA and DNA-protein interactions were taking place.
+       </p>
+       <p>
+       <br>List of ingredients:
+       <ul>
+         <li>DNA samples</li>
+         <li>Agarose</li>
+         <li>x1TBE or x10TBE as preferred</li>
+         <li>Deionised water</li>
+         <li>Conical flask</li>
+         <li>SybrGold</li>
+         <li>Microwave oven</li>
+         <li>Mould for the gel</li>
+       </ul>
+       </p>
+       <p>
+       Procedure:
+       <ol>
+         <li>Dissolve agar into x1TBE in a conical flask</li>
+         <li>Heat the conical flask in a microwave for a few minutes until the fluid is entirely clear. Be careful to not superheat it as this can cause serious injury. The flask is very hot at this stage, so using heat resistant gloves to hold it is recommended.</li>
+         <li>5 µl of SybrSafe is added to every 50 ml of agar-TBE buffer in the heated conical flask. This is poured into the mould with the comb. The mould is left immersed in 150ml x1TBE until it solidifies. This usually takes about an hour.</li>
+       </ol>
+       </p>
+
+  </div>
+
+
+  <div tabindex="0"
+       role="tabpanel"
+       id="Protocol104-tab"
+       aria-labelledby="Protocol104"
+       class="darkbluetab"
+       hidden="">
+
+       <p>
+       Gel electrophoresis assays were used to test whether (1) the nanopores had been assembled,
+       (2) strand displacement reactions were functional, and (3) that the nanopore was being opened.
+       By visualising bands which correspond to particular DNA complexes, gel electrophoresis is capable of
+       providing insight into whether the modelled DNA-DNA and DNA-protein interactions were taking place.
+       </p>
+       <p>
+       <br>List of ingredients:
+       <ul>
+         <li>Prepared agarose gel</li>
+         <li>Running gel apparatus (horizontal tank, lid)</li>
+         <li>Power source and cables</li>
+         <li>ThermoFisher SybrGold (or equivalent)</li>
+         <li>Gel loading dye</li>
+         <li>UV/blue light illuminator</li>
+         <li>Typhoon FLA 9500 gel imager</li>
+         <li>Samples to be run</li>
+         <li>x1TBE running buffer</li>
+         <li>NEB low and/or high molecular weight ladder(s)</li>
+         <li>Milli-Q (i.e. ultrapure) water</li>
+       </ul>
+       </p>
+       <p>
+       Procedure:
+       <ol>
+         <li>Gently remove the gel from the mould and transfer into the BioRad tank. Gently remove the comb.</li>
+         <li>Fill the tank with x1TBE buffer so that it completely submerges the gel.</li>
+         <li>Stock DNA at 1 µM was diluted using Milli-Q water: 10 µl DNA sample + 2 µl water + 3 µl gel loading dye was pipetted into an eppendorf. 10ul of the resultant solution was loaded into the wells. Make sure to include at least 1 ladder: 0.5 µl of the ladder + 3 µl of gel loading dye + 11.5 µl of water was pipetted into an eppendorf. 10ul of the resultant solution was added to the wells. The stock gel loading dye was at x5 concentration.</li>
+         <li>Load the wells with 10 µl of the prepared sample by hovering the pipette tip just above the desired well. Ensure that you include a ladder (also mixed with gel loading dye).</li>
+         <li>Close the tank with its lid and the run the gel for example at 70V for 1 hour. When the bands have travelled a sufficient distance, the power source can be switched off.</li>
+         <li>Gently lift the gel out of the tank and visualise the SybrGold under UV or blue light.</li>
+       </ol>
+       </p>
+
+  </div>
+
 
 </div>
 
@@ -413,7 +511,7 @@
 <div id="CreatingPOCs" class="megadivProtocol">
 
   <h1>Building Peptide-Oligonucleotide Conjugates (POCs)</h1>
-  After having succesfully demonstrated the the DNA nanopores open upon detection of the key input and allow the passage of molecular cargoes across the membrane, we aimed todemonstrate the nanopores can be used to sense protein substrates. For this we designed nanoscale Peptide-Oligonucleotide Conjugates (nanoPOCs), covalent constructs that link oligodeoxinucleotides to a synthetic peptide sequences. These materials merge the programmable self-assembly of oligonucleotides with the bioactivity and chemical diversity of polypeptides (MacCullogh et al., 2019).
+  After having succesfully demonstrated the the DNA nanopores open upon detection of the key input and allow the passage of molecular cargoes across the membrane, we aimed to demonstrate the nanopores can be used to sense protein substrates. For this we designed nanoscale Peptide-Oligonucleotide Conjugates (nanoPOCs), covalent constructs that link oligodeoxinucleotides to a synthetic peptide sequences. These materials merge the programmable self-assembly of oligonucleotides with the bioactivity and chemical diversity of polypeptides (MacCullogh et al., 2019).
   NanoPOCs are composed of peptide sequences flanked by tandem DNA sequences that form defined tertiary structures.
   The ultimate goal of nanoPOCs is to leverage the unique advantages of each biomolecule into a chimeric molecule that allows DNA nanopores to sense proteins.
   <div class="tabs">
@@ -435,27 +533,27 @@
       </button>
       <button role="tab"
               aria-selected="false"
-              aria-controls="Protocol9-tab"
-              id="Protocol9"
+              aria-controls="Protocol10-tab"
+              id="Protocol10"
               tabindex="-1"
               class="lightbluetab">
-              Gel electrophoresis
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol10-tab"
-              class="midbluetab"
-              id="Protocol10"
-              tabindex="-1">
-              Making a PAGE gel
+              Make PAGE Gel
       </button>
       <button role="tab"
               aria-selected="false"
               aria-controls="Protocol11-tab"
-              class="darkbluetab"
+              class="midbluetab"
               id="Protocol11"
               tabindex="-1">
-              Running the gel
+              Run PAGE gel
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol12-tab"
+              class="darkbluetab"
+              id="Protocol12"
+              tabindex="-1">
+              Visualise PAGE gel
       </button>
     </div>
     <div tabindex="0"
@@ -505,47 +603,12 @@
            </ol>
          </p>
     </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol9-tab"
-         aria-labelledby="Protocol9"
-         class="lightbluetab"
-         hidden="">
 
-         <p>
-         Gel electrophoresis assays were used to test whether (1) the POC had been assembled,
-         (2) strand displacement reactions were functional, and (3) that the nanopore was being opened.
-         By visualising bands which correspond to particular DNA complexes, gel electrophoresis is capable of
-         providing insight into whether the modelled DNA-DNA and DNA-protein interactions were taking place.
-         </p>
-         <p>
-         <br>List of ingredients:
-         <ul>
-           <li>DNA samples</li>
-           <li>Agarose</li>
-           <li>x1TBE or x10TBE as preferred</li>
-           <li>Deionised water</li>
-           <li>Conical flask</li>
-           <li>SybrGold</li>
-           <li>Microwave oven</li>
-           <li>Mould for the gel</li>
-         </ul>
-         </p>
-         <p>
-         Procedure:
-         <ol>
-           <li>Dissolve agar into x1TBE in a conical flask</li>
-           <li>Heat the conical flask in a microwave for a few minutes until the fluid is entirely clear. Be careful to not superheat it as this can cause serious injury. The flask is very hot at this stage, so using heat resistant gloves to hold it is recommended.</li>
-           <li>5 µl of SybrSafe is added to every 50 ml of agar-TBE buffer in the heated conical flask. This is poured into the mould with the comb. The mould is left immersed in 150ml x1TBE until it solidifies. This usually takes about an hour.</li>
-         </ol>
-         </p>
-
-    </div>
     <div tabindex="0"
          role="tabpanel"
          id="Protocol10-tab"
          aria-labelledby="Protocol10"
-         class="midbluetab"
+         class="lightbluetab"
          hidden="">
          <p>
            Polyacrylamide gels are used to separate smaller fragments of DNA or reveal differences between lanes when the strands differ by a small number of base pairs. Polyacrylamide gels were made without any denaturing agent as described below.
@@ -614,15 +677,59 @@
          role="tabpanel"
          id="Protocol11-tab"
          aria-labelledby="Protocol11"
+         class="midbluetab"
+         hidden="">
+
+
+
+         List of ingredients:
+         <ul>
+           <li>Prepared polyacrylamide gel (PAGE)</li>
+           <li>Gel running apparatus (holder, cassette, vertical tank, lid)</li>
+           <li>A power source and cables</li>
+           <li>Gel loading dye</li>
+           <li>Samples to be run</li>
+           <li>PAGE running buffer</li>
+           <li>low and/or high molecular weight ladder(s)</li>
+           <li>Milli-Q (i.e. ultrapure) water</li>
+         </ul>
+
+         Procedure:
+         <ol>
+           <li>Remove the glass plates from the casting frame and load them into the BioRad running gel apparatus, in accordance with the manufacturer’s instructions. Briefly, keep the short glass facing inwards and slide the plates onto the BioRad holder. The holder can accommodate 2 sets of glass plates (ie 2 gels) at a time. Use a dummy mould (ie glass plates without any gel) if only running 1 gel. Place the loaded holder into the BioRad running cassette and clamp them into position.</li>
+           <li>Load this into the BioRad tank. Fill the inner chamber to the brim with running buffer. The inner chamber is the portion between the 2 sets of gel plates in the holder/casting cassette. (The outer chamber are the areas between the casting cassette and the walls of the tank)</li>
+           <li>The running buffer lubricates the comb, making it easier to gently remove the comb without disturbing the rest of the gel.</li>
+           <li>Stock DNA at 1 µM was diluted using Milli-Q water: 10 µl DNA sample + 2 µl water + 3 µl gel loading dye was pipetted into an eppendorf. 10ul of the resultant solution was loaded into the wells. Make sure to include at least 1 ladder: 0.5 µl of the ladder + 3 µl of gel loading dye + 11.5 µl of water was pipetted into an eppendorf. 10ul of the resultant solution was added to the wells. The stock gel loading dye was at x5 concentration</li>
+           <li>Load 10 µl of each prepared sample/ladder by inserting the tip of the pipette perpendicularly to the edge of the short glass plate, just above the desired well.</li>
+           <li>Top the buffer in the inner chamber. Fill the outer chamber in about 600 ml of x1TBE buffer (or x10TBE diluted with Milli-Q water) which is just enough to submerge the bottom of the casting cassette apparatus.</li>
+           <li>Close the reactor with its lid and run the gel for an appropriate amount of time. For instance, we ran a 25% PAGE at 90V for >1.5 hours. When the gel loading dye bands have travelled a sufficient distance across the gel, the power source can be turned off.</li>
+         </ol>
+
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="Protocol12-tab"
+         aria-labelledby="Protocol12"
          class="darkbluetab"
          hidden="">
-      <p>
-        Fear of complicated buildings:
-      </p>
-      <p>
-        A complex complex complex.
-      </p>
+
+         List of ingredients:
+         <ul>
+           <li>Prepared polyacrylamide gel (PAGE)</li>
+           <li>ThermoFisher SybrGold (or equivalent)</li>
+           <li>Milli-Q (i.e. ultrapure) water</li>
+           <li>Typhoon FLA 9000 gel imager</li>
+         </ul>
+
+         Procedure:
+         <ol>
+           <li>The gel is removed from the reactor and from the glass plate mould, carefully ensuring not to break the gel.</li>
+           <li>SybrGold binds the DNA, allowing it to be visualised. Dissolve 5ul x1000 stock of SybrGold dissolved in 50ml of x1TBE (or x10TBE diluted in Milli-Q water). Immerse the gel in this for about 40 minutes on a shaker.</li>
+           <li>Place the gel on a UV illuminator for a quick analysis of the position of the DNA bands. For a better quality readout of the position of DNA bands, use an instrument such as the Typhoon FLA 9500TM gel imager. A “SYPRO Ruby” filter on this instrument gave an optimal readout.</li>
+         </ol>
+
     </div>
+
   </div>
 </div>
 

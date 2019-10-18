@@ -46,7 +46,7 @@
   font-size: 1.5em;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: lighter;
-  color: rgba(180,180,180,1);
+  color: rgba(160,160,160,1);
   bottom: 15%;
   right: 7%;
   line-height: 2em;
@@ -73,7 +73,7 @@ h1 {
   text-transform: none;
   font-size: 1.7em;
   padding-bottom: 0.75em;
-  color: rgba(180,180,180,1);
+  color: rgba(160,160,160,1);
   font-weight: normal;
   width: 100%;
   border-bottom: 2px solid rgba(217,217,217,1);
@@ -82,7 +82,7 @@ h1 {
 }
 
 .megadivProtocol {
-  color: rgba(180,180,180,1);
+  color: rgba(160,160,160,1);
   font-size: 1.2em;
   font-family: SanFrancisco, Arial, sans-serif;
   font-weight: bolder;
