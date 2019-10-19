@@ -162,6 +162,8 @@
 <div id="NanoporeAssembly" class="megadivProtocol">
 
   <h1>Nanopore assembly</h1>
+  After demonstrating the formation of fluorophore-filled liposomes, we sought to confirm assembly of nanopores from oligonucleotides.
+  To achieve this we performed agarose gel electrophoresis.
 
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
@@ -178,15 +180,7 @@
               tabindex="-1"
               class="greytab"
               id="Protocol1">
-              Agarose Gel
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol5-tab"
-              id="Protocol5"
-              tabindex="-1"
-              class="lightbluetab">
-              Something else?
+              Gel Electrophoresis
       </button>
 
     </div>
@@ -206,18 +200,59 @@
          hidden="">
 
          Assaying nanopore assembly enabled understanding whether another basic building block of the design had been achieved.
-         Each of the 6 DNA strands that form the DNA nanopore barrel should hybridise with their neighbour. Therefore, in theory, strands 1&2, 2&3, 3&4, 4&5, 5&6 should anneal to each other in pairs. Strands 1&6 should also anneal, resulting in a continuous barrel structure. When each of these combinations of DNA strands are run separately on an agarose gel, the resultant DNA bands are positioned such that they correspond to the expected molecular weights upon annealing (FigXA, B).
-         Furthermore, when all 6 bands of DNA are annealed together, the resulting band of DNA barely moves out of the well (FigXB). This is in accordance with the prediction of the molecular weight for the open nanopore. A similar result is also obtained for the closed nanopore (FigXB), which additionally incorporates the lock DNA strand. However, simply incubating the 6 DNA strands together at room temperature, without annealing at 950C, results in a smear of DNA (FigXB). This smear occurs much farther away from the well and the position of the bands for the annealed closed and open nanopores. In fact, it appears within the range of much lower molecular weights for the pairs of DNA. This suggests that without annealing at 950C, the 6 DNA bands form varying combinations of hybrids but do not all anneal in the continuous barrel structure which would have resulted in a much higher molecular weight.
-         Taken together, this data demonstrates that the closed and open nanopores are likely to have annealed in accordance with theoretical design and modelling predictions
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol5-tab"
-         aria-labelledby="Protocol5"
-         class="lightbluetab"
-         hidden="">
+         Each of the 6 DNA strands that form the DNA nanopore barrel should hybridise with their neighbour. Therefore, in theory, strands 1&2, 2&3, 3&4, 4&5, 5&6 should anneal to each other in pairs. Strands 1&6 should also anneal, resulting in a continuous barrel structure.
+         When each of these combinations of DNA strands are run separately on an agarose gel, the resultant DNA bands are positioned such that they correspond to the expected molecular weights upon annealing (table below).
 
-         other pics?
+       <style type="text/css">
+       .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+       .tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
+       .tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+       @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+       <div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 494px">
+       <colgroup>
+       <col style="width: 121px">
+       <col style="width: 373px">
+       </colgroup>
+         <tr>
+           <td class="tg-xwyw"><span style="font-weight:bold">DNA Strands</span></td>
+           <td class="tg-xwyw"><span style="font-weight:bold">Expected Molecular Weights (no. bases)</span></td>
+         </tr>
+         <tr>
+           <td class="tg-xwyw">1&amp;2</td>
+           <td class="tg-xwyw">118</td>
+         </tr>
+         <tr>
+           <td class="tg-wp8o">2&amp;3</td>
+           <td class="tg-wp8o">118</td>
+         </tr>
+         <tr>
+           <td class="tg-wp8o">3&amp;4</td>
+           <td class="tg-wp8o">110</td>
+         </tr>
+         <tr>
+           <td class="tg-wp8o">4&amp;5</td>
+           <td class="tg-wp8o">118</td>
+         </tr>
+         <tr>
+           <td class="tg-wp8o">5&amp;6</td>
+           <td class="tg-wp8o">118</td>
+         </tr>
+         <tr>
+           <td class="tg-wp8o">6&amp;1</td>
+           <td class="tg-wp8o">100</td>
+         </tr>
+       </table></div>
+
+         Furthermore, when all 6 bands of DNA are annealed together, the resulting band of DNA barely moves out of the well (FigXB). This is in accordance with the prediction of the molecular weight for the open nanopore. A similar result is also obtained for the closed nanopore (FigXB), which additionally incorporates the lock DNA strand. However, simply incubating the 6 DNA strands together at room temperature, without annealing at 950C, results in a smear of DNA (FigXB). This smear occurs much farther away from the well and the position of the bands for the annealed closed and open nanopores. In fact, it appears within the range of much lower molecular weights for the pairs of DNA. This suggests that without annealing at 950C, the 6 DNA bands form varying combinations of hybrids but do not all anneal in the continuous barrel structure which would have resulted in a much higher molecular weight.
+
+         <img class="accordionFigure" src="assets\figures\gel.jpg">
+
+
+         Taken together, this data demonstrates that the closed and open nanopores are likely to have annealed in accordance with theoretical design and modelling predictions
+
+
     </div>
 
   </div>
@@ -239,16 +274,16 @@
       </button>
       <button role="tab"
               aria-selected="false"
-              aria-controls="Protocol6-tab"
+              aria-controls="Protocol5-tab"
               tabindex="-1"
               class="greytab"
-              id="Protocol6">
+              id="Protocol5">
               Embedding nanopores
       </button>
       <button role="tab"
               aria-selected="false"
-              aria-controls="Protocol7-tab"
-              id="Protocol7"
+              aria-controls="Protocol6-tab"
+              id="Protocol6"
               tabindex="-1"
               class="lightbluetab">
               Opening nanopores
@@ -265,8 +300,8 @@
     </div>
     <div tabindex="0"
          role="tabpanel"
-         id="Protocol6-tab"
-         aria-labelledby="Protocol6"
+         id="Protocol5-tab"
+         aria-labelledby="Protocol5"
          class="greytab"
          hidden="">
 
@@ -276,8 +311,8 @@
     </div>
     <div tabindex="0"
          role="tabpanel"
-         id="Protocol7-tab"
-         aria-labelledby="Protocol7"
+         id="Protocol6-tab"
+         aria-labelledby="Protocol6"
          class="lightbluetab"
          hidden="">
          <h2>Release of SRB from LUVs + closed nanopores</h2>
@@ -302,19 +337,11 @@
       </button>
       <button role="tab"
               aria-selected="false"
-              aria-controls="Protocol8-tab"
+              aria-controls="Protocol7-tab"
               tabindex="-1"
               class="greytab"
               id="Protocol8">
               Native PAGE
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol9-tab"
-              id="Protocol9"
-              tabindex="-1"
-              class="lightbluetab">
-              Something else?
       </button>
 
     </div>
@@ -328,23 +355,14 @@
     </div>
     <div tabindex="0"
          role="tabpanel"
-         id="Protocol8-tab"
+         id="Protocol7-tab"
          aria-labelledby="Protocol8"
          class="greytab"
          hidden="">
 
          <h2>Fig.7 Native PAGE showing strand displacement-mediated opening of NP-C</h2>
-
-
     </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol9-tab"
-         aria-labelledby="Protocol9"
-         class="lightbluetab"
-         hidden="">
-         Something else?
-    </div>
+
 
   </div>
 </div>
