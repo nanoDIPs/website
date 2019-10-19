@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- NAVBAR -->
-  <link rel="stylesheet" href="../assets/cssNavbarv1.css">
+  <!-- NAVBAR -->
+  <link rel="stylesheet" href="../assets/cssNavbarv1.css" />
   <ul id="navbar" class="navbar">
-    <li class="navbar"><a href="../"><img src="../assets/logo/smallLogo.png" class="logobgcol"></a></li>
-    <li class="navbar keepfirst"><a href="../Introduction/">Introduction</a></li>
+    <li class="navbar">
+      <a href="../"
+        ><img src="../assets/logo/smallLogo.png" class="logobgcol"
+      /></a>
+    </li>
+    <li class="navbar keepfirst">
+      <a href="../Introduction/">Introduction</a>
+    </li>
     <li class="navbar keepfirst"><a href="../Design/">Design</a></li>
     <li class="navbar keepfirst"><a href="../Build/">Build</a></li>
-    <li class="navbar keepfirst"><a class="activeNavbar" href="../Model/">Model</a></li>
+    <li class="navbar keepfirst">
+      <a class="activeNavbar" href="../Model/">Model</a>
+    </li>
     <li class="navbar keepfirst"><a href="../Test/">Test</a></li>
     <li class="navbar"><a href="../AboutUs/">About Us</a></li>
     <li class="navbar"><a href="../Journal/">Journal</a></li>
@@ -24,334 +31,566 @@
         <a href="../Sponsors/">Sponsors</a>
       </div>
     </li>
-
   </ul>
 
-<head>
-  <!-- basic.html -->
-  <link rel="stylesheet" href="../assets/generalStyle.css">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/tabsCSS.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  <br>
-  <br>
-  <title>Model</title>
-  <meta charset = "UTF-8" />
-</head>
+  <head>
+    <!-- basic.html -->
+    <link rel="stylesheet" href="../assets/generalStyle.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/tabsCSS.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"
+      async
+    ></script>
+    <br />
+    <br />
+    <title>Model</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<body>
-
-<div class="herotext">
-  Testing our ideas <br> through <mark class="midblue">simulations</mark>.
-</div>
-
-<div class="frontmenu">
-  <a href="#DrugDelivery" class="frontmenuitem">
-    Modelling Drug Delivery
-  </a>
-  <br>
-  <a href="#Kinetics" class="frontmenuitem">
-    Kinetics of the Reactions
-  </a>
-  <br>
-  <a href="#Tailored" class="frontmenuitem">
-    Tailored Drug Delivery
-  </a>
-</div>
-
-<div id="DrugDelivery" class="megadivProtocol">
-
-  <h1>Modelling Drug Delivery</h1>
-Our novel approach to targeted drug delivery has been investigated further by simulating a region of a capillary and surrounding tissue using a system of partial differential equations (PDEs). Through making reasonable assumptions and simplifications of the modelled system, solutions were generated to describe the behaviour of the drug-carrying liposomes when they reach a region where cancerous cells are present in the tissue.
-  <div class="tabs">
-    <div role="tablist" aria-label="Entertainment">
-      <button role="tab"
-              aria-selected="true"
-              aria-controls="HidePanel1-tab"
-              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal;"
-              id="HidePanel1">
-              -
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol1-tab"
-              tabindex="-1"
-              class="greytab"
-              id="Protocol1">
-              Forming the Model
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol2-tab"
-              id="Protocol2"
-              tabindex="-1"
-              class="lightbluetab">
-              Notation
-      </button>
-            <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol103-tab"
-              id="Protocol103"
-              tabindex="-1"
-              class="midbluetab">
-              Solving PDEs
-      </button>
-            <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol104-tab"
-              id="Protocol104"
-              tabindex="-1"
-              class="darkbluetab">
-              Binary Cancer Model
-      </button>
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="HidePanel1-tab"
-         aria-labelledby="HidePanel1"
-         style="padding:0">
-      <p>
-      </p>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol1-tab"
-         aria-labelledby="Protocol1"
-         class="greytab"
-         hidden="">
-
-        List of ingredients:
-        <ul>
-          <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-          <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-          <li>15 mM Tris (1.8171 mg per ml)</li>
-        </ul>
-
-        Procedure:
-        <ol>
-          <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-          <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-          </li>
-          <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-          </li>
-        </ol>
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol2-tab"
-         aria-labelledby="Protocol2"
-         class="lightbluetab"
-         hidden="">
-
-         List of ingredients:
-         <ul>
-           <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-           <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-           <li>15 mM Tris (1.8171 mg per ml)</li>
-         </ul>
-
-         Procedure:
-         <ol>
-           <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-           <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-           </li>
-           <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-           </li>
-         </ol>
-
+  <body>
+    <div class="herotext">
+      Testing our ideas <br />
+      through <mark class="midblue">simulations</mark>.
     </div>
 
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol103-tab"
-         aria-labelledby="Protocol103"
-         class="midbluetab"
-         hidden="">
-
-         List of ingredients:
-         <ul>
-           <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-           <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-           <li>15 mM Tris (1.8171 mg per ml)</li>
-         </ul>
-
-         Procedure:
-         <ol>
-           <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-           <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-           </li>
-           <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-           </li>
-         </ol>
-
+    <div class="frontmenu">
+      <a href="#DrugDelivery" class="frontmenuitem">
+        Modelling Drug Delivery
+      </a>
+      <br />
+      <a href="#Kinetics" class="frontmenuitem">
+        Kinetics of the Reactions
+      </a>
+      <br />
+      <a href="#Tailored" class="frontmenuitem">
+        Tailored Drug Delivery
+      </a>
     </div>
 
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol104-tab"
-         aria-labelledby="Protocol104"
-         class="darkbluetab"
-         hidden="">
+    <div id="DrugDelivery" class="megadivProtocol">
+      <h1>Modelling Drug Delivery</h1>
+      Our novel approach to targeted drug delivery has been investigated further
+      by simulating a region of a capillary and surrounding tissue using a
+      system of partial differential equations (PDEs). Through making reasonable
+      assumptions and simplifications of the modelled system, solutions were
+      generated to describe the behaviour of the drug-carrying liposomes when
+      they reach a region where cancerous cells are present in the tissue.
+      <div class="tabs">
+        <div role="tablist" aria-label="Entertainment">
+          <button
+            role="tab"
+            aria-selected="true"
+            aria-controls="HidePanel1-tab"
+            style="width: 4%;color:rgba(180,180,180,1);font-weight:normal;"
+            id="HidePanel1"
+          >
+            -
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol1-tab"
+            tabindex="-1"
+            class="greytab"
+            id="Protocol1"
+          >
+            Forming the Model
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol2-tab"
+            id="Protocol2"
+            tabindex="-1"
+            class="lightbluetab"
+          >
+            Notation
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol103-tab"
+            id="Protocol103"
+            tabindex="-1"
+            class="midbluetab"
+          >
+            Solving PDEs
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol104-tab"
+            id="Protocol104"
+            tabindex="-1"
+            class="darkbluetab"
+          >
+            Binary Cancer Model
+          </button>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="HidePanel1-tab"
+          aria-labelledby="HidePanel1"
+          style="padding:0"
+        >
+          <p></p>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol1-tab"
+          aria-labelledby="Protocol1"
+          class="greytab"
+          hidden=""
+        >
+          <img src="./assets/image1.png" alt="" />
+          <p>
+            Where the species in the system can be identified using table 1
+            below.
+          </p>
+          <img src="./assets/table1.png" alt="" />
+          <p>
+            Simplifications included examining the system as a one-dimensional
+            state, where a single capillary traversed space parallel to this
+            dimension, while surrounded by Extra Cellular Matrix (ECM). The flow
+            of species within the system was appropriately simplified based on
+            the following conditions:
+          </p>
+          <ul>
+            <li>
+              Steady flow rate of blood in the capillary across the length of
+              the region examined
+              <ul>
+                <li>
+                  A representative value for the velocity of blood in
+                  capillaries was used for all simulations of uC = 1 mm/s
+                  (Ivanov et al., 1981)
+                </li>
+              </ul>
+            </li>
+            <li>
+              No bulk flow in ECM (i.e. no convective transport of species) –
+              mass transport only via molecular diffusion in this region
+              <ul>
+                <li>
+                  Representative values for diffusivity of the species and
+                  regions considered are documented in table 2 – all assumed to
+                  be constant in space and time.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <img src="./assets/table2.png" alt="" />
+          <p>
+            <small>
+              * Due to the size of the liposomes produced (diameter = ~150 nm),
+              the order of magnitude for their diffusivity was based upon virus
+              cells of similar size.
+            </small>
+          </p>
+          <br />
+          <p>
+            Values for the drug in the system are based upon the Cisplatin
+            molecule currently used as a chemotherapy product. Values for
+            diffusivity in mammalian tissues are well documented in literature
+            and used accordingly for this model, however, finding values for
+            diffusivity in blood medium produced less relevant results. As in
+            the capillary region of the model, the order of magnitude of the
+            flow term present dominates the diffusion term (based on scaling
+            analysis of the governing PDE), it was less pertinent to find
+            accurate values for diffusivity in blood. It was therefore assumed
+            that the diffusivity increased 10-fold when in blood, compared to
+            ECM, due to being in fluid medium.
+          </p>
+          <br />
+          <p>
+            Representing the complex process of exchange between the two regions
+            in the system was critical. To minimise the complexity of modelling
+            these processes, exchange was idealised as a one-step process with a
+            constant rate coefficient describing it. Enabling the exchange
+            processes to be represented in the PDEs concisely. Documented below
+            is the rate coefficients used to describe the one-step exchanges and
+            other key behaviours in the system, again assumed to be constant in
+            space and time.
+          </p>
+          <img src="./assets/table3.png" alt="" />
+          <p>
+            The modelling of the exchange process was further simplified by not
+            considering the system in two/three dimensions. Avoiding the need to
+            describe stochastic Brownian motion that would be particularly
+            complex to predict in the ECM region. Therefore, once in the ECM,
+            the only possible behaviour possible is diffusion in the one
+            dimension considered, exchange into the capillary or interaction
+            between liposomes/drug molecules and protease.
+          </p>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol2-tab"
+          aria-labelledby="Protocol2"
+          class="lightbluetab"
+          hidden=""
+        >
+          <p>
+            The PDEs required to model the system’s dynamics were formulated
+            based on the general Convection-Diffusion Equation, with ‘reaction’
+            terms incorporated describing the production/destruction of the
+            species as they interact within the system.
+          </p>
+          <br />
+          <!-- TODO: EQUATIONS -->
+          <br />
+          <p>
+            The generalised form can then be simplified for our system, through
+            the assumption that blood is incompressible, removing the ∇ ⃑∙v ⃑
+            term. For blood flow in capillaries, it is not ideal to apply this
+            assumption, however, as the system is only examined in one-dimension
+            and the blood flow is assumed steady, the derivative of it will
+            still be zero if incompressibility was not assumed. As previously
+            noted, diffusivity of all species is constant in time and space,
+            removing the ∇ ⃑D term.
+          </p>
+          <br />
+          <p>
+            Reducing the equation above as described and formulating it for each
+            specie forms the basis of PDEs to be solved.
+          </p>
+          <br />
+          <!-- TODO: EQUATIONS -->
+          <p>
+            Diffusion is described in these equations by the diffusivity
+            multiplying the Laplacian of specie concentration, while the
+            convection is the dot product of bulk velocity and gradient of
+            specie concentration. The reaction terms, ‘R’, noted in these
+            equations, were mathematically formulated based on the reaction
+            pathways described in figure 2.
+          </p>
+          <img src="./assets/image2.png" alt="" />
+          <!-- TODO: EQUATIONS -->
+          <p>
+            R1 accounts for each liposome containing multiple drug molecules
+            through the 50k_OPEN [V_ECM ][P] term. The coefficient of 50 is
+            based upon calculating the internal volume of a liposome with 150 nm
+            diameter and finding the ratio of this with the volume of a
+            Cisplatin molecule with diameter 30 nm. As the ratio found doesn’t
+            account for the molecular forces between Cisplatin molecules,
+            leaving empty space within the liposome, and assumes that a liposome
+            is filled to maximum capacity when formed, the outputted value of
+            ~100 was reduced to reasonably account for these factors.
+          </p>
+          <br />
+          <p>
+            Therefore, using the two sets of equations developed, the dynamics
+            of the system can be described. These can be solved through applying
+            initial conditions for the concentrations of the species and
+            reasonable boundary conditions to describe the physical system,
+            producing the evolution of the five species’ concentration over a
+            set time period.
+          </p>
+        </div>
 
-         List of ingredients:
-         <ul>
-           <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-           <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-           <li>15 mM Tris (1.8171 mg per ml)</li>
-         </ul>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol103-tab"
+          aria-labelledby="Protocol103"
+          class="midbluetab"
+          hidden=""
+        >
+          <p>
+            With the system of equations established, solving them required
+            initial and boundary conditions to be defined.
+          </p>
+          <img src="./assets/table4.png" alt="" />
+          <img src="./assets/table5.png" alt="" />
+          <p>
+            With these conditions the solver can now evaluate the concentration
+            of each specie across the domain of each instance of time
+            considered, outputting the desired dynamics. Referring to the system
+            of PDEs, both the first and second order spatial derivatives need to
+            be calculated, as well as calculating the reaction terms.
+          </p>
+          <br />
+          <p>
+            For the solver developed in this project, a forward-difference
+            method of calculating first order derivatives was not compatible.
+            However, Newton’s difference quotient can still be used by utilising
+            a backward-difference approach, as shown below, because this
+            produces identical derivative calculations when the step size is
+            suitably small and was compatible with our solver.
+          </p>
+          <br />
+          <!-- TODO: EQUATIONS -->
+          <p>
+            With the second order derivatives calculated in a similar way,
+            avoiding limitations of the numerical solving approach through the
+            appropriate boundary conditions when points (x + h) and (x – h) do
+            not exist. The functions in these definitions represent the
+            concentration of the specie being examined at the specific spatial
+            point. Therefore, these are the values of the concentration at that
+            specific time instance, known through calculating the changes in
+            their value at each time point evaluated, starting at the initial
+            values provided.
+          </p>
+          <br />
+          <p>
+            The reaction terms can simply be calculated using the concentration
+            values known for that time instance. With these steps completed,
+            ∂f/∂t can be calculated by inputting the calculated values for the
+            unknowns into the PDE (previously described) for each specie.
+            Concentrations are then known for the t+n (where n is the constant
+            time step size) time instance through the ∂f/∂t values calculated at
+            the previous time instance and this process can be iteratively
+            completed for the time period specified.
+          </p>
+        </div>
 
-         Procedure:
-         <ol>
-           <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-           <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-           </li>
-           <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-           </li>
-         </ol>
-
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol104-tab"
+          aria-labelledby="Protocol104"
+          class="darkbluetab"
+          hidden=""
+        >
+          <p>
+            To add a dynamic cancer presence in the model, a ‘binary’ tumour was
+            introduced into the ECM that was initialised as active at specified
+            spatial points for t = 0. Protease concentration at points with an
+            active tumour state will increase at a constant rate, simulating the
+            production of the protease (biomarkers for our drug delivery method)
+            by cancer cells. As the protease concentration rises, it may reach
+            the threshold value to activate an adjacent point/’cell’ into
+            switching to an active tumour state/’cancer cell’, producing an
+            idealised cancer growth description. The values designated for
+            production rate and threshold for spreading were based on giving
+            quantitative ‘cancer’ growth during the run time of the simulation
+            to demonstrate the dynamics of in vivo interactions between our
+            technology and a cancer.
+          </p>
+          <br />
+          <p>
+            HOW IS CANCER STATE SWITCHED OFF? DRUG CONC AT THAT POINT -> DRUG
+            RELEASE KINETICS DESCRIBED BY STRAND DISPLACEMENT MODELLING AND
+            VERIFIED WITH LAB DATA
+          </p>
+          <br />
+          <p>
+            Cancerous cell death in the presence of the medicinal drug was
+            represented by the tumour state being deactivated, determined
+            through evaluating drug concentration against a threshold for
+            medicinal activity across every point in space.
+          </p>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <div id="Kinetics" class="megadivProtocol">
+      <h1>Kinetics of the Reactions</h1>
+      The kinetics of this strand-displacement reaction was based on the methods
+      described by 'Control of DNA Strand Displacement Kinetics using Toehold
+      Exchange' (Winfree & Zhang 2008). The simulations were carried out for two
+      different example toeholds we could use. These are:
+      <br />
+      <br />
+      TH-1: AGCAAGAAGAGTGAG <br />
+      TH-3: TAGTACGAGAC
+      <div class="tabs">
+        <div role="tablist" aria-label="Entertainment">
+          <button
+            role="tab"
+            aria-selected="true"
+            aria-controls="HidePanel2-tab"
+            style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
+            id="HidePanel2"
+          >
+            -
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol4-tab"
+            tabindex="-1"
+            class="greytab"
+            id="Protocol1"
+          >
+            Notation
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol5-tab"
+            id="Protocol5"
+            tabindex="-1"
+            class="lightbluetab"
+          >
+            Theory
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol6-tab"
+            class="midbluetab"
+            id="Protocol6"
+            tabindex="-1"
+          >
+            Toehold Simulations
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol7-tab"
+            class="darkbluetab"
+            id="Protocol7"
+            tabindex="-1"
+          >
+            Strong Vs. Weak
+          </button>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="HidePanel2-tab"
+          aria-labelledby="HidePanel2"
+          style="padding:0"
+        >
+          <p></p>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol4-tab"
+          aria-labelledby="Protocol4"
+          class="greytab"
+          hidden=""
+        >
+          Greek letters are used to denote a domain (a group of consecutive
+          nucleotides) and a bar above indicates the complement to that domain.
+          Furthermore, a domain can be split further into superscripts and
+          subscripts. A superscript of n indicates the n bases that are closes
+          to the 5' part of the domain and subscript of n indicates all the
+          other bases. For example a domain \( \beta \) can be used to describe
+          5'-ACTGACGTACATGGA-3', which we can further split into: $$
+          \overbrace{\underbrace{ACTGAC}_{\beta^{6}}
+          \underbrace{GTACATGGA}_{\beta_{6}}}^{\beta} $$
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol5-tab"
+          aria-labelledby="Protocol5"
+          class="lightbluetab"
+          hidden=""
+        >
+          In this model, the biophysics of the toehold exchange process is
+          established in 3 steps: $$ X(m,n) + S \ \overset{k_{f1}}{
+          \underset{k_{r(\gamma^n )}}{\rightleftharpoons}} \ I(m,n) \
+          \overset{k_{b}}{ \underset{k_{b}}{\rightleftharpoons}} \ J(m,n) \
+          \overset{k_{r(\beta ^m)}}{ \underset{k_{f2}}{\rightleftharpoons}} \ Y
+          + L(m,n) $$ In the 1st step, an invading strand \( X(m,n) \) binds to
+          the substrate complex by toehold \( \bar{\gamma} ^n\). This is called
+          the invading toehold. This reaction forms an Intermediate \( I(m,n) \)
+          which represents all the branch migration states in which \( Y \) is
+          bound to more bases of \( \bar{\beta}_m \) (i.e. \( X(m,n) \) is in
+          the process of displacing \( Y \)). The second intermediate state \(
+          J(m,n) \) conversely represents the states in which \( X(m,n) \) is
+          bound to more bases of \( \beta_m \) (i.e. strand has been more than
+          halfway displaced). After this stage, the toehold \( \beta^m \)
+          dissociates and the forward reaction is complete, with the strand
+          having been displaced.
 
-</div>
+          <br />
+          <br />
 
-<div id="Kinetics" class="megadivProtocol">
+          In this reaction, the rate constants \( k_{f1} \) and \( k_{f2} \)
+          quantify the rates at which \( \gamma^n \) and \( \beta^m \) bind to
+          their respective complements. Winfree assumes that they are equal to
+          each other and denotes the overall hybridization rate \( k_f \) with a
+          value of approximately \(3.5 \times 10^6 M^{-1} s^{-1} \). Note that
+          this constant (along with \( k_b \)) is dependent on various features
+          such as salt concentrations, temperatures and domain
+          length/composition. Despite not being exactly accurate for our
+          purposes, it provides a good approximation for this process.
 
-  <h1>Kinetics of the Reactions</h1>
-  The kinetics of this strand-displacement reaction was based on the methods described by 'Control of DNA Strand Displacement Kinetics using Toehold Exchange' (Winfree & Zhang 2008). The simulations were carried out for two different example toeholds we could use. These are:
-  <br>
-  <br>
-  TH-1: AGCAAGAAGAGTGAG <br>
-  TH-3: TAGTACGAGAC
-  <div class="tabs">
-    <div role="tablist" aria-label="Entertainment">
-      <button role="tab"
-              aria-selected="true"
-              aria-controls="HidePanel2-tab"
-              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
-              id="HidePanel2">
-              -
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol4-tab"
-              tabindex="-1"
-              class="greytab"
-              id="Protocol1">
-              Notation
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol5-tab"
-              id="Protocol5"
-              tabindex="-1"
-              class="lightbluetab">
-              Theory
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol6-tab"
-              class="midbluetab"
-              id="Protocol6"
-              tabindex="-1">
-              Toehold Simulations
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol7-tab"
-              class="darkbluetab"
-              id="Protocol7"
-              tabindex="-1">
-              Strong Vs. Weak
-      </button>
+          <br />
+          <br />
+
+          The first order rates at which the toeholds dissociate are given by:
+          $$ k_{r(\gamma)} = k_{f1} \times \frac{2}{b-m} \times e^{\frac{\Delta
+          G(\gamma^n)}{RT}} $$ where the \( b-m \) term (the length of the \(
+          \beta_m \) domain) ensures that the relative concentrations at
+          equilibrium are accurate and the binding energy is calculated using
+          'The Thermodynamics of DNA Structural Motifs' (Hicks and Santa Lucia
+          Jr. 2004). The expression for \( k_{r(\gamma^m)} \) is similar to
+          this.
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol6-tab"
+          aria-labelledby="Protocol6"
+          class="midbluetab"
+          hidden=""
+        >
+          <p>
+            Despite being modelled as a 3-step process, it has been shown (Mills
+            & Yurke 2004) that toehold-mediated strand displacement can be
+            approximated by bimolecular reactions with second-order rate
+            constants. This can be displayed as: $$ X(m,n) + S \quad
+            \overset{k_{(\beta^m, \beta_m, \gamma^n)}}{ \underset{k_{(\gamma^n,
+            \beta_m, \beta^m}}{\rightleftharpoons}} \quad Y + L(m,n) $$ where
+            these rate constants are related to the constants defined previously
+            by: $$k_{(\beta^m, \beta_m, \gamma^n)} \equiv \frac{k_{r(\beta^m)}
+            k_f k_b}{k_{r(\gamma^n)}k_{r(\beta^m)} + k_{r(\gamma^n)}k_b +
+            k_{r(\gamma^m)}k_b} $$ To ensure that these simulations are accurate
+            to within 50%, the concentration of \( X(m,n) \) must be kept below
+            a certain critical concentration which for our purposes is \( 100nM
+            - 1\mu M \). Below is a simulation of this process with the rate
+            constants calculated for the two different toeholds: <br />
+            <img
+              style="display:block;margin-left: auto; margin-right: auto"
+              src="assets\toeholds.png"
+            />
+          </p>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol7-tab"
+          aria-labelledby="Protocol7"
+          class="darkbluetab"
+          hidden=""
+        >
+          <p>
+            The rate of this reaction also strongly depends on the composition
+            of the toehold. Most estimates are made using mixed teoholds but
+            toeholds can also be assigned as strong (exclusively G/C pairs) and
+            weak (exclusively A/T). This results in a quantifiable difference in
+            binding energy and therefore reaction rates due to the difference in
+            number of Hydrogen bonds.
+            <br />
+            For the purposes of illustrating this difference, below is plotted
+            the reaction rates for two domains of length m=6 with one composed
+            of only G/C pairs and the other only with A/T pairs. It is clear to
+            see that after 3 seconds there is a distinct difference in the rate
+            at which this reaction occurs. <br />
+          </p>
+          <br />
+          <p>
+            <img
+              style="display:block;margin-left: auto; margin-right: auto"
+              src="assets\strongweak.png"
+            />
+          </p>
+        </div>
+      </div>
     </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="HidePanel2-tab"
-         aria-labelledby="HidePanel2"
-         style="padding:0">
-      <p>
-      </p>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol4-tab"
-         aria-labelledby="Protocol4"
-         class="greytab"
-         hidden="">
-      Greek letters are used to denote a domain (a group of consecutive nucleotides) and a bar above indicates the complement to that domain. Furthermore, a domain can be split further into superscripts and subscripts. A superscript of n indicates the n bases that are closes to the 5' part of the domain and subscript of n indicates all the other bases.
-      For example a domain  \( \beta \)  can be used to describe 5'-ACTGACGTACATGGA-3', which we can further split into:
 
-      $$ \overbrace{\underbrace{ACTGAC}_{\beta^{6}} \underbrace{GTACATGGA}_{\beta_{6}}}^{\beta} $$
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol5-tab"
-         aria-labelledby="Protocol5"
-         class="lightbluetab"
-         hidden="">
-
-        In this model, the biophysics of the toehold exchange process is established in 3 steps:
-      $$ X(m,n) + S \ \overset{k_{f1}}{ \underset{k_{r(\gamma^n )}}{\rightleftharpoons}} \ I(m,n) \ \overset{k_{b}}{ \underset{k_{b}}{\rightleftharpoons}} \ J(m,n)  \ \overset{k_{r(\beta ^m)}}{ \underset{k_{f2}}{\rightleftharpoons}} \ Y + L(m,n) $$
-      In the 1st step, an invading strand \( X(m,n) \) binds to the substrate complex by toehold \( \bar{\gamma} ^n\). This is called the invading toehold. This reaction forms an Intermediate \( I(m,n) \) which represents all the branch migration states in which \( Y \) is bound to more bases of \( \bar{\beta}_m \) (i.e. \( X(m,n) \) is in the process of displacing \( Y \)). The second intermediate state \( J(m,n) \) conversely represents the states in which \( X(m,n) \) is bound to more bases of \( \beta_m \) (i.e. strand has been more than halfway displaced). After this stage, the toehold \( \beta^m \) dissociates and the forward reaction is complete, with the strand having been displaced.
-
-      <br>
-      <br>
-
-
-      In this reaction, the rate constants \( k_{f1} \) and \( k_{f2} \) quantify the rates at which \( \gamma^n \) and \( \beta^m \) bind to their respective complements. Winfree assumes that they are equal to each other and denotes the overall hybridization rate \( k_f \) with a value of approximately \(3.5 \times 10^6 M^{-1} s^{-1} \).
-Note that this constant (along with \( k_b \)) is dependent on various features such as salt concentrations, temperatures and domain length/composition. Despite not being exactly accurate for our purposes, it provides a good approximation for this process.
-
-        <br>
-        <br>
-
-      The first order rates at which the toeholds dissociate are given by:
-      $$ k_{r(\gamma)} = k_{f1} \times \frac{2}{b-m} \times e^{\frac{\Delta G(\gamma^n)}{RT}} $$
-
-      where the \( b-m \) term (the length of the \( \beta_m \) domain) ensures that the relative concentrations at equilibrium are accurate and the binding energy is calculated using 'The Thermodynamics of DNA Structural Motifs' (Hicks and Santa Lucia Jr. 2004). The expression for \( k_{r(\gamma^m)} \) is similar to this.
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol6-tab"
-         aria-labelledby="Protocol6"
-         class="midbluetab"
-         hidden="">
-      <p>
-      Despite being modelled as a 3-step process, it has been shown (Mills & Yurke 2004) that toehold-mediated strand displacement can be approximated by bimolecular reactions with second-order rate constants. This can be displayed as:
-        $$ X(m,n) + S \quad \overset{k_{(\beta^m, \beta_m, \gamma^n)}}{ \underset{k_{(\gamma^n, \beta_m, \beta^m}}{\rightleftharpoons}} \quad Y + L(m,n) $$
-        where these rate constants are related to the constants defined previously by:
-        $$k_{(\beta^m, \beta_m, \gamma^n)} \equiv \frac{k_{r(\beta^m)} k_f k_b}{k_{r(\gamma^n)}k_{r(\beta^m)} + k_{r(\gamma^n)}k_b + k_{r(\gamma^m)}k_b} $$
-
-        To ensure that these simulations are accurate to within 50%, the concentration of \( X(m,n) \) must be kept below a certain critical concentration which for our purposes is \( 100nM - 1\mu M \).
-        Below is a simulation of this process with the rate constants calculated for the two different toeholds: <br>
-        <img style="display:block;margin-left: auto; margin-right: auto" src="assets\toeholds.png">
-      </p>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol7-tab"
-         aria-labelledby="Protocol7"
-         class="darkbluetab"
-         hidden="">
-      <p>
-      The rate of this reaction also strongly depends on the composition of the toehold. Most estimates are made using mixed teoholds but toeholds can also be assigned as strong (exclusively G/C pairs) and weak (exclusively A/T). This results in a quantifiable difference in binding energy and therefore reaction rates due to the difference in number of Hydrogen bonds.
-        <br>
-        For the purposes of illustrating this difference, below is plotted the reaction rates for two domains of length m=6 with one composed of only G/C pairs and the other only with A/T pairs. It is clear to see that after 3 seconds there is a distinct difference in the rate at which this reaction occurs. <br>
-      </p>
-      <br>
-      <p>
-        <img style="display:block;margin-left: auto; margin-right: auto" src="assets\strongweak.png">
-      </p>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript" src="assets/tabsJS.js"></script>
-<script type="text/javascript" src="../assets/navbarScript.js"></script>
-
-
-</body>
+    <script type="text/javascript" src="assets/tabsJS.js"></script>
+    <script type="text/javascript" src="../assets/navbarScript.js"></script>
+  </body>
 </html>
