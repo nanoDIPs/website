@@ -106,7 +106,7 @@
             tabindex="-1"
             class="lightbluetab"
           >
-            Notation
+            Theory
           </button>
           <button
             role="tab"
@@ -146,12 +146,12 @@
           class="greytab"
           hidden=""
         >
-          <img src="./assets/image1.png" alt="" />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/image1.png" alt="" />
           <p>
             Where the species in the system can be identified using table 1
             below.
           </p>
-          <img src="./assets/table1.png" alt="" />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table1.png" alt="" />
           <p>
             Simplifications included examining the system as a one-dimensional
             state, where a single capillary traversed space parallel to this
@@ -183,7 +183,7 @@
               </ul>
             </li>
           </ul>
-          <img src="./assets/table2.png" alt="" />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table2.png" alt="" />
           <p>
             <small>
               * Due to the size of the liposomes produced (diameter = ~150 nm),
@@ -216,20 +216,7 @@
             other key behaviours in the system, again assumed to be constant in
             space and time.
           </p>
-          <img src="./assets/table3.png" alt="" />
-          <p>
-            *This value (and the other exchange rate coefficients) are based on 
-            the work oh Koh et al. (2003) and should reasonably describe the rate 
-            of the drug exchange across the boundary of the two regions. It has 
-            been assumed that the rate of exchange of the liposomes is an order of 
-            magnitude slower due to its larger size and that the forward and 
-            backward rates are equal, which has its limitations due to knowing that
-            the concentration gradient between the two regions will influence the 
-            rate of exchange (Fick’s First Law). However, for the purposes of the 
-            model, it is likely to not influence the overall dynamics significantly 
-            to spend time on during this project. 
-          </p>
-          <br />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table3.png" alt="" />
           <p>
             The modelling of the exchange process was further simplified by not
             considering the system in two/three dimensions. Avoiding the need to
@@ -254,7 +241,7 @@
             terms incorporated describing the production/destruction of the
             species as they interact within the system.
           </p>
-          <img src="./assets/eqn1.png" alt="" />
+          $$ \frac{\partial C}{\partial t} = \vec{\nabla} \cdot (\vec{\nabla} C) - \vec{\nabla} \cdot (\vec{v}C) + R \ \xrightarrow{Simplify} \ \frac{\partial C}{\partial t} = D \vec{\nabla}^2 C -\vec{v} \cdot \vec{\nabla} C + R $$
           <p>
             The generalised form can then be simplified for our system, through
             the assumption that blood is incompressible, removing the divergence
@@ -272,7 +259,16 @@
             Reducing the equation above as described and formulating it for each
             specie forms the basis of PDEs to be solved.
           </p>
-          <img src="./assets/eqn2.png" alt="" />
+          $$
+
+
+          \frac{\partial d_{ECM}}{\partial t} = D_{d-ECM} \nabla^2 (d_{ECM}) + R_1 \\
+          \frac{\partial d_{C}}{\partial t} = D_{d-C} \nabla^2 (d_{C}) - \vec{u} \cdot \vec{\nabla}{d_C} + R_1 \\
+          \frac{\partial L_{ECM}}{\partial t} = D_{L-ECM} \nabla^2 (L_{ECM}) + R_3 \\
+          \frac{\partial L_{C}}{\partial t} = D_{L-C} \nabla^2 (L_{C}) - \vec{u} \cdot \vec{\nabla}{L_C} + R_4 \\
+          \frac{\partial P}{\partial t} = D_{P} \nabla^2 (P) + R_5
+
+          $$
           <p>
             Diffusion is described in these equations by the diffusivity
             multiplying the Laplacian of specie concentration, while the
@@ -281,8 +277,14 @@
             equations, were mathematically formulated based on the reaction
             pathways described in figure 2.
           </p>
-          <img src="./assets/image2.png" alt="" />
-          <img src="./assets/eqn3new.PNG" alt="" />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/image2.png" alt="" />
+          $$
+          R_1 = \frac{d(d_{ECM})}{dt} = k_{d-Ex-ECM}(d_C) - k_{d-Ex-ECM} (d_{ECM}) + 50k_{OPEN}(L_{ECM})P - death_d (d_{ECM}) + death_L (L_{ECM}) \\
+          R_2 = \frac{d(d_{C})}{dt} = k_{d-Ex-C}(d_{ECM}) - k_{d-Ex-ECM} (d_C) - death_d (d_C) + death_L (L_C) \\
+          R_3 = \frac{d(L_{ECM})}{dt} = k_{L-Ex-C}(L_C) - k_{L-Ex-C} (L_{ECM}) + k_{OPEN}(L_{ECM})P -  death_L (L_{ECM}) \\
+          R_4 = \frac{d(L_{C})}{dt} = k_{L-Ex-C}(L_{ECM}) - k_{L-Ex-ECM} (L_C) -  death_L (L_C) \\
+          R_5 = \frac{dP}{dt} = \{Tumour state \} k_{P-Prod}
+          $$
           <p>
             The first reaction term accounts for each liposome containing
             multiple drug molecules through multiplying the second order term by
@@ -318,8 +320,8 @@
             With the system of equations established, solving them required
             initial and boundary conditions to be defined.
           </p>
-          <img src="./assets/table4.png" alt="" />
-          <img src="./assets/table5.png" alt="" />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table4.png" alt="" />
+          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table5.png" alt="" />
           <p>
             With these conditions the solver can now evaluate the concentration
             of each specie across the domain of each instance of time
@@ -336,7 +338,10 @@
             produces identical derivative calculations when the step size is
             suitably small and was compatible with our solver.
           </p>
-          <img src="./assets/eqn4.png" alt="" />
+          $$
+          f'(x) = \lim_{\delta x \rightarrow 0} \left\{ \frac{f (x + \delta x)-f(x)}{\delta x}\right\} \\
+          f''(x) = \lim_{\delta x \rightarrow 0} \left\{ \frac{f (x + \delta x) + f(x - \delta x) -2f(x)}{{\delta x}^2}\right\}
+          $$
           <p>
             With the second order derivatives calculated in a similar way,
             avoiding limitations of the numerical solving approach through the
