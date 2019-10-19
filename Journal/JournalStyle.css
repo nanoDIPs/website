@@ -103,22 +103,21 @@ h6 {
 .monthbox {
   position: fixed;
   top: 80px;
-  left: 30vw;
+  left: 25vw;
   margin: 0;
   text-align: center;
-  opacity: 0;
   font-size: 2em;
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 1em;
   z-index: 3;
-  width: 40vw;
+  width: 50vw;
   height:10vh;
-  color: rgba(116,142,193,1);
+  color: rgba(116,142,193,0.5);
 }
 
 .monthbox-active {
-  opacity: 1;
+  color: rgba(116,142,193,1);
 }
 
 .daybox {
