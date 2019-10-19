@@ -205,10 +205,10 @@
 
        <style type="text/css">
        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-       .tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
-       .tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+       .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+       .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+       .tg .tg-wp8o{border-color:white;text-align:center;vertical-align:top}
+       .tg .tg-xwyw{border-color:white;text-align:center;vertical-align:middle}
        @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
        <div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 494px">
        <colgroup>
@@ -261,7 +261,9 @@
 <div id="FluorophoreRelease" class="megadivProtocol">
 
   <h1>Nanopore-mediated release of fluorophore</h1>
-  We perfomed kinetic fluorescent spectrospy experiments to demonstrate that SRB can be released from our engineered lipsomes.
+  After having confirmed that we could form liposomes and assemble DNA nanopores, we had to demonstrate the we could embed the nanopores in the membrane of the vesicles.
+  Then we had to prove that molecules could pass through the pore of the DNA nanopore and be released in the extra-vesicular space.
+  We thus perfomed kinetic fluorescent spectroscopy experiments to demonstrate that SRB can be released from our nanopore-equipped liposomes.
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -333,8 +335,7 @@
 <div id="StrandDisplacement" class="megadivProtocol">
 
   <h1>Strand displacement-mediated opening</h1>
-  We tested whether our key strand could displace the lock from the nanopore and thus make it open.
-  <div class="tabs">
+  Having demonstrated that each of the building blocks of the design (such as the DNA nanopores and the liposomes) were functional, we approached our final goal: demonstrating our novel mechanism of triggering the nanopore to open. Towards this aim, we devised 2 separate  experiments:
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
               aria-selected="true"
@@ -349,7 +350,7 @@
               tabindex="-1"
               class="greytab"
               id="Protocol7">
-              Native PAGE
+              Strand Displacement
       </button>
 
     </div>
@@ -367,9 +368,10 @@
          aria-labelledby="Protocol8"
          class="greytab"
          hidden="">
+         Firstly, we checked the functionality of the strand displacement reactions that would be triggered downstream of the protease cleavage. Here, the key DNA strand was annealed to another strand with a toehold. The addition of a ‘complement’ DNA lead in the key being released (FigX). The released key is then able to bind the modified toehold on the lock, and invades to displace the lock, thereby opening the previously closed nanopore.
          <h2>Fig.7 Native PAGE showing strand displacement-mediated opening of NP-C</h2>
          <img class="accordionFigure" src="assets\figures\fig7-page.png">
-         Strand displacement mediated opening of DNA nanopore. A 25% polyacrylamide gel was used. In lane 4, the complement (C) strand would theoretically bind the toehold (T), displacing the key (K). This would allow the key to bind the lock strand. As a result, DNA bands corresponding to the following complexes should be visible: 21bp toehold-complement hybrid (K-T) and 88bp lock-key hybrid (L-K). Lanes 1-3 are controls. T-C = annealed toehold and complement DNA strands; L-K = annealed lock and key DNA strands; NPC = annealed closed nanopore; K-T = annealed key and toehold DNA strands; C = complement DNA strand. DNA strands were annealed in a PCR thermocycler as described in the Build page.
+         Strand displacement mediated opening of DNA nanopore. A 25% polyacrylamide gel was used. In lane 4, the complement (C) strand would theoretically bind the toehold (T), displacing the key (K). This would allow the key to bind the lock strand. As a result, DNA bands corresponding to the following complexes should be visible: 21bp toehold-complement hybrid (K-T) and 88bp lock-key hybrid (L-K). Lanes 1-3 are controls. T-C = annealed toehold and complement DNA strands; L-K = annealed lock and key DNA strands; NPC = annealed closed nanopore; K-T = annealed key and toehold DNA strands; C = complement DNA strand. DNA strands were annealed in a PCR thermocycler as described in the (<a href="..\Build\index.html">Build</a>) page.
 
     </div>
 
