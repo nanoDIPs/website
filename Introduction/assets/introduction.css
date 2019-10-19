@@ -36,8 +36,11 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;
   font-family: SanFrancisco, Arial, sans-serif;
-  font-size: 1.2em;
-  color: rgba(180,180,180,1)
+  font-size: 1.25em;
+  color: rgba(160,160,160,1);
+  line-height: 2em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 h1 {
@@ -237,4 +240,10 @@ p.nanoDIPsText {
 mark.midblue {
   color: rgba(116,142,193,1);
   background-color: inherit;
+}
+
+mark.midbluebold {
+  color: rgba(116,142,193,1);
+  background-color: inherit;
+  font-weight: bold;
 }
