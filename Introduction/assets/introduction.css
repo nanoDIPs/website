@@ -154,8 +154,8 @@ p.nanoDIPsText {
   background-color: none;
   width: 48vw;
   top: 15vh;
-
-  font-size: 1.3em;
+  line-height: 1.5em;
+  font-size: 1.4em;
   color: rgba(150,150,150,1);
 }
 
