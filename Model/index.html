@@ -106,7 +106,7 @@
             tabindex="-1"
             class="lightbluetab"
           >
-            Notation
+            Mathematical Descriptions
           </button>
           <button
             role="tab"
@@ -166,8 +166,8 @@
               <ul>
                 <li>
                   A representative value for the velocity of blood in
-                  capillaries was used for all simulations of uC = 1 mm/s
-                  (Ivanov et al., 1981)
+                  capillaries was used for all simulations of u = 1 mm/s (Ivanov
+                  et al., 1981)
                 </li>
               </ul>
             </li>
@@ -241,26 +241,25 @@
             terms incorporated describing the production/destruction of the
             species as they interact within the system.
           </p>
-          <br />
-          <!-- TODO: EQUATIONS -->
-          <br />
+          <img src="./assets/eqn1.png" alt="" />
           <p>
             The generalised form can then be simplified for our system, through
-            the assumption that blood is incompressible, removing the ∇ ⃑∙v ⃑
-            term. For blood flow in capillaries, it is not ideal to apply this
-            assumption, however, as the system is only examined in one-dimension
-            and the blood flow is assumed steady, the derivative of it will
-            still be zero if incompressibility was not assumed. As previously
-            noted, diffusivity of all species is constant in time and space,
-            removing the ∇ ⃑D term.
+            the assumption that blood is incompressible, removing the divergence
+            of velocity term. For blood flow in capillaries, it is not ideal to
+            apply this assumption, however, as the system is only examined in
+            one-dimension and the blood flow is assumed steady, the derivative
+            of it will still be zero if incompressibility was not assumed. As
+            previously noted, diffusivity of all species is constant in time and
+            space, removing the gradient of diffusivity term. Reducing the
+            equation above as described and formulating it for each specie forms
+            the basis of PDEs to be solved.
           </p>
           <br />
           <p>
             Reducing the equation above as described and formulating it for each
             specie forms the basis of PDEs to be solved.
           </p>
-          <br />
-          <!-- TODO: EQUATIONS -->
+          <img src="./assets/eqn2.png" alt="" />
           <p>
             Diffusion is described in these equations by the diffusivity
             multiplying the Laplacian of specie concentration, while the
@@ -270,17 +269,18 @@
             pathways described in figure 2.
           </p>
           <img src="./assets/image2.png" alt="" />
-          <!-- TODO: EQUATIONS -->
+          <img src="./assets/eqn3.png" alt="" />
           <p>
-            R1 accounts for each liposome containing multiple drug molecules
-            through the 50k_OPEN [V_ECM ][P] term. The coefficient of 50 is
-            based upon calculating the internal volume of a liposome with 150 nm
-            diameter and finding the ratio of this with the volume of a
-            Cisplatin molecule with diameter 30 nm. As the ratio found doesn’t
-            account for the molecular forces between Cisplatin molecules,
-            leaving empty space within the liposome, and assumes that a liposome
-            is filled to maximum capacity when formed, the outputted value of
-            ~100 was reduced to reasonably account for these factors.
+            The first reaction term accounts for each liposome containing
+            multiple drug molecules through multiplying the second order term by
+            50. The coefficient of 50 is based upon calculating the internal
+            volume of a liposome with 150 nm diameter and finding the ratio of
+            this with the volume of a Cisplatin molecule with diameter 30 nm. As
+            the ratio found doesn’t account for the molecular forces between
+            Cisplatin molecules, leaving empty space within the liposome, and
+            assumes that a liposome is filled to maximum capacity when formed,
+            the outputted value of ~100 was reduced to reasonably account for
+            these factors.
           </p>
           <br />
           <p>
@@ -323,8 +323,7 @@
             produces identical derivative calculations when the step size is
             suitably small and was compatible with our solver.
           </p>
-          <br />
-          <!-- TODO: EQUATIONS -->
+          <img src="./assets/eqn4.png" alt="" />
           <p>
             With the second order derivatives calculated in a similar way,
             avoiding limitations of the numerical solving approach through the
@@ -339,13 +338,14 @@
           <br />
           <p>
             The reaction terms can simply be calculated using the concentration
-            values known for that time instance. With these steps completed,
-            ∂f/∂t can be calculated by inputting the calculated values for the
-            unknowns into the PDE (previously described) for each specie.
-            Concentrations are then known for the t+n (where n is the constant
-            time step size) time instance through the ∂f/∂t values calculated at
-            the previous time instance and this process can be iteratively
-            completed for the time period specified.
+            values known for that time instance. With these steps completed, the
+            change in concentration with respect to time can be calculated by
+            inputting the calculated values for the unknowns into the PDE
+            (previously described) for each specie. Concentrations are then
+            known for the t+n (where n is the constant time step size) time
+            instance through the time derivative values calculated at the
+            previous time instance and this process can be iteratively completed
+            for the time period specified.
           </p>
         </div>
 
@@ -418,7 +418,7 @@
             class="greytab"
             id="Protocol1"
           >
-            Notation
+            Mathematical Descriptions
           </button>
           <button
             role="tab"
