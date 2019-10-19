@@ -126,7 +126,6 @@ h6 {
   float: left;
   height: auto;
   width: 35vh;
-  border-radius: 50%;
   border: 1px solid white;
   margin: 0;
   padding: 5vh;
@@ -149,6 +148,11 @@ mark.lastName {
   text-transform: uppercase;
   background-color: inherit;
   color: inherit;
+}
+
+mark.midblue {
+  color: rgba(116,142,193,1);
+  background-color: inherit;
 }
 
 mark.jobtitle {
@@ -204,6 +208,7 @@ mark.jobtitle {
   left: 0;
   margin-left: 20px;
   margin-top: 0;
+  width: 80vw;
 }
 
 .megaTeamPic {
