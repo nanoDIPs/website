@@ -67,10 +67,10 @@
 <div id="LiposomePreparation" class="megadivProtocol">
 
   <h1>Liposome preparation</h1>
-  Before embedding nanopores on the membranes of vesicles, we first had to prove that the protocols we developed (described here -put link here!) result in uniformly-sized vesicles.
+  Before embedding nanopores in the membranes of liposomes, we first had to prove that the protocols we developed (<a href="..\Build\index.html">described here</a>) result in uniformly-sized vesicles.
   To this aim, we performed dynamic-light scatter (DLS) experiments to analyse the size-distribution of the vesicles.
-  We then used fluorescence sprectroscopy to demonstrate the encapsulation of the fluorophore sulforhodamine B within the liposomes.
-  Lastly, we sought to purify the assembled liposomes from the unencapsulated fluorophore found in the liposome mixture. In order to achieve this, we performed size-exclusion chromatography. We found that our workflow robustly results in liposomes of high purity, even when using different buffers with different osmotic pressures.
+  We then used fluorescence sprectroscopy to demonstrate the encapsulation of the fluorophore sulforhodamine B  (SRB) within the liposomes.
+  Lastly, we sought to purify the assembled liposomes from the unencapsulated SRB found in the liposome mixture. In order to achieve this, we performed size-exclusion chromatography. We found that our workflow robustly results in liposomes of high purity, even when using different buffers with different osmotic pressures.
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -122,8 +122,9 @@
          class="greytab"
          hidden="">
         <h2>Fig.1 DLS showing the presence and size distribution of liposomes</h2>
-         A sample of newly-made liposomes was analysed using dynamic light scattering (DLS). DLS (Fig. 1) proved the presence of assembled vesicles in the sample and showed their size distribution.
-         The majority of vesicles had a diameter of /insert/ nm.
+         A sample of newly-made liposomes was analysed using dynamic light scattering (DLS).
+         Analaysis was performed using a scattering angle of 173°.
+         The mean average size was found to be 68 nm, with a standard deviation of 27.77.
          <img class="accordionFigure" src="assets\figures\DLS.png">
 
 
@@ -135,7 +136,8 @@
          class="lightbluetab"
          hidden="">
          <h2>Fig. 2 The separation of liposomes from unencapsulated SRB by size-exclusion chromatography</h2>
-         Liposomes were purified in sephadex G100 columns in four different buffers. A series of aliquots with varying fluorescence was obtained (Fig. 2). The expected two-peak pattern was observed only in buffer A, with the first fluorescence peak corresponding to the liposome fraction and the second to unencapsulated SRB.
+         Liposomes were purified in sephadex G100 columns in four different buffers. A series of aliquots with varying intensity of fluorescence was obtained. Fluorescence intensity was recorded using a BMG Labtech FLUOstar plate reader with excitation and emission wavelenghts of 544 nm and 590nm, respectively and gain of 500.
+         The expected two-peak pattern was observed only in buffer A, with the first fluorescence peak corresponding to the liposome fraction and the second to unencapsulated SRB.
          <img class="accordionFigure" src="assets\figures\fig2-elution.png">
        </div>
 
@@ -146,9 +148,12 @@
          class="midbluetab"
          hidden="">
          <h2>Fig. 3 Fold Changes in Fluorescence after Triton</h2>
-         To identify aliquots containing liposomes with SRB encapsulated with them, we treated those representing the first peak with Triton X-100. As Triton X-100 ruptured the vesicles, SRB was released and the fluorescence of the solution increased. This also provided an endpoint reference for future experiments assessing fluorophore release through DNA nanopores.
+         To identify aliquots containing liposomes with encapsulated  SRB, we treated the aliquoted within the first peak (of Fig.2) with 5 ul of 20% Triton X-100.
+         As Triton X-100 ruptured the vesicles, SRB was released and the fluorescence of the solution increased and recorded with a BMG Labtech FLUOstar plate reader with excitation and emission wavelenghts of 544 nm and 590nm, respectively.
          <br>
          <img class="accordionFigure" src="assets\figures\fig3-foldchange.png">
+         <br>
+         This also provided an endpoint reference for future experiments assessing fluorophore release through DNA nanopores.
     </div>
   </div>
 
@@ -157,13 +162,7 @@
 <div id="NanoporeAssembly" class="megadivProtocol">
 
   <h1>Nanopore assembly</h1>
-  Assaying nanopore assembly enabled understanding whether another basic building block of the design had been achieved.
 
-  Each of the 6 DNA strands that form the DNA nanopore barrel should hybridise with their neighbour. Therefore, in theory, strands 1&2, 2&3, 3&4, 4&5, 5&6 should anneal to each other in pairs. Strands 1&6 should also anneal, resulting in a continuous barrel structure. When each of these combinations of DNA strands are run separately on an agarose gel, the resultant DNA bands are positioned such that they correspond to the expected molecular weights upon annealing (FigXA, B).
-
-  Furthermore, when all 6 bands of DNA are annealed together, the resulting band of DNA barely moves out of the well (FigXB). This is in accordance with the prediction of the molecular weight for the open nanopore. A similar result is also obtained for the closed nanopore (FigXB), which additionally incorporates the lock DNA strand. However, simply incubating the 6 DNA strands together at room temperature, without annealing at 950C, results in a smear of DNA (FigXB). This smear occurs much farther away from the well and the position of the bands for the annealed closed and open nanopores. In fact, it appears within the range of much lower molecular weights for the pairs of DNA. This suggests that without annealing at 950C, the 6 DNA bands form varying combinations of hybrids but do not all anneal in the continuous barrel structure which would have resulted in a much higher molecular weight.
-
-  Taken together, this data demonstrates that the closed and open nanopores are likely to have annealed in accordance with theoretical design and modelling predictions
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -206,8 +205,10 @@
          class="greytab"
          hidden="">
 
-      Gelpicß
-
+         Assaying nanopore assembly enabled understanding whether another basic building block of the design had been achieved.
+         Each of the 6 DNA strands that form the DNA nanopore barrel should hybridise with their neighbour. Therefore, in theory, strands 1&2, 2&3, 3&4, 4&5, 5&6 should anneal to each other in pairs. Strands 1&6 should also anneal, resulting in a continuous barrel structure. When each of these combinations of DNA strands are run separately on an agarose gel, the resultant DNA bands are positioned such that they correspond to the expected molecular weights upon annealing (FigXA, B).
+         Furthermore, when all 6 bands of DNA are annealed together, the resulting band of DNA barely moves out of the well (FigXB). This is in accordance with the prediction of the molecular weight for the open nanopore. A similar result is also obtained for the closed nanopore (FigXB), which additionally incorporates the lock DNA strand. However, simply incubating the 6 DNA strands together at room temperature, without annealing at 950C, results in a smear of DNA (FigXB). This smear occurs much farther away from the well and the position of the bands for the annealed closed and open nanopores. In fact, it appears within the range of much lower molecular weights for the pairs of DNA. This suggests that without annealing at 950C, the 6 DNA bands form varying combinations of hybrids but do not all anneal in the continuous barrel structure which would have resulted in a much higher molecular weight.
+         Taken together, this data demonstrates that the closed and open nanopores are likely to have annealed in accordance with theoretical design and modelling predictions
     </div>
     <div tabindex="0"
          role="tabpanel"
