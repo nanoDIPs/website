@@ -46,8 +46,8 @@
 </div>
 
 <div class="frontmenu">
-  <a href="#CreatingNanopores" class="frontmenuitem">
-    Alisdair MATLAB Simulations
+  <a href="#DrugDelivery" class="frontmenuitem">
+    Modelling Drug Delivery
   </a>
   <br>
   <a href="#Kinetics" class="frontmenuitem">
@@ -59,11 +59,10 @@
   </a>
 </div>
 
-<div id="CreatingNanopores" class="megadivProtocol">
+<div id="DrugDelivery" class="megadivProtocol">
 
-  <h1>Building DNA nanopores</h1>
-  DNA nanopores self-assemble from synthetic single stranded sequences of DNA (oligonucleotides). Oligonucleotides are designed using computer software (cadnano) to fold into specific 3D structures.
-  We designed DNA nanopores as hexameric hollow barrel composed of six double stranded DNA helices. We chose to build this nanopore as this archetypal design has been independently described twice (Langecker et al., 2012; Burns et al., 2013)  and has been recently demonstrated to embed in the membranes of liposomes (Burns et al., 2016). Four of the 6 helices are equipped with cholesterol anchors, in order to puncture lipid bilayers and allow to the nanopores to embed across the hydrophobic membranes.
+  <h1>Modelling Drug Delivery</h1>
+Our novel approach to targeted drug delivery has been investigated further by simulating a region of a capillary and surrounding tissue using a system of partial differential equations (PDEs). Through making reasonable assumptions and simplifications of the modelled system, solutions were generated to describe the behaviour of the drug-carrying liposomes when they reach a region where cancerous cells are present in the tissue.
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -79,7 +78,7 @@
               tabindex="-1"
               class="greytab"
               id="Protocol1">
-              Open Nanopores
+              Forming the Model
       </button>
       <button role="tab"
               aria-selected="false"
@@ -87,7 +86,23 @@
               id="Protocol2"
               tabindex="-1"
               class="lightbluetab">
-              Closed Nanopores
+              Mathematical Descriptions
+      </button>
+            <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol2-tab"
+              id="Protocol2"
+              tabindex="-1"
+              class="midbluetab">
+              Solving the system of PDEs
+      </button>
+            <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol2-tab"
+              id="Protocol2"
+              tabindex="-1"
+              class="darkbluetab">
+              Binary Cancer Model
       </button>
 
     </div>
