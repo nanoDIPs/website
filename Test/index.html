@@ -353,6 +353,15 @@
               Strand Displacement
       </button>
 
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol8-tab"
+              tabindex="-1"
+              class="greytab"
+              id="Protocol8">
+              Restriction-Enzyme Digestion
+      </button>
+
     </div>
     <div tabindex="0"
          role="tabpanel"
@@ -365,17 +374,25 @@
     <div tabindex="0"
          role="tabpanel"
          id="Protocol7-tab"
-         aria-labelledby="Protocol8"
+         aria-labelledby="Protocol7"
          class="greytab"
          hidden="">
          Firstly, we checked the functionality of the strand displacement reactions that would be triggered downstream of the protease cleavage. Here, the key DNA strand was annealed to another strand with a toehold. The addition of a ‘complement’ DNA lead in the key being released (FigX). The released key is then able to bind the modified toehold on the lock, and invades to displace the lock, thereby opening the previously closed nanopore.
          <h2>Fig.7 Native PAGE showing strand displacement-mediated opening of NP-C</h2>
          <img class="accordionFigure" src="assets\figures\fig7-page.png">
          Strand displacement mediated opening of DNA nanopore. A 25% polyacrylamide gel was used. In lane 4, the complement (C) strand would theoretically bind the toehold (T), displacing the key (K). This would allow the key to bind the lock strand. As a result, DNA bands corresponding to the following complexes should be visible: 21bp toehold-complement hybrid (K-T) and 88bp lock-key hybrid (L-K). Lanes 1-3 are controls. T-C = annealed toehold and complement DNA strands; L-K = annealed lock and key DNA strands; NPC = annealed closed nanopore; K-T = annealed key and toehold DNA strands; C = complement DNA strand. DNA strands were annealed in a PCR thermocycler as described in the (<a href="..\Build\index.html">Build</a>) page.
-
     </div>
 
-
+    <div tabindex="0"
+         role="tabpanel"
+         id="Protocol8-tab"
+         aria-labelledby="Protocol8"
+         class="greytab"
+         hidden="">
+         <h2>Fig.8 Restriction enzyme digestion triggers the opening of the DNA nanopore.</h2>
+         <img class="accordionFigure" src="assets\figures\smau.png">
+          A 15% polyacrylamide gel was used. From right to left: In the control lane 1, no bands are visible except for the darkly staining well, indicating the presence of an intact closed nanopore (NPCH). In control lane 2, NPCH is incubated with a DNA sequence designated Key Kite (KK). In lane 3, the restriction enzyme SmaI is also added. The KK consists of a SmaI recognition site, which can trigger the downstream displacement of DNA strands on the KK to ultimately release the key DNA strand. In lanes 2 and 3, band 1 likely corresponds to a 153bp complex of the 97bp KK and 56bp lock. This indicates promiscuous, undesired KK activity regardless of SmaI presence. Bands 2 and 3 likely correspond to lock-key and complement-toehold complexes. Notably, these bands are stronger in lane 3, when the SmaI is added. This is in spite of the volume of KK used in lane 3 being half that used in lane 2. KK and NPCH were separately annealed in a PCR thermocycler as described in the Build page. NPCH was incubated with KK, or with KK+SmaI for 30 minutes at room temperature prior to running the gel. The ladders shown belong to the same gel.
+    </div>
   </div>
 </div>
 
