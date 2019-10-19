@@ -10,7 +10,6 @@
     <li class="navbar keepfirst"><a href="../Introduction/">Introduction</a></li>
     <li class="navbar keepfirst"><a href="../Design/">Design</a></li>
     <li class="navbar keepfirst"><a href="../Build/">Build</a></li>
-    <li class="navbar keepfirst"><a href="../Model/">Model</a></li>
     <li class="navbar keepfirst"><a class="activeNavbar" href="#">Test</a></li>
     <li class="navbar"><a href="../AboutUs/">About Us</a></li>
     <li class="navbar"><a href="../Journal/">Journal</a></li>
@@ -45,15 +44,15 @@
 </div>
 
 <div class="frontmenu">
-  <a href="#CreatingNanopores" class="frontmenuitem">
+  <a href="#LiposomePreparation" class="frontmenuitem">
     Liposome preparation
   </a>
   <br>
-  <a href="#CreatingLiposomes" class="frontmenuitem">
+  <a href="#NanoporeAssembly" class="frontmenuitem">
     Nanopore assembly
   </a>
   <br>
-  <a href="#ReleasingFluorophores" class="frontmenuitem">
+  <a href="#FluorophoreRelease" class="frontmenuitem">
     Nanopore-mediated release of fluorophores
   </a>
   <br>
@@ -62,11 +61,13 @@
   </a>
 </div>
 
-<div id="CreatingNanopores" class="megadivProtocol">
+<div id="LiposomePreparation" class="megadivProtocol">
 
   <h1>Liposome preparation</h1>
-  A sample of newly-made liposomes was analysed using dynamic light scattering (DLS). DLS (Fig. 1) proved the presence of assembled vesicles in the sample and showed their size distribution.
-  The majority of vesicles had a diameter of /insert/ nm.
+  Before embedding nanopores on the membranes of vesicles, we first had to prove that the protocols we developed (described here -put link here!) result in uniformly-sized vesicles.
+  To this aim, we performed dynamic-light scatter (DLS) experiments to analyse the size-distribution of the vesicles.
+  We then used fluorescence sprectroscopy to demonstrate the encapsulation of the fluorophore sulforhodamine B within the liposomes.
+  Lastly, we sought to purify the assembled liposomes from the unencapsulated fluorophore found in the liposome mixture. In order to achieve this, we performed size-exclusion chromatography. We found that our workflow robustly results in liposomes of high purity, even when using different buffers with different osmotic pressures.
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -82,7 +83,7 @@
               tabindex="-1"
               class="greytab"
               id="Protocol1">
-              Open Nanopores
+              Dynamic Light Scattering
       </button>
       <button role="tab"
               aria-selected="false"
@@ -90,7 +91,15 @@
               id="Protocol2"
               tabindex="-1"
               class="lightbluetab">
-              Closed Nanopores
+              Fluorophore encapsulation
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol3-tab"
+              class="midbluetab"
+              id="Protocol3"
+              tabindex="-1">
+              Size-Exclusion Chromatography
       </button>
 
     </div>
@@ -108,22 +117,11 @@
          aria-labelledby="Protocol1"
          class="greytab"
          hidden="">
+        <h2>Fig.1 DLS showing the presence and size distribution of liposomes</h2>
+         A sample of newly-made liposomes was analysed using dynamic light scattering (DLS). DLS (Fig. 1) proved the presence of assembled vesicles in the sample and showed their size distribution.
+         The majority of vesicles had a diameter of /insert/ nm.
+         <img style="display:block;margin-left: auto; margin-right: auto" src="assets\figures\DLS.png">
 
-        List of ingredients:
-        <ul>
-          <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-          <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-          <li>15 mM Tris (1.8171 mg per ml)</li>
-        </ul>
-
-        Procedure:
-        <ol>
-          <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-          <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-          </li>
-          <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-          </li>
-        </ol>
 
     </div>
     <div tabindex="0"
@@ -132,33 +130,34 @@
          aria-labelledby="Protocol2"
          class="lightbluetab"
          hidden="">
-
-         List of ingredients:
-         <ul>
-           <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-           <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-           <li>15 mM Tris (1.8171 mg per ml)</li>
-         </ul>
-
-         Procedure:
-         <ol>
-           <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-           <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-           </li>
-           <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-           </li>
-         </ol>
-
+         <h2>Fig.3 Fluorescence increase in SRB-containing liposome following rupturing with Triton X-100</h2>
+         To identify aliquots containing liposomes with SRB encapsulated with them, we treated those representing the first peak with Triton X-100. As Triton X-100 ruptured the vesicles, SRB was released and the fluorescence of the solution increased. This also provided an endpoint reference for future experiments assessing fluorophore release through DNA nanopores.
     </div>
 
+    <div tabindex="0"
+         role="tabpanel"
+         id="Protocol3-tab"
+         aria-labelledby="Protocol3"
+         class="midbluetab"
+         hidden="">
+         <h2>Fig. 2 The separation of liposomes from unencapsulated SRB by size-exclusion chromatography</h2>
+         Liposomes were purified in sephadex G100 columns in four different buffers. A series of aliquots with varying fluorescence was obtained (Fig. 2). The expected two-peak pattern was observed only in buffer A, with the first fluorescence peak corresponding to the liposome fraction and the second to unencapsulated SRB.
+         <img style="display:block;margin-left: auto; margin-right: auto" src="assets\figures\fig2-elution.png">
+    </div>
   </div>
 
 </div>
 
-<div id="CreatingLiposomes" class="megadivProtocol">
+<div id="NanoporeAssembly" class="megadivProtocol">
 
-  <h1>Building Liposomes</h1>
-  Liposomes (vesicles) are membrane-enclosed spheres that transport molecular cargo within and between cells. We used large unilamellar vesicles (LUVs) with a diameter of 200nm as drug carriers.
+  <h1>Nanopore assembly</h1>
+  Assaying nanopore assembly enabled understanding whether another basic building block of the design had been achieved.
+
+  Each of the 6 DNA strands that form the DNA nanopore barrel should hybridise with their neighbour. Therefore, in theory, strands 1&2, 2&3, 3&4, 4&5, 5&6 should anneal to each other in pairs. Strands 1&6 should also anneal, resulting in a continuous barrel structure. When each of these combinations of DNA strands are run separately on an agarose gel, the resultant DNA bands are positioned such that they correspond to the expected molecular weights upon annealing (FigXA, B).
+
+  Furthermore, when all 6 bands of DNA are annealed together, the resulting band of DNA barely moves out of the well (FigXB). This is in accordance with the prediction of the molecular weight for the open nanopore. A similar result is also obtained for the closed nanopore (FigXB), which additionally incorporates the lock DNA strand. However, simply incubating the 6 DNA strands together at room temperature, without annealing at 950C, results in a smear of DNA (FigXB). This smear occurs much farther away from the well and the position of the bands for the annealed closed and open nanopores. In fact, it appears within the range of much lower molecular weights for the pairs of DNA. This suggests that without annealing at 950C, the 6 DNA bands form varying combinations of hybrids but do not all anneal in the continuous barrel structure which would have resulted in a much higher molecular weight.
+
+  Taken together, this data demonstrates that the closed and open nanopores are likely to have annealed in accordance with theoretical design and modelling predictions
   <div class="tabs">
     <div role="tablist" aria-label="Entertainment">
       <button role="tab"
@@ -174,7 +173,7 @@
               tabindex="-1"
               class="greytab"
               id="Protocol1">
-              Dissolving Lipids
+              Agarose Gel Electrophoresis
       </button>
       <button role="tab"
               aria-selected="false"
@@ -182,24 +181,9 @@
               id="Protocol5"
               tabindex="-1"
               class="lightbluetab">
-              Hydration
+              Something else?
       </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol6-tab"
-              class="midbluetab"
-              id="Protocol6"
-              tabindex="-1">
-              Extrusion
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol7-tab"
-              class="darkbluetab"
-              id="Protocol7"
-              tabindex="-1">
-              Purification
-      </button>
+
     </div>
     <div tabindex="0"
          role="tabpanel"
@@ -216,23 +200,7 @@
          class="greytab"
          hidden="">
 
-        The first step of LUV preparation consists of drying phospholipids into glass vials to form “lipid films”. These can be stored at 4°C and taken out for use as needed.when fresh vesicles are needed.
-
-        List of ingredients:
-        <ul>
-          <li>DOPC powder (Avanti Polar Lipids)</li>
-          <li>25 mg mL⁻¹ DOPE (Avanti Polar Lipids)</li>
-          <li>Chloroform</li>
-          <li>Nitrogen gas</li>
-        </ul>
-
-        Procedure:
-        <ol>
-          <li>Dissolve the DOPC powder in 3.79 mL of chloroform.</li>
-          <li>Add dissolved DOPC and DOPE into a vial in a 3:7 DOPE:DOPC ratio and make the solution up to the desired volume with chloroform. Here,In this experiment, 30 uL of DOPE, 70 uL of DOPC and an additional 100 mL of chloroform were used</li>
-          <li>The vial is dried using nitrogen gas and left in a vacuum oven without any heat, at 400 bar of pressure at least overnight before using. </li>
-          <li>Nitrogen gas</li>
-        </ol>
+      Gelpicß
 
     </div>
     <div tabindex="0"
@@ -242,35 +210,134 @@
          class="lightbluetab"
          hidden="">
 
-        Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.
+         other pics?
+    </div>
 
+  </div>
+</div>
+
+
+<div id="FluorophoreRelease" class="megadivProtocol">
+
+  <h1>Nanopore-mediated release of fluorophore</h1>
+  We perfomed kinetic fluorescent spectrospy experiments to demonstrate that SRB can be released from our engineered lipsomes.
+  <div class="tabs">
+    <div role="tablist" aria-label="Entertainment">
+      <button role="tab"
+              aria-selected="true"
+              aria-controls="HidePanel3-tab"
+              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
+              id="HidePanel3">
+              -
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol6-tab"
+              tabindex="-1"
+              class="greytab"
+              id="Protocol6">
+              Embedding nanopores
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol7-tab"
+              id="Protocol7"
+              tabindex="-1"
+              class="lightbluetab">
+              Opening nanopores
+      </button>
+
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="HidePanel4-tab"
+         aria-labelledby="HidePanel3"
+         style="padding:0">
+      <p>
+      </p>
     </div>
     <div tabindex="0"
          role="tabpanel"
          id="Protocol6-tab"
          aria-labelledby="Protocol6"
-         class="midbluetab"
+         class="greytab"
          hidden="">
-      <p>
-        Fear of complicated buildings:
-      </p>
-      <p>
-        A complex complex complex.
-      </p>
+
+         <h2>Release of SRB from LUVs + open nanopore compared to LUVs</h2>
+        <img style="display:block;margin-left: auto; margin-right: auto" src="assets\figures\LUVs-NPO.png">
+
     </div>
     <div tabindex="0"
          role="tabpanel"
          id="Protocol7-tab"
          aria-labelledby="Protocol7"
-         class="darkbluetab"
+         class="lightbluetab"
          hidden="">
+         Howorka
+    </div>
+
+  </div>
+</div>
+
+<div id="StrandDisplacement" class="megadivProtocol">
+
+  <h1>Strand displacement-mediated opening</h1>
+  This section is about strand-displacement opening...
+  <div class="tabs">
+    <div role="tablist" aria-label="Entertainment">
+      <button role="tab"
+              aria-selected="true"
+              aria-controls="HidePanel4-tab"
+              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
+              id="HidePanel4">
+              -
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol8-tab"
+              tabindex="-1"
+              class="greytab"
+              id="Protocol8">
+              Native PAGE
+      </button>
+      <button role="tab"
+              aria-selected="false"
+              aria-controls="Protocol9-tab"
+              id="Protocol9"
+              tabindex="-1"
+              class="lightbluetab">
+              Something else?
+      </button>
+
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="HidePanel4-tab"
+         aria-labelledby="HidePanel4"
+         style="padding:0">
       <p>
-        Fear of complicated buildings:
-      </p>
-      <p>
-        A complex complex complex.
       </p>
     </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="Protocol8-tab"
+         aria-labelledby="Protocol8"
+         class="greytab"
+         hidden="">
+
+         <h2>Fig.7 Native PAGE showing strand displacement-mediated opening of NP-C</h2>
+
+
+    </div>
+    <div tabindex="0"
+         role="tabpanel"
+         id="Protocol9-tab"
+         aria-labelledby="Protocol9"
+         class="lightbluetab"
+         hidden="">
+         Something else?
+    </div>
+
   </div>
 </div>
 
