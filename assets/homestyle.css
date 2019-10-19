@@ -24,7 +24,7 @@ body {
 }
 
 .hideframe {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(255,255,255,0.1);
   position: absolute;
   z-index: 10;
   width: 50vw;
@@ -36,8 +36,11 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;
   font-family: SanFrancisco, Arial, sans-serif;
-  font-size: 1.2em;
-  color: rgba(180,180,180,1)
+  font-size: 1.25em;
+  color: rgba(160,160,160,1);
+  line-height: 2em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 h1 {
@@ -119,4 +122,29 @@ p.nanoDIPsText {
   padding-bottom: 0;
   margin-left: 0.57em;
   letter-spacing: 0.015em;
+}
+
+.downarrow {
+  position: relative;
+  margin-left: 48vw;
+  width: 40px;
+  margin-right: 48vw;
+  height: 40px;
+  margin-top: 2em;
+
+  display:inline-block;
+
+  border-right:2px solid rgba(180,180,180,1);
+  border-bottom:2px solid rgba(180,180,180,1);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+
+}
+
+.downarrow:hover {
+  text-decoration: none;
+  border-right:2px solid rgba(116,142,193,1);
+  border-bottom:2px solid rgba(116,142,193,1);
+  transition: 0.8s;
 }

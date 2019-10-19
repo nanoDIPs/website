@@ -14,9 +14,6 @@ To do list for the Website:
   - test
 
 ===HOMEPAGE===
-- add two empty full page divs with no in between scrolling
-  - one that embeds random youtube vid
-  - one that has lorem ipsum
 - responsive for phones, as eddi designed (pic in slack)
 - set window content fixed to 100vw
 
@@ -40,7 +37,6 @@ To do list for the Website:
 - first team member spacing needs adjusting.
 - For Eddi: make sonias pics into proper layout to fit site.
 - responsive for phones (first eddi design)
-- JS: animation start offset from 200px value to a vh value (as in journal)
 
 ===JOURNAL===
 - add calendar icon

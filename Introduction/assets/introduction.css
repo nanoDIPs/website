@@ -123,30 +123,49 @@ p.nanoDIPsText {
 
 .sideAnimation {
   position: fixed;
-  display: none;
+  display: block;
+  opacity: 0;
   margin-right: 3em;
   margin-left: 3em;
   top: 15vh;
   max-height: 70vh;
   width: 70vh;
   max-width: 45vw;
-  background-color: black;
-  animation: 1s ease;
+  background-color: none;
+  transition: 0.6s;
+  transition-delay: 0.35s;
 }
 
 .sideAnimation-active {
   display: block;
-  animation: 1s ease;
+  transition: 0.7s;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.0)), url("background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .introtext {
   position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
   right: 5em;
-  left: 50vw;
+  left: 45vw;
   height: 60vh;
-  background-color: blue;
+  background-color: none;
   width: 48vw;
   top: 15vh;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  color: rgba(150,150,150,1);
 }
 
 .scrollwrapper {
@@ -154,5 +173,68 @@ p.nanoDIPsText {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: red;
+}
+
+.downarrow {
+  position: relative;
+  margin-left: 48vw;
+  width: 40px;
+  margin-right: 48vw;
+  height: 40px;
+  margin-top: 2em;
+
+  display:inline-block;
+
+  border-right:2px solid rgba(180,180,180,1);
+  border-bottom:2px solid rgba(180,180,180,1);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+
+}
+
+.downarrow:hover {
+  text-decoration: none;
+  border-right:2px solid rgba(116,142,193,1);
+  border-bottom:2px solid rgba(116,142,193,1);
+  transition: 0.8s;
+}
+
+.herotext {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  height: auto;
+  width: 60%;
+  font-size: 4em;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: bold;
+  color: rgba(180,180,180,1);
+}
+
+.frontmenu {
+  position: absolute;
+  font-size: 1.5em;
+  font-family: SanFrancisco, Arial, sans-serif;
+  font-weight: lighter;
+  color: rgba(180,180,180,1);
+  bottom: 15%;
+  right: 7%;
+  line-height: 2em;
+}
+
+.frontmenuitem {
+  transition: 0.4s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.frontmenuitem:hover {
+  color: rgba(116,142,193,1);
+  transition: 0.4s;
+}
+
+mark.midblue {
+  color: rgba(116,142,193,1);
+  background-color: inherit;
 }

@@ -38,6 +38,11 @@ h6 {
   margin-bottom: 80px;
 }
 
+mark.midblue {
+  color: rgba(116,142,193,1);
+  background-color: inherit;
+}
+
 @font-face {
   font-family: SanFrancisco;
   src: url((../assets/fonts/SF-Pro-Text-Regular.otf);

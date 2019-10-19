@@ -92,6 +92,11 @@ h6 {
   position: static;
 }
 
+mark.midblue {
+  color: rgba(116,142,193,1);
+  background-color: inherit;
+}
+
 .bg-image {
   /* Add the blur effect */
   filter: blur(6px);
