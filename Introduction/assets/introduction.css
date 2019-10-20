@@ -235,17 +235,20 @@ p.nanoDIPsText {
   bottom: 15%;
   right: 7%;
   line-height: 2em;
+  z-index: 10;
 }
 
 .frontmenuitem {
   transition: 0.4s;
   text-decoration: none;
   color: inherit;
+  z-index: 15;
 }
 
 .frontmenuitem:hover {
   color: rgba(116,142,193,1);
   transition: 0.4s;
+  z-index: 15;
 }
 
 mark.midblue {
