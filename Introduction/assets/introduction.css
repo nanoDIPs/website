@@ -272,6 +272,13 @@ a.goalLink {
   background-color: inherit;
 }
 
+li.goaldone {
+  list-style-image: url('check_box-24px.svg');
+}
+li.goalnone {
+  list-style-image: url('check_box_outline_blank-24px.svg');
+}
+
 a.goalLink:hover {
   color: rgba(116,142,193,1);
 }
