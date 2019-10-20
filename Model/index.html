@@ -151,11 +151,39 @@
           hidden=""
         >
           <img class="accordionFigure" src="./assets/image1.png" alt="" />
+
           <p>
             Where the species in the system can be identified using table 1
             below.
           </p>
-          <img class="accordionFigure" src="./assets/table1.png" alt="" />
+          <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Term</span></th>
+              <th class="tg-yla0">Represents</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>ECM</sub></td>
+              <td class="tg-cly1">Drug molecule in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>C</sub></td>
+              <td class="tg-cly1">Drug molecule in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">L<sub>ECM</sub></td>
+              <td class="tg-cly1">Liposome in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">L<sub>C</sub></td>
+              <td class="tg-0lax">Liposome in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">P</td>
+              <td class="tg-0lax">Protease</td>
+            </tr>
+          </table>
+          <br>
           <p>
             Simplifications included examining the system as a one-dimensional
             state, where a single capillary traversed space parallel to this
@@ -187,7 +215,40 @@
               </ul>
             </li>
           </ul>
-          <img class="accordionFigure"  src="./assets/table2.png" alt="" />
+                    <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Term</span></th>
+              <th class="tg-yla0">Value (mm<sup>2</sup> s<sup>-1</sup>)</th>
+              <th class="tg-yla0">Represents</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">D<sub>d-ECM</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-4</sup> (<a href="https://cancerres.aacrjournals.org/content/34/10/2814">Swabb et al. 1974</a>)</td>
+              <td class="tg-cly1">Diffusivity of drug molecules in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">D<sub>d-C</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-3</sup></td>
+              <td class="tg-cly1">Diffusivity of drug molecules in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">D*<sub>L-ECM</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-5</sup>(<a href="https://www.int-res.com/articles/meps/89/m089p103.pdf?fbclid=IwAR3wcd2nPuH_wwueq6lw7-7LsQRpinFeiBF14nu82M2O8IWjXBln5eS-Idk">Murray et al. 1992</a>)</td>
+              <td class="tg-cly1">Diffusivity of liposomes in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">D*<sub>L-C</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-4</sup></td>
+              <td class="tg-0lax">Diffusivity of liposomes in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">D<sub>P</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-4</sup>(<a href="https://aip.scitation.org/doi/pdf/10.1063/1.4999925?fbclid=IwAR001eihyx4Ix7bNHTruVCreCZwVtCUf9NwL0nms4IRFUc8_X8uJIzd1Esk&">Hettiaractchi et al. 2018</a>)</td>
+              <td class="tg-0lax">Diffusivity of protease in ECM</td>
+            </tr>
+          </table>
+          <br>
           <p>
             <small>
               * Due to the size of the liposomes produced (diameter = ~150 nm),
@@ -220,7 +281,63 @@
             other key behaviours in the system, again assumed to be constant in
             space and time.
           </p>
-          <img class="accordionFigure"  src="./assets/table3.png" alt="" />
+                              <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Term</span></th>
+              <th class="tg-yla0">Value (s<sup>-1</sup>)</th>
+              <th class="tg-yla0">Represents</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">k<sub>d-Ex-ECM</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-2</sup> * </td>
+              <td class="tg-cly1">Rate coefficient for drug molecule exchange into ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">k<sub>d-Ex-C</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-2</sup></td>
+              <td class="tg-cly1">Rate coefficient for drug molecule exchange into capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">k<sub>L-Ex-ECM</sub></td>
+              <td class="tg-cly1">5 x 10<sup>-2</sup></td>
+              <td class="tg-cly1">Rate coefficient for liposome exchange into ECM/td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">k<sub>L-Ex-C</sub></td>
+              <td class="tg-0lax">5 x 10<sup>-2</sup></td>
+              <td class="tg-0lax">Rate coefficient for liposome exchange into capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Death<sub>d</sub></td>
+              <td class="tg-0lax">1.5 x 10<sup>-4</sup>(<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.2042-7158.1996.tb06002.x">Nagai et al., 1996</a>)</td>
+              <td class="tg-0lax">Rate coefficient of natural decomposition of drug molecules</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Death<sub>L</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-2</sup></td>
+              <td class="tg-0lax">Rate coefficient of natural decomposition of liposomes</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Death<sub>P</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-3</sup>(<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4503466/">Craik et al. 2015</a>)</td>
+              <td class="tg-0lax">Rate coefficient of natural decomposition of protease</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">k<sub>P-Prod</sub></td>
+              <td class="tg-0lax">WILL ADD ASAP<sup>PUT YOUR POWER HERE</sup></td>
+              <td class="tg-0lax">Rate coefficient for the constant production of protease by active cancer ‘cells’</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">k<sub>OPEN</sub></td>
+              <td class="tg-0lax">5 x 10<sup>-4</sup> M<sup>-1</sup></td>
+              <td class="tg-0lax">Predicted overall rate coefficient for drug release – describing strand displacement process for opening of pore</td>
+            </tr>
+          </table>
+          <br>
+          *This value (and the other exchange rate coefficients) are based on the work of <a href="https://ieeexplore.ieee.org/abstract/document/1185139">Koh et al. 2003</a> and should reasonably describe the rate of the drug exchange across the boundary of the two regions. It has been assumed that the rate of exchange of the liposomes is an order of magnitude slower due to its larger size and that the forward and backward rates are equal, which has its limitations due to knowing that the concentration gradient between the two regions will influence the rate of exchange (Fick’s First Law). However, for the purposes of the model, it is likely to not influence the overall dynamics significantly to spend time on during this project.
+          <br>
+          <br>
           <p>
             The modelling of the exchange process was further simplified by not
             considering the system in two/three dimensions. Avoiding the need to

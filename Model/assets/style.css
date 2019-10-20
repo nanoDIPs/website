@@ -1,3 +1,51 @@
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:SanFrancisco, Arial, sans-serif;
+  font-size:14px;padding:10px 5px;
+  border-style:solid;border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:white;}
+.tg th{font-family:SanFrancisco, Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:white;}
+.tg .tg-cly1{text-align:left;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
+.tg .tg-9wq8{border-color:white;text-align:center;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:white;text-align:center;vertical-align:top}
+.tg .tg-g7sd{font-weight:bold;border-color:white;text-align:left;vertical-align:middle}
+.tg .tg-uzvj{font-weight:bold;border-color:white;text-align:center;vertical-align:middle}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:white;text-align:left;vertical-align:top}
+.tg .tg-lboi{border-color:white;text-align:left;vertical-align:middle}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:SanFrancisco, Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+.tg th{font-family:SanFrancisco, Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+.tg .tg-lboi{border-color:white;text-align:left;vertical-align:middle}
+.tg .tg-9wq8{border-color:white;text-align:center;vertical-align:middle}
+.tg .tg-g7sd{font-weight:bold;border-color:white;text-align:left;vertical-align:middle}
+.tg .tg-uzvj{font-weight:bold;border-color:white;text-align:center;vertical-align:middle}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:SanFrancisco, Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+.tg th{font-family:SanFrancisco, Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+.tg .tg-lboi{border-color:white;text-align:left;vertical-align:middle}
+.tg .tg-9wq8{border-color:white;text-align:center;vertical-align:middle}
+.tg .tg-g7sd{font-weight:bold;border-color:white;text-align:left;vertical-align:middle}
+.tg .tg-uzvj{font-weight:bold;border-color:white;text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
 .herotext {
   position: absolute;
   top: 10%;
@@ -76,3 +124,4 @@ h1 {
   margin-top: 20vh;
   width: 90vw;
 }
+
