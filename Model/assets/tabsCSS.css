@@ -105,6 +105,10 @@
   color: white;
 }
 
+a.midbluetab:hover {
+  color: rgba(61, 84, 134, 1);
+}
+
 .darkbluetab {
   background-color: rgba(61, 84, 134, 1);
   color: white;

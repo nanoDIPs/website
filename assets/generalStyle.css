@@ -161,5 +161,9 @@ a {
 }
 
 a:hover {
-  color: rgba(116,142,193,1);
+  color: rgba(116, 142, 193, 1);
+}
+
+.midbluetab a:hover {
+  color: rgba(61, 84, 134, 1);
 }
