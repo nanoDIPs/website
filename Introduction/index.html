@@ -59,6 +59,7 @@ $(document).ready(function() {
     return (elementTop) >= viewportTop && elementBottom <= viewportBottom;
   };
 
+
   $(window).on('resize scroll', function() {
     $('.introtext').each(function() {
         var activeName = $(this).attr('id');
@@ -73,9 +74,64 @@ $(document).ready(function() {
         $('#pic' + activeName + 'third').removeClass('sideAnimation-active');
       }
     });
-
+    $('.abstract').each(function() {
+      if ($(this).isInViewport()) {
+        $('#piczerothfirst').addClass('sideAnimation-Hidefull');
+        $('#piczerothsecond').addClass('sideAnimation-Hidefull');
+        $('#piczeroththird').addClass('sideAnimation-Hidefull');
+        $('#picfirst').addClass('sideAnimation-Hidefull');
+        $('#picsecond').addClass('sideAnimation-Hidefull');
+        $('#picsecondsecond').addClass('sideAnimation-Hidefull');
+        $('#picthird').addClass('sideAnimation-Hidefull');
+        $('#picthirdsecond').addClass('sideAnimation-Hidefull');
+        $('#picfourth').addClass('sideAnimation-Hidefull');
+        $('#picfourthsecond').addClass('sideAnimation-Hidefull');
+        $('#picfourththird').addClass('sideAnimation-Hidefull');
+        $('#piceigth').addClass('sideAnimation-Hidefull');
+        $('#picninth').addClass('sideAnimation-Hidefull');
+        $('#pictenth').addClass('sideAnimation-Hidefull');
+        $('#pictenthsecond').addClass('sideAnimation-Hidefull');
+        $('#piceleventh').addClass('sideAnimation-Hidefull');
+      } else {
+        $('#piczerothfirst').removeClass('sideAnimation-Hidefull');
+        $('#piczerothsecond').removeClass('sideAnimation-Hidefull');
+        $('#piczeroththird').removeClass('sideAnimation-Hidefull');
+        $('#picfirst').removeClass('sideAnimation-Hidefull');
+        $('#picsecond').removeClass('sideAnimation-Hidefull');
+        $('#picsecondsecond').removeClass('sideAnimation-Hidefull');
+        $('#picthird').removeClass('sideAnimation-Hidefull');
+        $('#picthirdsecond').removeClass('sideAnimation-Hidefull');
+        $('#picfourth').removeClass('sideAnimation-Hidefull');
+        $('#picfourthsecond').removeClass('sideAnimation-Hidefull');
+        $('#picfourththird').removeClass('sideAnimation-Hidefull');
+        $('#piceigth').removeClass('sideAnimation-Hidefull');
+        $('#picninth').removeClass('sideAnimation-Hidefull');
+        $('#pictenth').removeClass('sideAnimation-Hidefull');
+        $('#pictenthsecond').removeClass('sideAnimation-Hidefull');
+        $('#piceleventh').removeClass('sideAnimation-Hidefull');
+      }
+    });
 
   });
+/*
+  $(window).on('resize scroll', function() {
+    $('.introtext').each(function() {
+        var activeName = $(this).attr('id');
+      if ($(this).isInViewport()) {
+        $('#pic' + activeName).fadeIn(600);
+        $('#pic' + activeName + 'second').fadeIn(600);
+        $('#pic' + activeName + 'third').fadeIn(600);
+
+      } else {
+        $('#pic' + activeName).fadeOut(900);
+        $('#pic' + activeName + 'second').fadeOut(900);
+        $('#pic' + activeName + 'third').fadeOut(900);
+      }
+    });
+
+  });
+*/
+
 });
 
 </script>
@@ -298,12 +354,44 @@ $(document).ready(function() {
 </div>
 
 <!--#ProjectGoals-->
-<div class="scrollwrapper">
-  <div class="fillpage">
+<div class="scrollwrapper" style="z-index:100000">
+  <div class="fillpage" style="z-index:100001">
     <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
 
     <div id="ProjectGoals" class="abstract">
       <h1>Project Goals</h1>
+      <li><a href="../Test/#NanoporeAssembly" class="goalLink">
+        Assemble DNA nanopores – open (NP-O) and closed (NP-C)
+      </a></li>
+      <li><a href="../Test/#FluorophoreRelease" class="goalLink">
+        Demonstrate the synthesis of liposomes with an encapsulated dye
+      </a></li>
+      <li><a href="../Test/#FluorophoreRelease" class="goalLink">
+        Embed DNA nanopores into membranes of synthetic liposomes containing encapsulated fluorescent dye
+      </a></li>
+      <li><a href="../Test/#FluorophoreRelease" class="goalLink">
+        Trigger release of fluorescent dye from liposomes using a ‘key’ to unlock closed DNA nanopores
+      </a></li>
+      <li><a href="../Model/#DrugDelivery" class="goalLink">
+        Confirm feasibility of design in medical context using mathematical modelling
+      </a></li>
+      <li><a href="../Model/#Kinetics" class="goalLink">
+        Examine the kinetics of toehold mechanics using mathematical modelling
+      </a></li>
+      <li><a href="../Test/#StrandDisplacement" class="goalLink">
+        Demonstrate input triggered DNA strand displacement using key sequences designed in-house
+      </a></li>
+      <li>
+        Assemble peptide-oligonucleotide conjugate (POC) – perform enzymatic digest on POC to simulate release of ‘key’ DNA sequence by cancer-associated protease. [pending]
+      </li>
+      <li>
+        Demonstrate protein triggered opening of the DNA nanopore [pending]
+      </li>
+
+
+
+
+
     </div>
 
   </div>
