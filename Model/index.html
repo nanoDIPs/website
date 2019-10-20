@@ -50,24 +50,28 @@
   </head>
 
   <body>
-    <div class="herotext">
-      Testing our ideas <br />
-      through <mark class="midblue">simulations</mark>.
-    </div>
 
-    <div class="frontmenu">
-      <a href="#DrugDelivery" class="frontmenuitem">
-        Modelling Drug Delivery
-      </a>
-      <br />
-      <a href="#Kinetics" class="frontmenuitem">
-        Kinetics of the Reactions
-      </a>
-      <br />
-      <a href="#Tailored" class="frontmenuitem">
-        Tailored Drug Delivery
-      </a>
-    </div>
+
+<div class="hero-image">
+  <div class="herotext">
+    Testing our ideas <br>
+    through <mark class="midblue">simulations</mark>.
+  </div>
+
+  <div class="frontmenu">
+    <a href="#DrugDelivery" class="frontmenuitem">
+      Modelling Drug Delivery
+    </a>
+    <br>
+    <a href="#Kinetics" class="frontmenuitem">
+      Kinetics of the Reactions
+    </a>
+    <br>
+    <a href="#Tailored" class="frontmenuitem">
+      Tailored Drug Delivery
+    </a>
+  </div>
+</div>
 
     <div id="DrugDelivery" class="megadivProtocol">
       <h1>Modelling Drug Delivery</h1>
@@ -146,12 +150,40 @@
           class="greytab"
           hidden=""
         >
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/image1.png" alt="" />
+          <img class="accordionFigure" src="./assets/image1.png" alt="" />
+
           <p>
             Where the species in the system can be identified using table 1
             below.
           </p>
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table1.png" alt="" />
+          <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Term</span></th>
+              <th class="tg-yla0">Represents</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>ECM</sub></td>
+              <td class="tg-cly1">Drug molecule in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>C</sub></td>
+              <td class="tg-cly1">Drug molecule in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">L<sub>ECM</sub></td>
+              <td class="tg-cly1">Liposome in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">L<sub>C</sub></td>
+              <td class="tg-0lax">Liposome in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">P</td>
+              <td class="tg-0lax">Protease</td>
+            </tr>
+          </table>
+          <br>
           <p>
             Simplifications included examining the system as a one-dimensional
             state, where a single capillary traversed space parallel to this
@@ -183,7 +215,40 @@
               </ul>
             </li>
           </ul>
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table2.png" alt="" />
+                    <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Term</span></th>
+              <th class="tg-yla0">Value (mm<sup>2</sup> s<sup>-1</sup>)</th>
+              <th class="tg-yla0">Represents</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">D<sub>d-ECM</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-4</sup> (<a href="https://cancerres.aacrjournals.org/content/34/10/2814">Swabb et al. 1974</a>)</td>
+              <td class="tg-cly1">Diffusivity of drug molecules in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">D<sub>d-C</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-3</sup></td>
+              <td class="tg-cly1">Diffusivity of drug molecules in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">D*<sub>L-ECM</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-5</sup>(<a href="https://www.int-res.com/articles/meps/89/m089p103.pdf?fbclid=IwAR3wcd2nPuH_wwueq6lw7-7LsQRpinFeiBF14nu82M2O8IWjXBln5eS-Idk">Murray et al. 1992</a>)</td>
+              <td class="tg-cly1">Diffusivity of liposomes in ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">D*<sub>L-C</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-4</sup></td>
+              <td class="tg-0lax">Diffusivity of liposomes in capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">D<sub>P</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-4</sup>(<a href="https://aip.scitation.org/doi/pdf/10.1063/1.4999925?fbclid=IwAR001eihyx4Ix7bNHTruVCreCZwVtCUf9NwL0nms4IRFUc8_X8uJIzd1Esk&">Hettiaractchi et al. 2018</a>)</td>
+              <td class="tg-0lax">Diffusivity of protease in ECM</td>
+            </tr>
+          </table>
+          <br>
           <p>
             <small>
               * Due to the size of the liposomes produced (diameter = ~150 nm),
@@ -216,7 +281,63 @@
             other key behaviours in the system, again assumed to be constant in
             space and time.
           </p>
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table3.png" alt="" />
+                              <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Term</span></th>
+              <th class="tg-yla0">Value (s<sup>-1</sup>)</th>
+              <th class="tg-yla0">Represents</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">k<sub>d-Ex-ECM</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-2</sup> * </td>
+              <td class="tg-cly1">Rate coefficient for drug molecule exchange into ECM</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">k<sub>d-Ex-C</sub></td>
+              <td class="tg-cly1">1 x 10<sup>-2</sup></td>
+              <td class="tg-cly1">Rate coefficient for drug molecule exchange into capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">k<sub>L-Ex-ECM</sub></td>
+              <td class="tg-cly1">5 x 10<sup>-2</sup></td>
+              <td class="tg-cly1">Rate coefficient for liposome exchange into ECM/td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">k<sub>L-Ex-C</sub></td>
+              <td class="tg-0lax">5 x 10<sup>-2</sup></td>
+              <td class="tg-0lax">Rate coefficient for liposome exchange into capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Death<sub>d</sub></td>
+              <td class="tg-0lax">1.5 x 10<sup>-4</sup>(<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.2042-7158.1996.tb06002.x">Nagai et al., 1996</a>)</td>
+              <td class="tg-0lax">Rate coefficient of natural decomposition of drug molecules</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Death<sub>L</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-2</sup></td>
+              <td class="tg-0lax">Rate coefficient of natural decomposition of liposomes</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Death<sub>P</sub></td>
+              <td class="tg-0lax">1 x 10<sup>-3</sup>(<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4503466/">Craik et al. 2015</a>)</td>
+              <td class="tg-0lax">Rate coefficient of natural decomposition of protease</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">k<sub>P-Prod</sub></td>
+              <td class="tg-0lax">WILL ADD ASAP<sup>PUT YOUR POWER HERE</sup></td>
+              <td class="tg-0lax">Rate coefficient for the constant production of protease by active cancer ‘cells’</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">k<sub>OPEN</sub></td>
+              <td class="tg-0lax">5 x 10<sup>-4</sup> M<sup>-1</sup></td>
+              <td class="tg-0lax">Predicted overall rate coefficient for drug release – describing strand displacement process for opening of pore</td>
+            </tr>
+          </table>
+          <br>
+          *This value (and the other exchange rate coefficients) are based on the work of <a href="https://ieeexplore.ieee.org/abstract/document/1185139">Koh et al. 2003</a> and should reasonably describe the rate of the drug exchange across the boundary of the two regions. It has been assumed that the rate of exchange of the liposomes is an order of magnitude slower due to its larger size and that the forward and backward rates are equal, which has its limitations due to knowing that the concentration gradient between the two regions will influence the rate of exchange (Fick’s First Law). However, for the purposes of the model, it is likely to not influence the overall dynamics significantly to spend time on during this project.
+          <br>
+          <br>
           <p>
             The modelling of the exchange process was further simplified by not
             considering the system in two/three dimensions. Avoiding the need to
@@ -277,7 +398,7 @@
             equations, were mathematically formulated based on the reaction
             pathways described in figure 2.
           </p>
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/image2.png" alt="" />
+          <img class="accordionFigure"  src="./assets/image2.png" alt="" />
           $$
           R_1 = \frac{d(d_{ECM})}{dt} = k_{d-Ex-ECM}(d_C) - k_{d-Ex-ECM} (d_{ECM}) + 50k_{OPEN}(L_{ECM})P - death_d (d_{ECM}) + death_L (L_{ECM}) \\
           R_2 = \frac{d(d_{C})}{dt} = k_{d-Ex-C}(d_{ECM}) - k_{d-Ex-ECM} (d_C) - death_d (d_C) + death_L (L_C) \\
@@ -320,8 +441,67 @@
             With the system of equations established, solving them required
             initial and boundary conditions to be defined.
           </p>
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table4.png" alt="" />
-          <img style="display:block;margin-left: auto; margin-right: auto" src="./assets/table5.png" alt="" />
+                                        <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Specie</span></th>
+              <th class="tg-yla0">Initial Condition</th>
+              <th class="tg-yla0">Relevance</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>ECM</sub></td>
+              <td class="tg-cly1">[ d<sub>ECM</sub> ] = 0 for all space </td>
+              <td class="tg-cly1">No liposomes have entered the system that could have released the drug</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>C</sub></td>
+              <td class="tg-cly1">[ d<sub>C</sub> ] = 0 for all space</td>
+              <td class="tg-cly1">"</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">L<sub>ECM</sub></td>
+              <td class="tg-cly1">[ L<sub>ECM</sub> ] = 0 for all space </td>
+              <td class="tg-cly1">No liposomes have exchanged from capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">L<sub>C</sub></td>
+              <td class="tg-0lax">[ L<sub>C</sub> ] = 0 for all space except for spatial point two</td>
+              <td class="tg-0lax">Dose of drug carrying liposomes enters system at time zero – point two used due to limitation of model when applied to entrance of system</td>
+            </tr>
+    <tr>    <tr>
+              <td class="tg-baqh">P</td>
+              <td class="tg-0lax">[P] = 0 for all space outside of active tumour region</td>
+              <td class="tg-0lax">Simulating a tumour being present that is already metastasizing surrounding tissue</td>
+            </tr>
+          </table>
+          <br>
+
+                    <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Boundary Condition</span></th>
+              <th class="tg-yla0">Relevance</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">First spatial derivatives = 0 for all species at entrance of system</td>
+              <td class="tg-cly1">Neumann boundary condition represents that material flux entering system is zero – as the arrival of liposomes is described within the system as an initial condition</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">First spatial derivatives not restricted for all species at end of system</td>
+              <td class="tg-cly1">This enables the flux of material out of the system as expected through a non-prescribed first derivative value</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">Second spatial derivatives at end boundary equal to derivative at previous point</td>
+              <td class="tg-cly1">Avoids unreasonably restricting concavity of concentration profiles as calculation of it requires concentration at the x, x + &delta;x and x – &delta;x points – the x + &delta;x point does not exist at end boundary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Initial third of spatial points have no exchange between regions</td>
+              <td class="tg-0lax">Allows distribution of vesicles to spread due to flow in capillary – better representing the concentration profile that would arrive into in vivo capillaries </td>
+            </tr>
+
+          </table>
+          <br>
+
           <p>
             With these conditions the solver can now evaluate the concentration
             of each specie across the domain of each instance of time
@@ -345,7 +525,7 @@
           <p>
             With the second order derivatives calculated in a similar way,
             avoiding limitations of the numerical solving approach through the
-            appropriate boundary conditions when points (x + h) and (x – h) do
+            appropriate boundary conditions when points \(x + \delta x\) and \( x - \delta x \) do
             not exist. The functions in these definitions represent the
             concentration of the specie being examined at the specific spatial
             point. Therefore, these are the values of the concentration at that
@@ -542,8 +722,8 @@
           G(\gamma^n)}{RT}} $$ where the \( b-m \) term (the length of the \(
           \beta_m \) domain) ensures that the relative concentrations at
           equilibrium are accurate and the binding energy is calculated using
-          'The Thermodynamics of DNA Structural Motifs' (Hicks and Santa Lucia
-          Jr. 2004). The expression for \( k_{r(\gamma^m)} \) is similar to
+          'The Thermodynamics of DNA Structural Motifs' (<a href="https://www.ncbi.nlm.nih.gov/pubmed/15139820">Hicks and Santa Lucia Jr. 2004</a>)
+          . The expression for \( k_{r(\gamma^m)} \) is similar to
           this.
         </div>
         <div
@@ -555,8 +735,8 @@
           hidden=""
         >
           <p>
-            Despite being modelled as a 3-step process, it has been shown (Mills
-            & Yurke 2004) that toehold-mediated strand displacement can be
+            Despite being modelled as a 3-step process, it has been shown (<a href="https://link.springer.com/article/10.1023/A:1023928811651">Mills
+            & Yurke 2003 </a>) that toehold-mediated strand displacement can be
             approximated by bimolecular reactions with second-order rate
             constants. This can be displayed as: $$ X(m,n) + S \quad
             \overset{k_{(\beta^m, \beta_m, \gamma^n)}}{ \underset{k_{(\gamma^n,
@@ -569,8 +749,9 @@
             a certain critical concentration which for our purposes is \( 100nM
             - 1\mu M \). Below is a simulation of this process with the rate
             constants calculated for the two different toeholds: <br />
+
             <img
-              style="display:block;margin-left: auto; margin-right: auto"
+              class="accordionFigure"
               src="assets\toeholds.png"
             />
           </p>
@@ -600,10 +781,126 @@
           <br />
           <p>
             <img
-              style="display:block;margin-left: auto; margin-right: auto"
+              class="accordionFigure"
               src="assets\strongweak.png"
             />
           </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="Tailored" class="megadivProtocol">
+      <h1>Tailored Drug Delivery</h1>
+      Both these mathematical models can be used in combination to give a simulation of the impact of the nanopore as well as the rate at which this occurs. This simulation was made in MATLAB in order to solve the PDEs above and we tested this model out for four different toeholds. Shown individually in the tabs below are the toeholds, a description of them and the simulation itself running.
+      <div class="tabs">
+        <div role="tablist" aria-label="Entertainment">
+          <button
+            role="tab"
+            aria-selected="true"
+            aria-controls="HidePanel2-tab"
+            style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
+            id="HidePanel2"
+          >
+            -
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol8-tab"
+            tabindex="-1"
+            class="greytab"
+            id="Protocol8"
+          >
+            Case 1
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol9-tab"
+            id="Protocol9"
+            tabindex="-1"
+            class="lightbluetab"
+          >
+            Case 2
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol10-tab"
+            class="midbluetab"
+            id="Protocol10"
+            tabindex="-1"
+          >
+            Case 3
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="Protocol11-tab"
+            class="darkbluetab"
+            id="Protocol11"
+            tabindex="-1"
+          >
+            Case 4
+          </button>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="HidePanel2-tab"
+          aria-labelledby="HidePanel2"
+          style="padding:0"
+        >
+          <p></p>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol8-tab"
+          aria-labelledby="Protocol12"
+          class="greytab"
+          hidden=""
+        >
+          This is for a weak toehold with m=6 (i.e. of the form ATTATA) with rate constant 1.85 x 10<sup>6</sup>.   <br>
+          <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 1st Case Here">
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol9-tab"
+          aria-labelledby="Protocol5"
+          class="lightbluetab"
+          hidden=""
+        >
+         This is for a mixed toehold with m=8 (i.e. of the form ATCCAGTT) with rate constant 1.29 x 10<sup>6</sup>.
+          <br>
+          <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 2nd Case Here">
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol10-tab"
+          aria-labelledby="Protocol6"
+          class="midbluetab"
+          hidden=""
+        >
+          This is for a strong toehold with m=10 (i.e. of the form CGGGCGCCGC) with rate constant 0.27 x 10<sup>6</sup>.
+          <br>
+          <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 3rd Case Here">
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="Protocol11-tab"
+          aria-labelledby="Protocol7"
+          class="darkbluetab"
+          hidden=""
+        >
+          This is for a strong toehold with m=14 (i.e of the form CGCCCGCGGCGGCC) with rate constant 0.094 x 10<sup>6</sup>.
+          <br>
+          <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 4th Case Here">
+
         </div>
       </div>
     </div>

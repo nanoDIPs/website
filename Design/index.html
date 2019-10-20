@@ -29,6 +29,20 @@
 
 <head>
   <!-- basic.html -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/scrollify.js"></script>
+  <script>
+  window.addEventListener('load', function(){
+    $(document).ready(function() {
+      $.scrollify({
+        section : ".scrollwrapper",
+        offset : 0,
+      });
+    });
+    });
+  </script>
+
+
   <link rel="stylesheet" href="../assets/generalStyle.css">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/tabsCSS.css">
@@ -39,239 +53,126 @@
 </head>
 
 <body>
+  <div class="scrollwrapper">
 <div class="hero-image">
 <div class="herotext">
-  From pen and paper <br> to <mark class="midblue">nanodevice</mark>.
+  The nitty-<mark class="midblue">gritty</mark>.
 </div>
 
 <div class="frontmenu">
-  <a href="#CreatingNanopores" class="frontmenuitem">
-    Building DNA nanopores
+  <a href="#StrandDisplacement" class="frontmenuitem">
+    Toehold mediated strand displacement
   </a>
   <br>
-  <a href="#CreatingLiposomes" class="frontmenuitem">
-    Building Liposomes
+  <a href="#NanoporeSketching" class="frontmenuitem">
+    Nanopore Design
   </a>
   <br>
-  <a class="frontmenuitem">
-    Creating Peptide-Oligonucleotide Conjugates
+  <a href="#threeToeholds" class="frontmenuitem">
+    Three Toehold Design
+  </a>
+  <br>
+  <a href="#oneToehold" class="frontmenuitem">
+    One Toehold Design
   </a>
 </div>
 </div>
-
-<div id="CreatingNanopores" class="megadivProtocol">
-
-  <h1>Building DNA nanopores</h1>
-  DNA nanopores self-assemble from synthetic single stranded sequences of DNA (oligonucleotides). Oligonucleotides are designed using computer software (cadnano) to fold into specific 3D structures.
-  We designed DNA nanopores as hexameric hollow barrel composed of six double stranded DNA helices. We chose to build this nanopore as this archetypal design has been independently described twice (Langecker et al., 2012; Burns et al., 2013)  and has been recently demonstrated to embed in the membranes of liposomes (Burns et al., 2016). Four of the 6 helices are equipped with cholesterol anchors, in order to puncture lipid bilayers and allow to the nanopores to embed across the hydrophobic membranes.
-  <div class="tabs">
-    <div role="tablist" aria-label="Entertainment">
-      <button role="tab"
-              aria-selected="true"
-              aria-controls="HidePanel1-tab"
-              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal;"
-              id="HidePanel1">
-              -
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol1-tab"
-              tabindex="-1"
-              class="greytab"
-              id="Protocol1">
-              Open Nanopores
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol2-tab"
-              id="Protocol2"
-              tabindex="-1"
-              class="lightbluetab">
-              Closed Nanopores
-      </button>
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="HidePanel1-tab"
-         aria-labelledby="HidePanel1"
-         style="padding:0">
-      <p>
-      </p>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol1-tab"
-         aria-labelledby="Protocol1"
-         class="greytab"
-         hidden="">
-
-        List of ingredients:
-        <ul>
-          <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-          <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-          <li>15 mM Tris (1.8171 mg per ml)</li>
-        </ul>
-
-        Procedure:
-        <ol>
-          <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-          <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-          </li>
-          <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-          </li>
-        </ol>
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol2-tab"
-         aria-labelledby="Protocol2"
-         class="lightbluetab"
-         hidden="">
-
-         List of ingredients:
-         <ul>
-           <li>1 nM of oligonucleotides (ordered from Integrated DNA Technologies, IDT, as in the table below:</li>
-           <li>0.3 M KCl (if powder: 22.37 mg per ml)</li>
-           <li>15 mM Tris (1.8171 mg per ml)</li>
-         </ul>
-
-         Procedure:
-         <ol>
-           <li>The DNA nanopores are assembled from oligonucleotides ordered from Integrated DNA Technologies. Resuspend lyophilised DNA in nuclease free water to a stock concentration of 100 uM.</li>
-           <li>Prepare an equimolar mixture of DNA oligonucleotides (1 nmol each, dissolved in buffer A: 0.3 M KCl, 15 mM Tris pH 8.0; total volume 1,000 μl) at room temperature.
-           </li>
-           <li>Incubate at 95°C for 2 min and gently cool to 20°C at a rate of 5°C per min in a PCR thermocycler.
-           </li>
-         </ol>
-
-    </div>
-
-  </div>
-
 </div>
 
-<div id="CreatingLiposomes" class="megadivProtocol">
+<div id="StrandDisplacement" class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="maintext">
+  <h1>Toehold mediated strand displacement</h1>
+Branch migrations are a well-documented phenomenon found to occur in natural processes such as DNA repair and replication. This exchange of DNA strands is a core principle of designing biomolecular circuits based on toehold mediated strand displacement (TMSD) reactions, as demonstrated by Yin et al. (2008). Originally introduced to the community through Yurke et al. (2000), TMSD offers a controllable method of exchanging strands of DNA between inputs and outputs and offers the critical benefit to perform this in an enzyme-free manner. The control of this process is possible through modulating the toehold regions of the system. Varying the length and DNA base sequence of the toehold significantly affects the rate of the TMSD reaction. The pioneering modelling techniques developed by <a href="https://www.ncbi.nlm.nih.gov/pubmed/19894722">Zhang and Winfree (2009)</a> of these mechanisms has formed a core part of our design verification.
 
-  <h1>Building Liposomes</h1>
-  Liposomes (vesicles) are membrane-enclosed spheres that transport molecular cargo within and between cells. We used large unilamellar vesicles (LUVs) with a diameter of 200nm as drug carriers.
-  <div class="tabs">
-    <div role="tablist" aria-label="Entertainment">
-      <button role="tab"
-              aria-selected="true"
-              aria-controls="HidePanel2-tab"
-              style="width: 4%;color:rgba(180,180,180,1);font-weight:normal"
-              id="HidePanel2">
-              -
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol4-tab"
-              tabindex="-1"
-              class="greytab"
-              id="Protocol1">
-              Dissolving Lipids
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol5-tab"
-              id="Protocol5"
-              tabindex="-1"
-              class="lightbluetab">
-              Hydration
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol6-tab"
-              class="midbluetab"
-              id="Protocol6"
-              tabindex="-1">
-              Extrusion
-      </button>
-      <button role="tab"
-              aria-selected="false"
-              aria-controls="Protocol7-tab"
-              class="darkbluetab"
-              id="Protocol7"
-              tabindex="-1">
-              Purification
-      </button>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="HidePanel2-tab"
-         aria-labelledby="HidePanel2"
-         style="padding:0">
-      <p>
-      </p>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol4-tab"
-         aria-labelledby="Protocol4"
-         class="greytab"
-         hidden="">
+<img class="maintextFigure" src="assets/figures/displacement1.png">
 
-        The first step of LUV preparation consists of drying phospholipids into glass vials to form “lipid films”. These can be stored at 4°C and taken out for use as needed.when fresh vesicles are needed.
-
-        List of ingredients:
-        <ul>
-          <li>DOPC powder (Avanti Polar Lipids)</li>
-          <li>25 mg mL⁻¹ DOPE (Avanti Polar Lipids)</li>
-          <li>Chloroform</li>
-          <li>Nitrogen gas</li>
-        </ul>
-
-        Procedure:
-        <ol>
-          <li>Dissolve the DOPC powder in 3.79 mL of chloroform.</li>
-          <li>Add dissolved DOPC and DOPE into a vial in a 3:7 DOPE:DOPC ratio and make the solution up to the desired volume with chloroform. Here,In this experiment, 30 uL of DOPE, 70 uL of DOPC and an additional 100 mL of chloroform were used</li>
-          <li>The vial is dried using nitrogen gas and left in a vacuum oven without any heat, at 400 bar of pressure at least overnight before using. </li>
-          <li>Nitrogen gas</li>
-        </ol>
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol5-tab"
-         aria-labelledby="Protocol5"
-         class="lightbluetab"
-         hidden="">
-
-        Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.
-
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol6-tab"
-         aria-labelledby="Protocol6"
-         class="midbluetab"
-         hidden="">
-      <p>
-        Fear of complicated buildings:
-      </p>
-      <p>
-        A complex complex complex.
-      </p>
-    </div>
-    <div tabindex="0"
-         role="tabpanel"
-         id="Protocol7-tab"
-         aria-labelledby="Protocol7"
-         class="darkbluetab"
-         hidden="">
-      <p>
-        Fear of complicated buildings:
-      </p>
-      <p>
-        A complex complex complex.
-      </p>
-    </div>
-  </div>
+The combination of Watson-Crick base pairing and TSMD reactions allows the design of controllable self-assembly pathways that perform complex autonomous behaviours (Liang et al. 2017). Burns et al. (2016)  exploited  these principles to design a DNA-gated nanopore with a TMSD-driven opening mechanism.
+</div>
+</div>
 </div>
 
-<script type="text/javascript" src="assets/tabsJS.js"></script>
+<div id="NanoporeSketching" class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="maintext">
+  <h1>The Nanopore</h1>
+<p>
+Cells have protein pores which act as molecular gate-keepers, controlling the movement of substances across the lipid walls of the cell. Carefully designing these protein pores for biosensing could hugely advance healthcare. However, it is overwhelmingly difficult to visualise and predict the interactions between the 22 possible chemical units that form proteins. This makes it hard to design and produce protein pores from scratch.
+</p>
+<p>
+  On the other hand, the 4 chemical letters that form DNA always bind like lego bricks in specific pairs: A binds T, G binds C. As a result, even lay people can use software to programme DNA to bind to itself and other DNA molecules in precise, novel 3D shapes - without ever writing any code or needing highly specialist training.
+</p>
+<p>
+  Our novel system is based upon the DNA-nanopore described by Burns et al., (2016),  which is comprised of six DNA strands that self-assemble to form a hollow barrell. This DNA nanopore can be potentially used as a drug delivery device thanks to its ability to form a sterically sealed channel. This is possible through the addition of the ‘lock’ strand, that can hybridise with parts of the DNA nanopore strands, while leaving three toeholds openly available. The ‘key’ strand, with the complementary base sequences to these toeholds, can displace the lock from the rest of the nanopore. Once the strand displacement is complete, the lock-key hybrid dissociates away from the pore, allowing the cargo to be released from the nanopore.
+</p>
+<p>
+  The schematic below illustrates how the addition of six DNA strands can reliably self-assemble into a stable nanopore. Also detailed is the lock strand’s hybridisation to the nanopore to form the nanopore in a closed state (NP-C).
+</p>
+<img class="maintextFigure" src="assets/figures/nanoporeSketch.png">
+<p>
+  The square symbols indicate 5’ ends and triangles represent 3’ends of the DNA strands.
+</p>
+<p>
+  These DNA-nanopores can then be embedded into liposomes by adding cholesterol modifications to the 3’ end of the oligonucleotides. The hydrophobic interactions between the lipid tails and cholesterol groups allow the stable insertion of the DNA-nanopores into liposome membranes.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="threeToeholds" class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="maintext">
+  <h1>Three Toehold Design</h1>
+<p>
+  The original design for the lock and key strands utilised three toehold regions to obtain the desired kinetics of pore opening. To avoid off-target release of the key, these toehold regions on the key must be blocked from interacting with the lock.
+</p>
+<p>
+  These toeholds are at the beginning, middle and end of the key sequence. In order to block them,  a single DNA strand acting as a toehold blocker would need to be of similar length to this key. However, this design complicates the process of key release, as the kinetics of the toehold blocker dissociating from the lock would be very slow. To solve this issue, we re-designed the toehold blocker to partially bind the key rather than to the entire sequence. This partial binding effectively inactivates the key but allows the toehold blocker to be displaced by a third strand (the complement), which is fully homologous to the toehold blocker. When such displacement takes place,  a cascade of strand displacement reactions initiates, thereby releasing the key and opening the pore.
+</p>
+
+<img class="maintextFigure" src="assets/figures/threetoeholds1.png">
+<p>
+  Although this schematic is an oversimplified view of the system, it establishes the core steps taken to achieve controlled opening of the pore.
+</p>
+<p>
+  The green linker enabling the hairpin structure to be formed in the blocker strand is a peptide sequence. When this sequence is cleaved by cancer-specific biomarkers (e.g. proteases), the hairpin structure becomes de-stabilised, thus initiating a cascade of strand displacement reactions.
+</p>
+<p>
+  When the  linker is cleaved, the short pink strand blocking the overhanging toehold on the blocker will spontaneously dissociate and reveal the first toehold involved in a TMSD reaction.
+</p>
+<p>
+  The blocker complement (light blue) is a perfect match to the blocker and binds to the exposed toehold region. Due to its high affinity for the blocker, the complement can displace the blocker from  the key. Once the first TMSD reaction is  completed, the blocker/complement complex able to dissociate away from the pore. This activates the key strand to displace the lock, finally opening the pore.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="oneToehold" class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="maintext">
+  <h1>One Toehold Design</h1>
+<p>
+To streamline the design, the key and lock strands were modified to contain one active toehold for the TMSD reaction opening the pore. This simplifies the overall process as the initial TMSD reaction in the previous design is no longer required. The single toehold present on the key is now blocked due to the hairpin structure formed by the peptide linker, which, when cleaved, allows the blocker strand to dissociate. The newly designed key (Key-2) can then hybridise to the newly designed lock (lock-2) through a TMSD reaction and the pore can open.
+</p>
+
+<img class="maintextFigure" src="assets/figures/oneToehold.png">
+<p>
+  Key-2 was not localised to lock-2 in this design to avoid any potential effects of this on the lock-key hybridisation that were not originally predicted for.
+</p>
+
+</div>
+</div>
+</div>
+
+
+
+
 <script type="text/javascript" src="../assets/navbarScript.js"></script>
 
 

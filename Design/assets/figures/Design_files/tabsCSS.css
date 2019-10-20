@@ -18,6 +18,7 @@
   font-weight: bold;
   margin-right: -5px;
 
+
   background-color: #eee;
   cursor: pointer;
   border: none;
@@ -34,7 +35,7 @@
   bottom: 100%;
   right: -0px;
   left: -0px;
-  content: "";
+  content: '';
 }
 
 [role="tab"][aria-selected="true"] {
@@ -51,7 +52,7 @@
   right: 0;
   left: 0;
   height: 0.3em;
-  content: "";
+  content: '';
 }
 
 [role="tab"]:hover,
@@ -79,7 +80,7 @@
   bottom: 0;
   right: -0px;
   left: -0px;
-  content: "";
+  content: '';
 }
 
 [role="tabpanel"] p {
@@ -90,27 +91,25 @@
   margin-top: 0em;
 }
 
+
 .greytab {
-  background-color: rgba(180, 180, 180, 1);
+  background-color: rgba(180,180,180,1);
   color: white;
 }
 
 .lightbluetab {
-  background-color: rgba(159, 177, 213, 1);
+  background-color: rgba(159,177,213,1);
   color: white;
 }
 
+
 .midbluetab {
-  background-color: rgba(116, 142, 193, 1);
+  background-color: rgba(116,142,193,1);
   color: white;
 }
 
 
 .darkbluetab {
-  background-color: rgba(61, 84, 134, 1);
+  background-color: rgba(61,84,134,1);
   color: white;
-}
-
-img {
-  margin: 20px 0;
 }
