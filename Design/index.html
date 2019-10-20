@@ -61,15 +61,19 @@
 
 <div class="frontmenu">
   <a href="#StrandDisplacement" class="frontmenuitem">
-    Building DNA nanopores
+    Toehold mediated strand displacement
   </a>
   <br>
   <a href="#NanoporeSketching" class="frontmenuitem">
-    Building Liposomes
+    Nanopore Design
   </a>
   <br>
-  <a class="frontmenuitem">
-    Creating Peptide-Oligonucleotide Conjugates
+  <a href="#threeToeholds" class="frontmenuitem">
+    Three Toehold Design
+  </a>
+  <br>
+  <a href="#oneToehold" class="frontmenuitem">
+    One Toehold Design
   </a>
 </div>
 </div>
@@ -101,7 +105,7 @@ Cells have protein pores which act as molecular gate-keepers, controlling the mo
   On the other hand, the 4 chemical letters that form DNA always bind like lego bricks in specific pairs: A binds T, G binds C. As a result, even lay people can use software to programme DNA to bind to itself and other DNA molecules in precise, novel 3D shapes - without ever writing any code or needing highly specialist training.
 </p>
 <p>
-  Our novel system was based upon the DNA-nanopore described by Burns et al., (2016),  which is comprised of six DNA strands that self-assemble to form a hollow barrell. This DNA nanopore can be potentially used as a drug delivery device thanks to its ability to form a sterically sealed channel. This is possible through the addition of the ‘lock’ strand, that can hybridise with parts of the DNA nanopore strands, while leaving three toeholds openly available. The ‘key’ strand, with the complementary base sequences to these toeholds, can displace the lock from the rest of the nanopore. Once the strand displacement is complete, the lock-key hybrid dissociates away from the pore, allowing the cargo to be released from the nanopore.
+  Our novel system is based upon the DNA-nanopore described by Burns et al., (2016),  which is comprised of six DNA strands that self-assemble to form a hollow barrell. This DNA nanopore can be potentially used as a drug delivery device thanks to its ability to form a sterically sealed channel. This is possible through the addition of the ‘lock’ strand, that can hybridise with parts of the DNA nanopore strands, while leaving three toeholds openly available. The ‘key’ strand, with the complementary base sequences to these toeholds, can displace the lock from the rest of the nanopore. Once the strand displacement is complete, the lock-key hybrid dissociates away from the pore, allowing the cargo to be released from the nanopore.
 </p>
 <p>
   The schematic below illustrates how the addition of six DNA strands can reliably self-assemble into a stable nanopore. Also detailed is the lock strand’s hybridisation to the nanopore to form the nanopore in a closed state (NP-C).
@@ -122,7 +126,7 @@ Cells have protein pores which act as molecular gate-keepers, controlling the mo
   <div class="fillpage">
     <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
 <div class="maintext">
-  <h1>Toehold mediated strand displacement</h1>
+  <h1>Three Toehold Design</h1>
 <p>
   The original design for the lock and key strands utilised three toehold regions to obtain the desired kinetics of pore opening. To avoid off-target release of the key, these toehold regions on the key must be blocked from interacting with the lock.
 </p>
@@ -134,8 +138,33 @@ Cells have protein pores which act as molecular gate-keepers, controlling the mo
 <p>
   Although this schematic is an oversimplified view of the system, it establishes the core steps taken to achieve controlled opening of the pore.
 </p>
+<p>
+  The green linker enabling the hairpin structure to be formed in the blocker strand is a peptide sequence. When this sequence is cleaved by cancer-specific biomarkers (e.g. proteases), the hairpin structure becomes de-stabilised, thus initiating a cascade of strand displacement reactions.
+</p>
+<p>
+  When the  linker is cleaved, the short pink strand blocking the overhanging toehold on the blocker will spontaneously dissociate and reveal the first toehold involved in a TMSD reaction.
+</p>
+<p>
+  The blocker complement (light blue) is a perfect match to the blocker and binds to the exposed toehold region. Due to its high affinity for the blocker, the complement can displace the blocker from  the key. Once the first TMSD reaction is  completed, the blocker/complement complex able to dissociate away from the pore. This activates the key strand to displace the lock, finally opening the pore.
+</p>
 
-The combination of Watson-Crick base pairing and TSMD reactions allows the design of controllable self-assembly pathways that perform complex autonomous behaviours (Liang et al. 2017). Burns et al. (2016)  exploited  these principles to design a DNA-gated nanopore with a TMSD-driven opening mechanism.
+</div>
+</div>
+</div>
+
+<div id="oneToehold" class="scrollwrapper">
+  <div class="fillpage">
+    <mark style="background-color: inherit; color: rgba(0,0,0,0);">42</mark>
+<div class="maintext">
+  <h1>One Toehold Design</h1>
+<p>
+To streamline the design, the key and lock strands were modified to contain one active toehold for the TMSD reaction opening the pore. This simplifies the overall process as the initial TMSD reaction in the previous design is no longer required. The single toehold present on the key is now blocked due to the hairpin structure formed by the peptide linker, which, when cleaved, allows the blocker strand to dissociate. The newly designed key (Key-2) can then hybridise to the newly designed lock (lock-2) through a TMSD reaction and the pore can open.
+</p>
+
+<img class="maintextFigure" src="assets/figures/oneToehold.png">
+<p>
+  Key-2 was not localised to lock-2 in this design to avoid any potential effects of this on the lock-key hybridisation that were not originally predicted for.
+</p>
 
 </div>
 </div>
