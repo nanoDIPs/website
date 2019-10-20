@@ -441,8 +441,67 @@
             With the system of equations established, solving them required
             initial and boundary conditions to be defined.
           </p>
-          <img class="accordionFigure" src="./assets/table4.png" alt="" />
-          <img class="accordionFigure"  src="./assets/table5.png" alt="" />
+                                        <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Specie</span></th>
+              <th class="tg-yla0">Initial Condition</th>
+              <th class="tg-yla0">Relevance</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>ECM</sub></td>
+              <td class="tg-cly1">[ d<sub>ECM</sub> ] = 0 for all space </td>
+              <td class="tg-cly1">No liposomes have entered the system that could have released the drug</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">d<sub>C</sub></td>
+              <td class="tg-cly1">[ d<sub>C</sub> ] = 0 for all space</td>
+              <td class="tg-cly1">"</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">L<sub>ECM</sub></td>
+              <td class="tg-cly1">[ L<sub>ECM</sub> ] = 0 for all space </td>
+              <td class="tg-cly1">No liposomes have exchanged from capillary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">L<sub>C</sub></td>
+              <td class="tg-0lax">[ L<sub>C</sub> ] = 0 for all space except for spatial point two</td>
+              <td class="tg-0lax">Dose of drug carrying liposomes enters system at time zero – point two used due to limitation of model when applied to entrance of system</td>
+            </tr>
+    <tr>    <tr>
+              <td class="tg-baqh">P</td>
+              <td class="tg-0lax">[P] = 0 for all space outside of active tumour region</td>
+              <td class="tg-0lax">Simulating a tumour being present that is already metastasizing surrounding tissue</td>
+            </tr>
+          </table>
+          <br>
+
+                    <br>
+          <table class="tg">
+            <tr>
+              <th class="tg-cly1"><span style="font-weight:bold">Boundary Condition</span></th>
+              <th class="tg-yla0">Relevance</th>
+            </tr>
+            <tr>
+              <td class="tg-nrix">First spatial derivatives = 0 for all species at entrance of system</td>
+              <td class="tg-cly1">Neumann boundary condition represents that material flux entering system is zero – as the arrival of liposomes is described within the system as an initial condition</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">First spatial derivatives not restricted for all species at end of system</td>
+              <td class="tg-cly1">This enables the flux of material out of the system as expected through a non-prescribed first derivative value</td>
+            </tr>
+            <tr>
+              <td class="tg-nrix">Second spatial derivatives at end boundary equal to derivative at previous point</td>
+              <td class="tg-cly1">Avoids unreasonably restricting concavity of concentration profiles as calculation of it requires concentration at the x, x + &delta;x and x – &delta;x points – the x + &delta;x point does not exist at end boundary</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Initial third of spatial points have no exchange between regions</td>
+              <td class="tg-0lax">Allows distribution of vesicles to spread due to flow in capillary – better representing the concentration profile that would arrive into in vivo capillaries </td>
+            </tr>
+
+          </table>
+          <br>
+
           <p>
             With these conditions the solver can now evaluate the concentration
             of each specie across the domain of each instance of time
@@ -803,7 +862,7 @@
           class="greytab"
           hidden=""
         >
-          This is Case 1 <br>
+          This is for a weak toehold with m=6 (i.e. of the form ATTATA) with rate constant 1.85 x 10<sup>6</sup>.   <br>
           <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 1st Case Here">
         </div>
         <div
@@ -814,7 +873,8 @@
           class="lightbluetab"
           hidden=""
         >
-         This is Case 2 <br>
+         This is for a mixed toehold with m=8 (i.e. of the form ATCCAGTT) with rate constant 1.29 x 10<sup>6</sup>.
+          <br>
           <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 2nd Case Here">
         </div>
         <div
@@ -825,7 +885,8 @@
           class="midbluetab"
           hidden=""
         >
-          This is Case 3 <br>
+          This is for a strong toehold with m=10 (i.e. of the form CGGGCGCCGC) with rate constant 0.27 x 10<sup>6</sup>.
+          <br>
           <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 3rd Case Here">
         </div>
         <div
@@ -836,7 +897,8 @@
           class="darkbluetab"
           hidden=""
         >
-          This is Case 4 <br>
+          This is for a strong toehold with m=14 (i.e of the form CGCCCGCGGCGGCC) with rate constant 0.094 x 10<sup>6</sup>.
+          <br>
           <img class='accordionFigure' src="wrongname.gif" alt="Put Gif for 4th Case Here">
 
         </div>
